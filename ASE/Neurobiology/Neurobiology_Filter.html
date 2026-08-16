@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 1000;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-left: 650px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Times;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div1 id="mySidebar" class="sidebar BLACC-theme">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a target="_self" Title="ssssssss"> Axon</a>
+  <a target="_self" Title="ssssssss"> Drug Effect </a>
+  <a target="_self" Title="ssssssss"> Sites Of Action </a>
+  <a target="_self" Title="ssssssss"> Pharmacology Kinetics </a>
+  <a target="_self" Title="ssssssss"> Intraperitoneal Injection </a>
+  <a target="_self" Title="ssssssss"> Intramuscular Injection </a>
+  <a target="_self" Title="ssssssss"> Subcutaneous Injection </a>
+  <a target="_self" Title="ssssssss"> Oral Administration </a>
+  <a target="_self" Title="ssssssss"> Inhalation </a>
+  <a target="_self" Title="ssssssss"> Topical Administration </a>
+  <a target="_self" Title="ssssssss"> Intracerebral Administration </a>
+  <a target="_self" Title="ssssssss"> Depot Binding </a>
+  <a target="_self" Title="ssssssss"> Dose Response Curve </a>
+  <a target="_self" Title="ssssssss"> Therapeutic Index </a>
+  <a target="_self" Title="ssssssss"> Affinity </a>
+  <a target="_self" Title="ssssssss"> Tolerance </a>
+  <a target="_self" Title="ssssssss"> Sensitization </a>
+  <a target="_self" Title="ssssssss"> Withdrawal Symptom </a>
+  <a target="_self" Title="ssssssss"> Antagonist </a>
+  <a target="_self" Title="ssssssss"> Agonist </a>
+  <a target="_self" Title="ssssssss"> Direct Agonist </a>
+  <a target="_self" Title="ssssssss"> Receptor Blocker </a>
+  <a target="_self" Title="ssssssss"> Direct Antagonist </a>
+  <a target="_self" Title="ssssssss"> Noncompetitive Binding </a>
+  <a target="_self" Title="ssssssss"> Indirect Antagonist </a>
+  <a target="_self" Title="ssssssss"> Presynaptic Heteroreceptor </a>
+  <a target="_self" Title="ssssssss"> C H A T </a>
+  <a target="_self" Title="ssssssss"> Botulinum Toxin </a>
+  <a target="_self" Title="ssssssss"> Black Widow Spider Venom </a>
+  <a target="_self" Title="ssssssss"> Hemicholinum </a>
+  <a target="_self" Title="ssssssss"> Neostigmine </a>
+  <a target="_self" Title="ssssssss"> Muscarinic Receptor </a>
+  <a target="_self" Title="ssssssss"> Atropine </a>
+  <a target="_self" Title="ssssssss"> Curare </a>
+  <a target="_self" Title="ssssssss"> L D O P A </a>
+  <a target="_self" Title="ssssssss"> Nigrostriatal System </a>
+  <a target="_self" Title="ssssssss"> Mesolimbic System </a>
+  <a target="_self" Title="ssssssss"> Mesocortical System </a>
+  <a target="_self" Title="ssssssss"> Parkison’s Disease </a>
+  <a target="_self" Title="ssssssss"> A M P T </a>
+  <a target="_self" Title="ssssssss"> Reserpine </a>
+  <a target="_self" Title="ssssssss"> Apomorphine </a>
+  <a target="_self" Title="ssssssss"> Methylphenidate </a>
+  <a target="_self" Title="ssssssss"> Monoamine Oxidase </a>
+  <a target="_self" Title="ssssssss"> Chlorpromazine </a>
+  <a target="_self" Title="ssssssss"> N E </a>
+  <a target="_self" Title="ssssssss"> Epinephrine </a>
+  <a target="_self" Title="ssssssss"> Methylphenidate </a>
+  <a target="_self" Title="ssssssss"> Moclobemide </a>
+  <a target="_self" Title="ssssssss"> Locus Coeruleus </a>
+  <a target="_self" Title="ssssssss"> Axonal Varicosity </a>
+  <a target="_self" Title="ssssssss"> Idazoxan </a>
+  <a target="_self" Title="ssssssss"> Serotonin </a>
+  <a target="_self" Title="ssssssss"> P C P A </a>
+  <a target="_self" Title="ssssssss"> Fluoxetine </a>
+  <a target="_self" Title="ssssssss"> Fenfluramine </a>
+  <a target="_self" Title="ssssssss"> L S D </a>
+  <a target="_self" Title="ssssssss"> M D M A </a>
+  <a target="_self" Title="ssssssss"> Glutamate </a>
+  <a target="_self" Title="ssssssss"> N M D A Receptor </a>
+  <a target="_self" Title="ssssssss"> A M P A Receptor </a>
+  <a target="_self" Title="ssssssss"> Kainate Receptor </a>
+  <a target="_self" Title="ssssssss"> Metabotropic Glutamate Receptor </a>
+  <a target="_self" Title="ssssssss"> A P 5 </a>
+  <a target="_self" Title="ssssssss"> P C P </a>
+  <a target="_self" Title="ssssssss"> G A B A </a>
+</div1>
+
+<div2 id="main">
+  <button class="openbtn BLACC-theme" onclick="openNav()">☰ Open Sidebar</button>
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+</div2>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
