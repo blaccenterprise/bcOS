@@ -1,0 +1,15 @@
+<php
+setcookie("test_cookie", "test", time() + 3600,);
+
+>
+
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"navigator.cookieEnabled is " + navigator.cookieEnabled;
+</script>
+</body>
+</html>
