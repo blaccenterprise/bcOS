@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>B.L.A.C.C. Connect - Computer Science Department</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+	<style>
+		
+		
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 2s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+		a {
+			text-decoration: none;
+			}
+	</style>
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+
+<div class="BLACC-top"   id="navbar">
+  <div class="BLACC-bar BLACC-red BLACC-wide BLACC-padding BLACC-card">
+    <a href="./index.html" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow BLACC-text-black"><b>BC</b> B.L.A.C.C. Connect</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="BLACC-right BLACC-hide-small">
+      <a style="color: black;" href="#1" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Alabama</a>
+      <a style="color: black;"  href="#2" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Alaska</a>
+      <a style="color: black;"  href="#3" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Arizona</a>
+      <a style="color: black;"  href="#4" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Arkansas</a>
+      <a style="color: black;"  href="#5" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">California</a>
+      <a style="color: black;"  href="#6" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Colorado</a>
+      <a style="color: black;"  href="#7" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Connecticut</a>
+      <a style="color: black;"  href="#8" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Delaware</a>
+      <a style="color: black;"  href="#9" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Florida</a>
+      <a style="color: black;"  href="#10" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Georgia</a>
+      <a style="color: black;"  href="#11" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Hawaii</a>
+    
+      <a style="color: black;" href="#12" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Idaho</a>
+      <a style="color: black;"  href="#13" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Illinois</a>
+      <a style="color: black;"  href="#14" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Indiana</a>
+      <a style="color: black;"  href="#15" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Iowa</a>
+      <a style="color: black;"  href="#16" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Kansas</a>
+      <a style="color: black;"  href="#17" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Kentucky</a>
+      <a style="color: black;"  href="#18" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Louisiana</a>
+      <a style="color: black;"  href="#19" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Maine</a>
+      <a style="color: black;"  href="#20" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Maryland</a>
+      <a style="color: black;"  href="#21" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Massachusetts</a>
+    
+      <a style="color: black;" href="#2" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Michigan</a>
+      <a style="color: black;"  href="#23" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Minnesota</a>
+      <a style="color: black;"  href="#24" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Mississippi</a>
+      <a style="color: black;"  href="#25" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Missouri</a>
+      <a style="color: black;"  href="#26" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Montana</a>
+      <a style="color: black;"  href="#27" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Nebraska</a>
+      <a style="color: black;"  href="#28" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Nevada</a>
+      <a style="color: black;"  href="#29" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">New Hampshire</a>
+      <a style="color: black;"  href="#30" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">New Jersey</a>
+      <a style="color: black;"  href="#31" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">New Mexico</a>
+    
+      <a style="color: black;" href="#32" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">New York</a>
+      <a style="color: black;"  href="#33" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">North Carolina</a>
+      <a style="color: black;"  href="#34" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">North Dakota</a>
+      <a style="color: black;"  href="#35" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Ohio</a>
+      <a style="color: black;"  href="#36" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Oklahoma</a>
+      <a style="color: black;"  href="#37" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Oregon</a>
+      <a style="color: black;"  href="#38" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Pennsylvania</a>
+      <a style="color: black;"  href="#39" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Rhode Island</a>
+      <a style="color: black;"  href="#40" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">South Carolina</a>
+      <a style="color: black;"  href="#41" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">South Dakota</a>
+    
+      <a style="color: black;" href="#42" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Tennessee</a>
+      <a style="color: black;"  href="#43" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Texas</a>
+      <a style="color: black;"  href="#44" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Utah</a>
+      <a style="color: black;"  href="#45" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Vermont</a>
+      <a style="color: black;"  href="#46" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Virginia</a>
+      <a style="color: black;"  href="#47" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Washington</a>
+      <a style="color: black;"  href="#48" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">West Virginia</a>
+      <a style="color: black;"  href="#49" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Wisconsin</a>
+      <a style="color: black;"  href="#50" class="BLACC-bar-item BLACC-button BLACC-hover-black BLACC-hover-text-yellow">Wyoming</a>
+    </div>
+  </div>
+</div>
+<!-- Navbar (sit on top) -->
+<div class="BLACC-top">
+  <div class="BLACC-bar BLACC-white BLACC-wide BLACC-padding BLACC-card">
+    <a href="./index.html" class="BLACC-bar-item BLACC-button"><b>BC</b> B.L.A.C.C. CONNECT</a>
+
+	  
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="BLACC-right BLACC-hide-small">
+      <a href="#projects" class="BLACC-bar-item BLACC-button">B.L.A.C.C. Connect News</a>
+      <a href="#about" class="BLACC-bar-item BLACC-button">About</a>
+      <a href="#contact" class="BLACC-bar-item BLACC-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="BLACC-display-container BLACC-content BLACC-wide" style="max-width:1500px;" id="home">
+  <img class="BLACC-image" src="BLACC_Connect_Background.jpg" alt="Architecture" width="1500" height="800">
+  <div class="BLACC-display-middle BLACC-margin-top BLACC-center">
+    <h1 class="BLACC-xxlarge BLACC-text-white"><span class="BLACC-padding BLACC-black BLACC-opacity-min"><b>BC</b></span> <span class="BLACC-hide-small BLACC-text-light-grey">B.L.A.C.C. Connect</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="BLACC-content BLACC-padding" style="max-width:1564px">
+
+
+
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;" id="1">Alabama's B.L.A.C.C. Connect Memo</h1>
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+ 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="2"></i>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Alaska's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="3"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Arizona's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="4"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Arkansas's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="5"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">California's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="6"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Colorado's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="7"></i>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Connecticut's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="8"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Delaware's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="9"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Florida's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="10"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Georia's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;" id="11">Hawaii's B.L.A.C.C. Connect Memo</h1>
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+ 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="12"></i>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Idaho's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="13"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Illinois's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="14"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Indiana's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="15"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Iowa's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="16"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Kansas's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="17"></i>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Kentucky's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="18"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Louisiana's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="19"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Maine's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="20"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Maryland's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;" id="21">Massachusetts's B.L.A.C.C. Connect Memo</h1>
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+ 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="22"></i>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Michigan's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="23"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Minnesota's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="24"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Mississippi's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="25"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Missouri's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="26"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Montana's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="27"></i>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Nebraska's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="28"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Nevada's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="29"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">New Hampshire's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="30"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">New Jesery's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;" id="31">New Mexico's B.L.A.C.C. Connect Memo</h1>
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+ 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="32"></i>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">New York's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="33"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">North Carolina's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="34"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">North Dakota's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="35"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Ohio's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="36"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Oklahoma's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="37"></i>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Oregon's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="38"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Pennsylvania's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="39"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Rhode Island's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="40"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">South Carolina's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;" id="41">South Dakota's B.L.A.C.C. Connect Memo</h1>
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+ 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="42"></i>
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Tennessee's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="43"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Texas's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="44"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Utah's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="45"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Vermont's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<i id="46"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Virginia's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="47"></i>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Washington's B.L.A.C.C. Connect Memo</h1>
+
+
+  
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="48"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">West Virginia's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="49"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Wisconsin's B.L.A.C.C. Connect Memo</h1>
+
+
+
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<i id="50"></i>
+
+<br>
+<br>
+<br>
+<br>
+<!-- Page content -->
+
+<h1 style="background-color: yellow; color: black; font-famliy: Georgia;">Wyoming's B.L.A.C.C. Connect Memo</h1>
+
+
+ 
+
+
+  <!-- About Section -->
+ 
+    <p style="padding:1em;">B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be securely transferred to the private server by the end of the first quarter of 2024.
+    </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+<br>
+	
+  <div class="BLACC-container BLACC-padding-32" id="about">
+    <h3 class="BLACC-border-bottom BLACC-border-light-grey BLACC-padding-16">About</h3>
+    <p>It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Unless they are blinded by desire, they do not come out, they are in fault who abandon their duties, the mind softens, that is to say, the pursuit of hardships. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.
+    </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+
+<br>
+
+
+
+
+
+<!-- Footer -->
+
+<footer class="BLACC-container BLACC-black">
+<p> Made By B.L.A.C.C. Corportation  (c) 2024</p>
+<br>
+<hr>
+<br>
+  <ul class="lileft">
+ <li><a href="https://blacccorporation.w3spaces.com/index.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="lileft">
+ <li><a href="https://blaccsearch.w3spaces.com/BLACC_Search.html">B.L.A.C.C. Search</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="https://blacccorporation.w3spaces.com/B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="https://blacccorporation.w3spaces.com/PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+ <ul class="lileft">
+<li><a href="https://blacccorporation.w3spaces.com/Subscribe_Form.html">Subscribe</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blaccconnect.w3spaces.com/Level_1_Access/United_States_Selection_Level_1_Access.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+<br>
+<hr>
+<br>
+
+
+
+  <p style="text-align: right;">Powered by <a href="https://blacccorporation.w3spaces.com/Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="https://blacccorporation.w3spaces.com/index.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+</footer>
+
+
+
+
+
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-400px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+
+
+</body>
+</html>
+
+

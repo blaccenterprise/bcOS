@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch Element</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f7f6;
+        }
+
+        /* --- Toggle Switch Styling --- */
+        .switch-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            user-select: none;
+            margin-bottom: 20px;
+        }
+
+        .toggle-switch {
+            width: 50px;
+            height: 26px;
+            background-color: #ccc;
+            border-radius: 50px;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        /* The moving circle inside the toggle */
+        .toggle-switch::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            top: 3px;
+            left: 3px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Active/On state styling */
+        .switch-container.active .toggle-switch {
+            background-color: #4cd964;
+        }
+
+        .switch-container.active .toggle-switch::before {
+            transform: translateX(24px);
+        }
+
+        /* --- Target Element Styling --- */
+        #targetElement {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Class to hide the element smoothly */
+        .hidden {
+            opacity: 0 !important;
+            transform: scale(0.95) !important;
+            pointer-events: none; /* Prevents clicking interacting with it while hidden */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="switch-container" id="toggleControl">
+        <span id="statusText">Status: Off</span>
+        <div class="toggle-switch"></div>
+    </div>
+
+    <div id="targetElement">
+        <h3>🎉 Dynamic Content Box</h3>
+        <p>This element visibility is being controlled by the switch above.</p>
+    </div>
+
+    <script>
+        // 1. Grab references to the DOM elements
+        const toggleControl = document.getElementById('toggleControl');
+        const targetElement = document.getElementById('targetElement');
+        const statusText = document.getElementById('statusText');
+
+        // 2. Define the toggle function
+        function toggleElement() {
+            // Toggle the 'active' class on the switch button itself (for visual state)
+            const isActive = toggleControl.classList.toggle('active');
+            
+            // Toggle the 'hidden' class on the target element
+            targetElement.classList.toggle('hidden');
+            
+            // Optional: Update the text label dynamically
+            if (isActive) {
+                statusText.textContent = "Status: On";
+            } else {
+                statusText.textContent = "Status: Off";
+            }
+        }
+
+        // 3. Attach the function to the click event
+        toggleControl.addEventListener('click', toggleElement);
+
+        // Initialize state as 'hidden' on startup to match the default "Off" text
+        targetElement.classList.add('hidden');
+    </script>
+
+</body>
+</html>
