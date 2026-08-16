@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/x-icon" href="./BC.jpg">
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+* {box-sizing: border-box}
+
+.lileft {
+  float: left;
+}
+.liright {
+  float: right;
+}
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+	 background-image: url('./BLACC_Corp.jpg');
+}
+ h3 {
+     font-family: Georgia;
+     color: teal;
+     
+ }
+/* Style tab links */
+.tablinkhome {
+  background-color: #E2E5EA;
+  color: blue;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink {
+  background-color: grey;
+  color: lightblue;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: lightblue;
+  color: purple;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: blue;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#Blacklining {
+    background-color: black; 
+    text-align: center;
+    
+}
+
+#Architecture {
+    background-color:  #E2E5EA;
+    text-align: center;
+	 background-image: url('./Architecture_Background_Extra.jpg');
+
+}
+
+#Eye {
+    background-color: grey;
+    
+}
+
+#NFT {
+    background-color: black;
+    
+}
+
+
+
+.bgArchitecture {
+  /* The image used */
+  background-image: url("Architecture_Background_Wallpaper.jpg");
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonArchitecture {
+    background-color: lightblue;
+    color: teal;
+    width: 150px;
+    height: 70px;
+}
+
+.buttonArchitecture:hover {
+    background-color: white;
+    color: purple;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+</head>
+<body>
+    
+    <div class="BLACC-top">
+<div class="BLACC-bar BLACC-black">
+  <a href="./New_Design.html" class="BLACC-bar-item BLACC-button BLACC-hover-blue" target="_self"><i><img src="./BC.jpg" style="width:25px;height:25px;"></i></a>
+
+  <a href="./Search_Engine.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-search"></i></a>
+  <a href="./Support.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-commenting-o"></i></a>
+  <a href="./Login.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-user"></i></a>
+</div>
+ </div>
+ <br>
+ <br>
+<button class="tablinkhome" onclick="openPage('Architecture', this, '#B4DFE5')" id="defaultOpen">Architecture</button>
+<button class="tablink" onclick="openPage('NFT', this, 'grey')">NFT (Non-Fungible Token)</button>
+<button class="tablink" onclick="openPage('Blacklining', this, 'grey')">Blacklining</button>
+<button class="tablink" onclick="openPage('Eye', this, 'blue')">Eye</button>
+    
+
+<div id="BLACCark" class="tabcontent">
+  <h3>B.L.A.C.C. Ark</h3>
+  <p>BLACCark is where the heart is..</p>
+  <img src="./BLACC_Ark.jpg" width="1880px" height="700px" style="opacity: 50%">
+  <p style="color: red">
+      The real life game:
+
+B.L.A.C.C. Ark is a game that deals with real life mission, side quest, team missions, objectives and much more. Level up in life and see the results.
+
+
+
+Building the necessary components to provide a better quality of life through Architecture, Language, Architecture, Computer Science and Change, is the sole foundation of B.L.A.C.C.
+
+The direction in which the economy is heading, especially with the placement of A.I into the workfield; there needs to be another outlet for making wages that are designed for human accomplishment. Enter the real life game with different job offers covering all fields, just undestand that the action made within this game is real; you will be doing it.
+  </p>
+</div>
+
+
+
+
+
+
+<!--Architecture-->
+
+<div id="Architecture" class="tabcontent">
+    <div class="bgArchitecture">
+<div class="container centered">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<canvas id="myCanvas" width="1100" height="250" style="border:1px solid grey;">
+Architecture</canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(180,150,280,350);
+grad.addColorStop(0, "lightblue");
+grad.addColorStop(1, "grey");
+
+// Fill outlined text with gradient
+ctx.font = "196px Arial";
+ctx.fillStyle = grad;
+ctx.fillText("Architecture",0,190);
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<p style="margin-left: 1em; text-align: center; background-color: white; font-family: Times; font-size: 24px; color: black; border: solid 5px grey">
+    <b>
+B.L.A.C.C.'s focus is dedicated to the knowledge of biological factors that affect humainty. In addition, reserching possible options to improve the quality of life by declining the negative biological affects on humanity. The inventions incorporated under the B.L.A.C.C. Corporation trademark is B.L.A.C.C. Ark, Asclepieion of B.L.A.C.C. and OneiroNet. Using the inventions are free. To access the invention, "click" the tab and sign-up for free. The inventions within the Architecture department are designed to improve the physiology and psychology of the user. Time invested will improve your observational skills, somatosensory skills and actualization skills.
+</b>
+</p> 
+  <br>
+<br>
+<br>
+	
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<video width="1250" autoplay controls>
+  <source src="https://blaccenterprise.github.io/Media/Installing_BLACC_App_Store.mp4" type="video/mp4">
+  <source src="https://blaccenterprise.github.io/Media/Installing_BLACC_App_Store.MPEG" type="video/MPEG">
+  </video>    
+  <script>
+      function lesson() {
+          var msg = new SpeechSynthesisUtterance();
+msg.text = "My name is Arthenya. I am called an Ace; Artificial Support Engine. I am Mr. Carpenter's Ace. I will be giving you the tutorial on how to utilize Black Corporation for max potentiality. If you view this from your phone, then that is great. But, if you are viewing this from a computer, then be prepared to switch to a mobile device in the near future. Each tutorial there will be video that will automatically start, please watch the audioless video. Follow the visual instructions along with my verbal instruction. First you will want to download the Black App Store. Either download the Andriod or I Phone version depending on your device, just scan the correct Q R code. Two devices may be necessary, one to show the code and the other that can scan the code. Make sure the device that is scanning the Q R code is the device you want the appilication. To locate the Q R code please go to blacc app store dot b l a c c c o r p dot com.";
+window.speechSynthesis.speak(msg);
+      }
+  </script>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+<br>
+    <div id="Blacklining">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:black; border: solid 2px white">
+    <h2 style="color: white;">Blacklining</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./Blacklining.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <br>
+    <button class="BLACC-button BLACC-white BLACC-button-hover-grey" style="width: 100px; height: 50px;"><a href="" target="_self" style="color: black">View More</a></button>
+ 
+  </div>
+  
+  <div class="column" style="background-color:black; border: solid 2px white">
+    <h2 style="color: grey;">Purpose</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: grey;">Through careful observation of the data, B.L.A.C.C. can make educated decisions on what aspects may need improve in the present; and the ability to foresee damaging circumstances that can be minimized before calamity occurs. Monitoring of B.L.A.C.C. owned parcels and having data on B.L.A.C.C. acres will allow for calculative development.</p>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: grey;">There are eight databases with multiple subcategories, whiich will provide the necessary components to view important sectors that alter/influence parcels to provide a better quality of life.</p>
+  </div>
+  <div class="column" style="background-color:grey; border: solid 2px black">
+    <h2 style="color: black;">About</h2>
+    <hr style="border: 1px solid black">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: black;">The quality of the community that individuals decide to inhabit should have the necessary components to provide a better quality of life. The collaborative nature of the BLACC Database with BLACC Connect inspired Asclepieion Of BLACC</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">After intense reserch for 5 yeasr, BLACC has identified eight main categories that are necessary in order to build a well-rounded community. These eight categories are Food/Water/Clothing/Housing, Donate Outgoing, Donate Receiving, Entertainment, Monetary Gains, Resources, Advisory/Counseling and transportation.</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">For the security of the data that is presented within Asclepieion Of BLACC, access to the data input is monitored by BLACC Connect officers. BLACC members will be able to view the data and perform hypothetical calculations to see possible outcomes.</p>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<hr>
+
+<br>
+<hr>
+
+<br>
+<br>
+<br>
+    <div id="Eye">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:black; border: solid 2px white">
+    <h2 style="color: grey;">Purpose</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: grey;">Through careful observation of the data, B.L.A.C.C. can make educated decisions on what aspects may need improve in the present; and the ability to foresee damaging circumstances that can be minimized before calamity occurs. Monitoring of B.L.A.C.C. owned parcels and having data on B.L.A.C.C. acres will allow for calculative development.</p>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: grey;">There are eight databases with multiple subcategories, whiich will provide the necessary components to view important sectors that alter/influence parcels to provide a better quality of life.</p>
+  </div>
+  <div class="column" style="background-color:grey; border: solid 2px black">
+    <h2 style="color: black;">About</h2>
+    <hr style="border: 1px solid black">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: black;">The quality of the community that individuals decide to inhabit should have the necessary components to provide a better quality of life. The collaborative nature of the BLACC Database with BLACC Connect inspired Asclepieion Of BLACC</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">After intense reserch for 5 yeasr, BLACC has identified eight main categories that are necessary in order to build a well-rounded community. These eight categories are Food/Water/Clothing/Housing, Donate Outgoing, Donate Receiving, Entertainment, Monetary Gains, Resources, Advisory/Counseling and transportation.</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">For the security of the data that is presented within Asclepieion Of BLACC, access to the data input is monitored by BLACC Connect officers. BLACC members will be able to view the data and perform hypothetical calculations to see possible outcomes.</p>
+  </div>
+  <div class="column" style="background-color:black; border: solid 2px white">
+    <h2 style="color: white;">Eye</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./Eye.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <br>
+    <button class="BLACC-button BLACC-white BLACC-button-hover-grey" style="width: 100px; height: 50px;"><a href="" target="_self" style="color: black">View More</a></button>
+ 
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+<br>
+<br>
+
+<hr>
+<br>
+<hr>
+
+<br>
+<hr>
+
+<br>
+<br>
+<br>
+
+    <div id="NFT">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:lightblue; border: solid 2px white">
+    <h2>Purpose</h2>
+    <hr style="border: solid 1px black;">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: black;">OneiroNet is a database that contains the different embraceable energies that could be experienced during sleep. Within each embraceable energy, there will be four aspects that will help as a catalyst to influence the Dream State. </p>
+   <br>
+   <p style="font-family: times; font-size: 22px; color: black;"> These four aspects are External Objective Sensory Stimuli, Internal Subjective Sensory Stimuli, Internal Organic Physical Excitation and Psychic Exciting Source.
+The data collected within this research project derives its source from first-hand experience and recorded interviews from volunteers. The research approach can be obtained through contacting Stevie W. Carpenter, due to ownership of the data.
+</p>
+  </div>
+
+  <div class="column" style="background-color:black; border: solid 2px lightblue">
+    <h2 style="color: lightblue;">NFT</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="./NFT.jpg" width="500px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: lightblue;">LIFE BEYOND SLEEP</p>
+    <br>
+    <button class="BLACC-button BLACC-white" style="width: 100px; height: 50px;"><a href="" target="_self" style="color: red">View More</a></button>
+ 
+  </div>
+    <div class="column" style="background-color:lightblue; border: solid 2px white">
+    <h2>About</h2>
+    <hr style="border: solid 1px black;">
+    <br>
+    <p style="font-family: times; font-size: 19px; color: black;">  NeuroArchitecture is a field that I have personally chosen for the sole purpose of understanding the brain’s operations that influence dreams, vision and memory. During my studies I have come to the fork in the road, Sigmund Freud or James Hillman; from my personal experience I believe that the James Hillman approach is more holistic and will advance society through introducing different possibilities within reality. The literature book that influenced me toward this insight is titled, “The Dream And The Underworld” by James Hillman.
+</p>
+<br>
+<p style="font-family: times; font-size: 19px; color: black;">The studying of dreams is an obstacle with many pathways, which could lead to a labyrinth of approaches. Within the research field of dreams there have been iconic “scholars”  like Sigmund Freud, James Hillman and even Carl Jung at some occasions, but nevertheless each approach to studying the aspects of dreams lead to different approaches and information. The vital part to understand about this labyrinth of approaches, once a path is taken the original route back to the beginning becomes blurred due to previous convictions in personal beliefs. This aspect can be seen between Sigmund Freud and James Hillman, where Sigmund Freud dedicated his studying of dreams to their interpretation within the Living World, rather James Hillman studies focused on how to navigate within the Dream State. 
+</p>
+  </div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<footer class="BLACC-container BLACC-black">
+<p> Made By B.L.A.C.C. Corporation  &copy; 2020 - 2025</p>
+<br>
+<hr>
+<br>
+  <ul class="liright">
+ <li><a href="./New_Design.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="liright">
+ <li><a href="https://blaccenterprise.github.io/search/BLACC_Search.html">B.L.A.C.C. Search</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="./B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="./PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+
+ 
+ <ul class="liright">
+  <li><a href="https://blaccenterprise.github.io/blaccconnect/Level_1_Access/United_States_Selection_Level_1_Access.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blaccenterprise.github.io/newnexxus/Home_Page.html">New Nexxus</a>
+</ul>
+
+ 
+<br>
+<hr>
+<br>
+
+
+<a style="font-size: 28px; text-align: center; border: solid 3px red" href="./Subscribe_Form.html">Subscribe</a>
+<br>
+<br>
+  <p style="text-align: center;">Powered by <a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="./index.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+<br>
+<br>
+<br>
+</footer>
+
+  
+</div>
+
+<hr>
+<br>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 

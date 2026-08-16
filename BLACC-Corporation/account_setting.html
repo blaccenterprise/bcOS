@@ -1,0 +1,97 @@
+<html>
+        <head>
+            <style>
+               
+:root {
+  --bg-page: #f4f4f9;
+  --accent-primary: #6366f1;
+  --radius-main: 8px;
+}
+
+body {
+  background-color: var(--bg-page);
+  font-family: sans-serif;
+  transition: 0.3s background-color; /* Smooth transitions make it feel premium */
+}
+
+#accent-color {
+  background-color: var(--accent-color);
+  font-family: sans-serif;
+  transition: 0.3s background-color; /* Smooth transitions make it feel premium */
+}
+
+.settings-card, .preview-box {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-main);
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-preview {
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius-main);
+  cursor: pointer;
+}
+ 
+            </style>
+        </head>
+    <body id="bg-color">
+        
+<div class="settings-card">
+  <h2>Account Appearance</h2>
+  <p>Customize how the dashboard looks for you.</p>
+
+  <div class="setting-group">
+    <label for="bg-color">Background Color</label>
+    <input type="color" id="bg-color" value="#ffffff">
+  </div>
+
+  <div class="setting-group">
+    <label for="accent-color">Accent Color</label>
+    <input type="color" id="accent-color" value="#6366f1">
+  </div>
+
+  <div class="setting-group">
+    <label for="border-radius">Corner Roundness</label>
+    <input type="range" id="border-radius" min="0" max="20" value="8">
+  </div>
+
+  <button id="reset-btn">Reset to Default</button>
+</div>
+
+<div class="preview-box">
+  <p>This is a preview of your UI elements.</p>
+  <button class="btn-preview">Action Button</button>
+</div>
+        
+            <script>
+                
+const bgColorInput = document.getElementById('bg-color');
+const accentColorInput = document.getElementById('accent-color');
+const radiusInput = document.getElementById('border-radius');
+const root = document.documentElement;
+
+// Function to update CSS Variables
+const updateStyle = (property, value) => {
+  root.style.setProperty(property, value);
+};
+
+// Event Listeners
+bgColorInput.addEventListener('input', (e) => updateStyle('--bg-page', e.target.value));
+accentColorInput.addEventListener('input', (e) => updateStyle('--accent-primary', e.target.value));
+radiusInput.addEventListener('input', (e) => updateStyle('--radius-main', e.target.value + 'px'));
+
+// Reset Logic
+document.getElementById('reset-btn').addEventListener('click', () => {
+  updateStyle('--bg-page', '#f4f4f9');
+  updateStyle('--accent-primary', '#6366f1');
+  updateStyle('--radius-main', '8px');
+});
+            </script>
+    </body>
+</html>
+
