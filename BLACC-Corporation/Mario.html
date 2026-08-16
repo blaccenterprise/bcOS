@@ -1,0 +1,2655 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./BLACC_Internet_Search.css">
+<link rel="stylesheet" href="./account-setting.">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="icon" type="image/x-icon" href="./BC.jpg">
+     <script type="text/javascript" src="./ASE.js"></script>
+    <script type="text/javascript" src="./Username_Database.js"></script>
+
+    <style>
+            
+:root {
+  --bg-page: #FFFFFF;
+  --accent-container: purple;
+  --accent-secondary: red;
+  --accent-content: orange;
+  --accent-sidenav: white;
+  --accent-sidenavtext: purple;
+  --radius-main: 55%;
+  --cursor-img: pointer;
+}    
+#containerapps {
+  height: 350px;
+  width: 60%;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: end space-between;
+ margin-bottom:-666px; 
+}
+
+#containerapps > div {
+  flex-basis: 40px;
+  height: 40px;
+  margin: 2px;
+  background-color: var(--accent-sidenav);
+}
+</style>
+</head>
+  <body id="main">
+         
+      <!--
+<script>
+function myFunctionmove(event) {
+ const body = document.getElementById("main");  // Get the DIV element
+  var event = e;
+  e.clientX;
+  e.clientY;
+    if (e.clientX >= 10) {
+       if e.clientY >= 10 { 
+element.classList.remove("pointer"); // Remove mystyle class from DIV
+  element.classList.add("grabbing"); // Add newone class to DIV}
+ }
+    };
+};
+</script>  
+    -->
+        
+    <div id="id02" class="modal ">
+  
+  <div class="modal-content animate"  style="width:500px;" autocomplete="off">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="material-icons">close</button>
+<iframe src="../blaccstore/BLACC_App_Store/BLACC_Store_App.html"  style="width:500px; height: 650px;"></iframe>
+      </div>
+    </div>
+      
+    <div id="id04" class="modal ">
+  
+  <div class="modal-content animate"  style="width:auto;" autocomplete="off">
+
+
+<form autocomplete="off" action="/action_page.php" style="background-color: var(--accent-sidenav);">
+
+    
+             
+    
+    <div id="myU" class="autocomplete autocomplete-list" style="background-color: var(--accent-sidenav);">
+
+                    
+        <input class="Input" onclick="myFunctionaseUsername()" id="myInputUsername" type="text" name="Search" placeholder="(Always Start First Letter Capitalzed) FirstName_MiddleInitial_LastName::Password" title="John_D_Doe::JohnDD957$">
+        </div>
+</form>      
+      <button type="button"  onclick="myFunctionaseUsername()">Login</button>
+      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="material-icons">close</button>
+
+      </div>
+    </div>
+<script src="./Username.js"></script>
+    <script src="./Username_Database.js"></script>
+    <div id="id06" class="modal ">
+  
+  <div class="modal-content animate"  style="width:900px; " autocomplete="off">
+
+
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:800px;
+  background-color:#FFFFFF;
+}
+#myTable { 
+  width:100%;
+  table-layout: fixed;
+}
+</style>
+
+
+<div id="myDIV">
+<table id="myTable" border="1" cellpadding="3">
+    
+<tr>
+    
+<td> 
+    <div class="switch-container" id="toggleControlSearch">
+        <i class="material-icons" >search</i>
+        <span id="searchText">Off</span>
+        <a onclick="openapps1()" ><div class="toggle-switch"></div></a>
+    </div>    
+</td>
+<td>
+ <div class="switch-container" id="toggleControlHome">
+        <i class="material-icons" >home</i>
+        <span id="homeText">Off</span>
+        <a onclick="openapps2()" ><div class="toggle-switch"></div></a>
+    </div>
+</td>
+<td>
+ <div class="switch-container" id="toggleControlMenu">
+        <i class="material-icons" >menu</i>
+        <span id="menuText">Off</span>
+        <a onclick="openapps3()" ><div class="toggle-switch"></div></a>
+    </div>
+</td>
+    <td>
+ <div class="switch-container" id="toggleControlClose">
+        <i class="material-icons" >close</i>
+        <span id="closeText">Off</span>
+        <a onclick="openapps4()" ><div class="toggle-switch"></div></a>
+    </div>
+</td>
+    
+</tr>
+    
+  
+    </table>
+</div>
+      <button type="button" onclick="document.getElementById('id06').style.display='none'" class="cancelbtn">Close</button>
+      </div>
+    </div>
+     <script type="text/javascript" src="./apps.js"></script>
+
+      
+      <div id="id03" class="modal"  onload="checkCookie()">
+  
+  <div class="modal-content animate"  style="width:900px; text-align: center;" autocomplete="off" id="reset-btn" >
+<div class="settings-card ">
+  <h2>Browser Appearance</h2>
+  <p>Customize how the dashboard looks for you.</p>
+</div>
+      
+  <div class="setting-group">
+    <label for="bg-color"><i>Search Bar : </i></label>
+    <input key="bg-color" type="color" id="bg-color" value="#000000">
+  </div>
+
+  <div class="setting-group">
+    <label for="accent-container"><i>Button : </i></label>
+    <input type="color" id="accent-container" value="#FF0000">
+  </div>
+
+  <div class="setting-group">
+    <label for="accent-sidenav"><i>Panel - Primary : </i></label>
+    <input type="color" id="accent-sidenav" value="#9FA2FE">
+  </div>
+
+  <div class="setting-group">
+    <label for="accent-secondary"><i>Highlight Shadow : </i></label>
+    <input type="color" id="accent-secondary" value="#000352">
+  </div>
+
+  <div class="setting-group">
+    <label for="accent-sidenavtext"><i>Icon : </i></label>
+    <input type="color" id="accent-sidenavtext" value="#FF0000">
+  </div>
+
+  <div class="setting-group">
+    <label for="accent-content"><i>Internet Dashboard : </i></label>
+    <input type="color" id="accent-content" value="#FFFFFF">
+  </div>
+
+ 
+
+<div class="preview-box">
+  <p>This is a preview of your UI elements.</p>
+  <button class="btn-preview">Action Button</button>
+</div>
+
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Close</button>
+      
+          </div>
+
+    </div>
+    
+            <script>
+                
+const bgColorInput = document.getElementById('bg-color');
+const accentContainerInput = document.getElementById('accent-container');
+const accentContent = document.getElementById('accent-content');
+const accentSecondary = document.getElementById('accent-secondary');
+const accentSidenavInput = document.getElementById('accent-sidenav');
+const accentSidenavtextInput = document.getElementById('accent-sidenavtext');
+const accentCursor = document.getElementById('cursor-img');
+const radiusInput = document.getElementById('radius-main');
+const root = document.documentElement;
+
+// Function to update CSS Variables
+const updateStyle = (property, value) => {
+  root.style.setProperty(property, value);
+};
+
+// Event Listeners
+bgColorInput.addEventListener('input', (e) => updateStyle('--bg-page', e.target.value));
+accentContainerInput.addEventListener('input', (e) => updateStyle('--accent-container', e.target.value));
+accentSecondary.addEventListener('input', (e) => updateStyle('--accent-secondary', e.target.value));
+accentContent.addEventListener('input', (e) => updateStyle('--accent-content', e.target.value));
+accentSidenavInput.addEventListener('input', (e) => updateStyle('--accent-sidenav', e.target.value));
+accentSidenavtextInput.addEventListener('input', (e) => updateStyle('--accent-sidenavtext', e.target.value));
+accentCursor.addEventListener('input', (e) => updateStyle('--cursor-img', e.target.value));
+radiusInput.addEventListener('input', (e) => updateStyle('--radius-main', e.target.value + '%'));
+
+// Reset Logic
+document.getElementById('reset-btn').onclick('click', () => {
+  updateStyle('--bg-page', '#000000');
+  updateStyle('--accent-container', '#FF0000');
+  updateStyle('--accent-secondary', '#000352');
+  updateStyle('--accent-content', '#FFFFFF');
+  updateStyle('--accent-sidenav', '#9FA2FE');
+  updateStyle('--accent-sidenavtext', '#FF0000');
+  updateStyle('--cursor-img', 'progress');
+  updateStyle('--radius-main', '33%');
+});
+            </script>
+
+    
+    <div class="chat-popup"  id="myForm" style="background-color: black;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeForm()"><i class="material-icons" style="font-size: 35px; color: grey;">close</i></a>
+    <div class="chat-container" style="background-color: black;">
+        <div class="chat-header" style="background-color: black;">
+            <h2 style="color: yellow;">Raziel</h2>
+        </div>
+        <div class="chat-window" id="chat-window" style="color: yellow; font-size: 20px;">
+            <!-- Messages will be displayed here -->
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type a message..." style="color:white; font-size: 25px;">
+            <button id="send-button">Send</button>
+                <script src="./Raziel/Chat.js"></script>
+
+<script>
+    
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="sidenav" id="mySidenav">
+  <a href="javascript:void(0)"  onclick="closeNav()"><i class="material-icons">close</i>
+  </a>
+
+    <!-- DARK MODE -->
+    
+              <script>
+function myFunctiondark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+    
+        <!-- Logout -->
+    <a class="active" href="./Music_Safe/Music_Safe/Music_Safe.html" style="width:auto; opacity: 1;" target="content"><i class="material-icons">live_tv</i>Music Safe</a>
+    <hr>
+
+            <!-- Dashboard App-->
+
+    
+
+    <a class="active" onclick="document.getElementById('id04').style.display='block'" style="width:auto; opacity: .1;"><i class="material-icons">dashboard_customize</i> Customize Dashboard</a> 
+
+    <a class="active" onclick="document.getElementById('id05').style.display='block'" style="width:auto; opacity: .1;"><i class="material-icons">space_dashboard</i> Dashboard Spacing</a>
+
+    <hr>
+
+            <!-- Dashboard Icon -->
+    
+    <a class="active" onclick="document.getElementById('id07').style.display='block'" style="width:auto; opacity: .1;"><i class="material-icons">apps<sub style="margin-left: -20px"><i >add</i></sub></i> Customize Icon Module</a> 
+
+    <a class="active" onclick="document.getElementById('id08').style.display='block'" style="width:auto; opacity: .1;"><i class="material-icons">table_view</i> Filter Icon Table</a> 
+    <hr>
+    <!--
+    <a class="active" href="./Old_Design.html"><i class="material-icons">home</i> Home</a> 
+-->
+    
+    <a class="active" onclick="myFunctionshare()"><i class="material-icons">share</i>Share</a>
+    
+<a class="active" href="" download><i class="material-icons">install_desktop</i> Install</a> 
+    
+        <!--
+        
+<a href="#stock"><i class="material-icons">settings</i>Settings</a>
+<a class="active" href="./Login.html"><i class="material-icons">login</i>Login  </a> 
+    -->
+    
+
+    
+        
+    
+ <input type="text" style="opacity: .0; width: 0px; height: 0px;" value="https://www.blacccorp.com" id="myShare">
+    <script>
+function myFunctionshare() {
+  // Get the text field
+  var copyText = document.getElementById("myShare");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+    <hr>
+    
+<a onclick="myFunctionautooff()" class="active"><i class="material-icons">search_off</i> Search Off/On</a>
+    <script>
+        function myFunctionautooff() {
+   
+  var x = document.getElementById("myA");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+            }
+    </script>
+    <a class="active" href="./Category_Search.html" target="content"><i class="material-icons">manage_search</i>Cate. Search</a> 
+    
+    <a class="active" href="./Explore.html" target="content"><i class="material-icons">web</i> Explore</a> 
+    <hr>
+    <a class="active" href="./Report_Problem.html" target="content" style=""><i class="material-icons">report_problem</i> Report Problem</a> 
+<a class="active" href="./Contact_Problem.html" target="content"><i class="material-icons">contact_support</i>Contact Support</a> 
+<a class="active" href="./Info.html" target="content"><i class="material-icons">info</i> Info</a> 
+<a class="active" href="./Help.html" target="content"><i class="material-icons">help_outline</i> Help Outline</a> 
+<a class="active" function(alert) target="content"><i class="material-icons">announcement</i> Announcement</a>
+    <a class="active" href="./Bug_Report.html" target="content"><i class="material-icons">bug_report</i> Bug Report</a>
+    
+
+
+</div>
+    
+<div id="accent-container" class="container">
+  <div class="row" >
+      
+    <div class="column left">
+     <div style="float:left" >
+
+         
+         <div class="icondot-bar">
+             
+         
+             
+         <a onclick="myFunctionsharennn()"  target="_self"  class="icondot">
+              <i class="material-icons" style="font-size: 27px;">share</i>
+   
+         </a>
+<script>
+function myFunctionsharennn() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+
+
+<a  href="./circle.html" target="content" >
+        <i class="material-icons" >announcement</i>
+</a>
+    
+<a  href="./circle.html" target="content" >
+        <i class="material-icons">sync</i>
+</a>
+    
+<a  href="./circle.html" target="content">
+        <i class="material-icons">save</i>
+</a>
+               
+
+             </div>
+
+<script>
+function myFunctionminimize() {
+  const element = document.getElementById("myDIV");  // Get the DIV element
+  element.classList.remove("container"); // Remove mystyle class from DIV
+  element.classList.add("containermini"); // Add newone class to DIV
+}
+</script>
+             
+
+<script>
+function myFunctionmaximize() {
+  const element = document.getElementById("myDIV");  // Get the DIV element
+  element.classList.remove("containermini"); // Remove mystyle class from DIV
+  element.classList.add("container"); // Add newone class to DIV
+}
+</script>
+
+     </div>
+    </div>
+
+
+    <div class="column middle">
+        <div style="float: center;">
+
+
+            
+  <div  style="width:auto;" autocomplete="off">
+
+
+<form autocomplete="off" action="/action_page.php" style="background-color: var(--accent-sidenav);">
+
+    
+    <div id="myA" class="autocomplete autocomplete-list" style="background-color: var(--accent-sidenav);">
+
+                    
+        <input class="Input" id="myInput" type="text" name="Search" placeholder="nnn.blacccorporation.bc" title="John_D_Doe::JohnDD957$">
+      
+<script src="./Terms_Search.js"></script>
+        
+    </div>
+</form>  
+             </div>
+        </div>
+            
+    <script src="./BLACCspace.js"></script>
+
+            
+        </div>
+        </div>
+  
+    
+    <div class="column right">
+<div style="float: right;">
+
+
+        <div class="BLACC-hover-white glow" style="border: 4px solid red;margin-top: 100px; width: 1800px; height: 70px; box-shadow: 0 4px 15px rgba(220,130,150,0.8);" >       
+            <style>
+        body { display: flex; width: 130px; justify-content: right; align-items: right;  background: white; }
+        canvas { background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(220,130,150,0.8); }
+    </style>
+
+<svg viewBox="0 0 400 400" width="400" height="400"
+id="hive" style="display: none; ">
+    
+    
+    <!--
+  <a class="active"  onclick="myFunctiondark()"><i class="material-icons"  style="float: right; font-size: 47px;">nightlight</i></a> 
+  <script>
+function myFunctiondark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script> 
+    -->
+
+
+<i class="material-icons" style="font-size:57px; color: green; opacity: 1; margin-top:10px;" onclick="myFunctionase()" onmouseout="myFunctionase(myInput)"> search </i> 
+
+
+    <a href="./Old_Design.html" target="content"  class="icondot">
+            <i class="material-icons" style="font-size: 37px; float: right">home</i></a>
+
+<a  href="./Home.html" target="content"  class="icondot">
+            <i class="material-icons" style="font-size: 37px;  float: right">restore</i></a>
+    
+<a href="#" onclick="history.back(); return false;" target="content"  class="icondot">
+            <i class="material-icons" style="font-size: 37px;  float: right">arrow_left</i></a>
+
+    
+<a class="active" onclick="document.getElementById('id02').style.display='block'" style="width:auto;font-size: 37px; float: left;"><i class="material-icons" style="width:auto;font-size: 37px; float: left; opacity: 1;">dashboard</i></a>          
+
+  <!-- Raziel -->
+    <a class="active" onclick="openForm()" style="width:auto;font-size: 37px; float: left;"><i class="material-icons" style="width:auto;font-size: 37px; float: left;">smart_button</i></a> 
+
+    
+
+<script>
+// Get the modal
+var modal = document.getElementById();
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+    
+    <!-- Dashboard Icon -->
+    
+    <a class="active" onclick="document.getElementById('id06').style.display='block'" style="width:auto;font-size: 37px; float: left;"><i class="material-icons" style="width:auto;font-size: 37px; float: left;">apps</i> </a> 
+    
+<a  href="./circle.html" target="content">
+    <circle cx="280.9" cy="141.2" r="25" fill="#5F99FF" stroke="black" 
+    </circle>
+</a>
+    
+<a class="active" onclick="document.getElementById('id03').style.display='block'" style="width:auto; float: left; font-size: 37px;"><i class="material-icons"style="width:auto; float: left; font-size: 37px;">display_settings</i></a> 
+
+
+<script>
+// Get the modal
+var modal = document.getElementById();
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</svg>
+     </div>
+</div>
+    </div>
+    
+    
+    <div class="content" id="content">
+        <!--
+        <section id="asetab" style="display: none;"><a href="javascript:void(0)"  onclick="asetabclose()"> <i class="material-icons">close</i></a>
+
+            <div id="mydivdrag">
+                <elmnt id="mydivdragheader">
+    <i class="material-icons" style="font-size:40px; color: red; opacity: 1;">hand</i>
+<iframe style="width: 300px; height: 400px;" src="./Category_Search.html"></iframe>
+    </elmnt>
+</div>
+
+            <div id="mydivdrag1"><elmnt id="mydivdragheader1">
+    <i class="material-icons" style="font-size:40px; color: red; opacity: 1;">hand</i>
+                <iframe style="width: 300px; height: 400px;" src="./BLACC_Internet_Search.html"></iframe>
+                 </elmnt>
+</div>
+            
+          </section>
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydivdrag"));
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>   
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydivdrag1"));
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>   
+        -->
+
+        <iframe class="content" name="content">
+            
+        </iframe>
+
+           
+
+         </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+        
+        <div class="BLACC-bottom" style="border-bottom: 4px solid red; width: 100%;margin-left: 0px;" id="bwscale">
+
+
+     
+        
+        <div id="myDIVapps" class="BLACC-bottom mydivdragheaderapps"  style="display: block; border-bottom: 4px solid red; margin-bottom:-966px; width: 30%; overflow-y: scroll; height: 800px; opacity: .8;" >
+
+    <div id="containerapps"  style="display: block; border-bottom: 4px solid red; margin-bottom:-666px; width: 50%; overflow-y: scroll;">
+        
+<a class="facebook active" onclick="floatApps()" ><i class="material-icons" style="font-size:40px; color: red; opacity: 1;">apps</i></a>
+          
+          <hr>
+        
+          <a class="facebook active" onclick="closeApps()" ><i class="material-icons" style="font-size:40px; color: red; opacity: 1; float: right;">
+              power_off</i></a>
+          <a  class="youtube active"  onclick="orgApps()"><i class="material-icons" >compress</i></a>    
+          <a  class="youtube active"  onclick="comApps()"><i class="material-icons" >density_small</i></a>   
+
+<div style="column-count: 4; margin-top:26px;" id="mydivdragheaderapps">
+        
+             <a id="appssearch" class="BLACC-left active" onclick="myFunctionautooff()" style="display: none; width: 10%;"><i id="targetElementSearch" class="material-icons">
+                  search</i></a>
+    <script>
+        function myFunctionautooff() {
+  var x = document.getElementById("myA");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+            }
+    </script>
+
+
+    
+              <a id="appshome" class="BLACC-left active" href="./Email_Login.html" target="content" style="display: block; width: 10%; opacity: 1;"><i id="targetElementHome" class="material-icons">
+              home</i></a>    
+
+
+              <a id="appsmenu" class="BLACC-right active" href="" target="_self" style="display: none; width: 10%;"><i id="targetElementMenu" class="material-icons">
+              menu</i></a>
+
+    <!--
+              <a id="appstab_close" class="BLACC-left youtube active" href="" target="_self" style="display: none; width: 10%;"><i class="material-icons">
+              tab<sub style="margin-left: -20px"><i >close</i></sub></i></a>
+    -->
+              
+
+    
+              <a id="appsclose" class="BLACC-left active" href="" target="_self" style="display: none; width: 10%;"><i  id="targetElementClose" class="material-icons">
+              close</i></a>
+    </div>
+<div style="column-count: 4; margin-top:26px;" id="mydivdragheaderapps">
+    
+              <a id="appssettings" class="BLACC-left active" href="" target="_self" style="display: none; width: 10%;"><i  id="targetElementSettings" class="material-icons">
+              settings</i></a>
+    
+             <u> <a id="appscheck_circle" class="BLACC-left active" href="" target="_self" style="display: none; width: 10%;"><i  id="targetElementCheckCircle" class="material-icons">
+              check_circle</i></a></u>
+    
+              <a id="appsfavorite" class="BLACC-left active" href="" target="_self" style="display: none; width: 10%;"><i  id="targetElementFavorite" class="material-icons">
+              favorite</i></a>
+</div>
+    </div>
+    </div>
+        
+        <div id="navbar" class="BLACC-bar BLACC-wide BLACC-card BLACC-border BLACC-border-wide">
+      
+    <div>
+        
+<a onclick="openNav()"  class="active"><i class="material-icons" >account_circle</i></a>      
+    </div>
+
+          <div class="BLACC-center" style="font-size: 12px; float: center; margin-left: 700px;">
+
+            
+  <a style="width:auto; opacity: 1;" class="active" title="Talk to A.S.E."><i class="material-icons" >mic</i></a>
+
+
+<script>
+function myFunctionasemic() {
+  var txt;
+  if (confirm("Press a button!")) {
+ runSpeechRecognition();
+ myFunctionase();
+  } else {
+    txt = "You pressed Cancel!";
+  }
+}
+</script>
+  <a style="width:auto; opacity: 1;" class="active"><i class="material-icons" >psychology_alt</i></a>
+  <a  style="width:auto; opacity: 1;" class="active"><i class="material-icons" >add_comment</i></a>
+  <a style="width:auto; opacity: 1;" class="active"><i class="material-icons" >dynamic_feed</i></a>
+
+  <a  href="./circle.html" target="content" style="width:auto;" class="active"><i class="material-icons" >hive</i></a>
+              
+  <a  href="./Old_Design.html" target="content" style="width:auto; opacity: 1;" class="active"><i class="material-icons" >rocket_launch</i></a>
+              
+              </div>
+            
+              <!-- Float links to the right. Hide them on small screens -->
+    <div class="BLACC-right" style="font-size: 12px; float: right;" id="bwscale">
+        
+        <a class="active" style="width:auto; opacity: 1;" onclick="openApps()">
+            <i class="material-icons">apps
+                <sub style="margin-left: -30px"><i>power_settings_new</i></sub>
+            </i> 
+</a>
+    </div>
+
+<script>
+function openApps() {
+  document.getElementById("myDIVapps").style.display = "none";
+  document.getElementById("myDIVapps").style.display = "block";
+}
+
+function closeApps() {
+  document.getElementById("myDIVapps").style.display = "block";
+  document.getElementById("myDIVapps").style.display = "none";
+}
+
+function hiveclose() {
+  document.getElementById("hive").style.display = "block";
+  document.getElementById("hive").style.display = "none";
+}
+
+function hiveopen() {
+  document.getElementById("hive").style.display = "none";
+  document.getElementById("hive").style.display = "block";
+}
+
+function floatApps() {
+  document.getElementById("myDIVapps").style.width = "100%";
+  document.getElementById("myDIVapps").style.width = "70%";
+
+}
+
+function comApps() {
+  document.getElementById("myDIVapps").style.width = "100%";
+  document.getElementById("myDIVapps").style.width = "50%";
+}
+
+function orgApps() {
+  document.getElementById("myDIVapps").style.width = "100%";
+  document.getElementById("myDIVapps").style.width = "30%";
+}
+
+    
+</script>
+
+  
+  </div>
+      </div>
+
+    <script>
+    function() scrolling {
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+        }
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("BLACC-show") == -1) {
+    x.className += " BLACC-show";
+  } else { 
+    x.className = x.className.replace(" BLACC-show", "");
+  }
+    
+}
+    
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+      
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+      
+                <script>
+                    /* JS comes here */
+                    function runSpeechRecognition() {
+                        var myInput = document.getElementByElement("Input");
+
+                        // get output div reference
+                        var myInput = action;
+                        // get action element reference
+                        var action = document.getElementById("Input");
+                        // new speech recognition object
+                        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                        var recognition = new SpeechRecognition();
+
+                        // This runs when the speech recognition service starts
+                        recognition.onstart = function() {
+                            action.innerHTML = "<small>listening, please speak...</small>";
+                        };
+
+                        recognition.onspeechend = function() {
+                            action.innerHTML = "stopped listening, hope you are done...";
+                        }
+
+                        // This runs when the speech recognition service returns result
+                        recognition.onresult = function(event) {
+                            var transcript = event.results[0][0].transcript;
+                            var confidence = event.results[0][0].confidence;
+                            output.innerHTML = transcript;
+                            output.classList.remove("hide");
+                        };
+
+                        // This runs when the speech recognition service starts
+                        recognition.onstart = function() {
+                            action.innerHTML = "<small>listening, please speak...</small>";
+                        };
+
+                        // start recognition
+                        recognition.start();
+                    }
+                </script>
+                <!--
+
+                                <script>
+                                    var Arthenya = new Artyom();
+                                    // Needed user interaction at least once in the website to make
+                                    // it work automatically without user interaction later... thanks google .i.
+                                    document.getElementById("btn").addEventListener("click", function() {
+                                        Arthenya.say("Hi?");
+                                    }, true);
+                                </script>
+                                -->
+                                
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keypress", myFunctionase(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myInput").click();
+  }
+});
+</script>
+<script>
+function myFunctionase() {
+    
+                        //Variables {
+                        var text;
+                        var consciousness = document.getElementById("myInput").value;
+                        var ASE = new Artyom();
+                        var emergency = 1;
+                        var relax = 2;
+                        //}
+    
+                        switch (consciousness) {
+ 
+    //Domain1 - B.L.A.C.C. Corproation {
+
+            case "nnn.blacccorporation.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("./Old_Design.html", "content");
+			break;
+
+                                //}
+ 
+    //Domain2 - B.L.A.C.C. Connect {
+
+            case "nnn.blaccconnect.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Connect/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain3 - B.L.A.C.C. Search {
+
+            case "nnn.blaccsearch.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Search/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain4 - ASE {
+
+            case "nnn.ase.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/ASE/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain5 - B.L.A.C.C. Ark {
+
+            case "nnn.blaccark.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Ark/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain6 - Vital Mathematics  {
+
+            case "nnn.vitalmathematics.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/Vital_Mathematics/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain7 - New Nexxus  {
+
+            case "nnn.newnexxus.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/New_Nexxus/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain8 - B.L.A.C.C. Profile  {
+
+            case "nnn.blaccprofile.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Profile/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain9 - B.L.A.C.C.hole  {
+
+            case "nnn.blacchole.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACChole/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain10 - Pharaoh History  {
+
+            case "nnn.pharaohhistory.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/Pharaoh_History/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain11 - OneiroNet  {
+
+            case "nnn.oneironet.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/OneiroNet/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain12 - Asclepieion Of B.L.A.C.C.  {
+
+            case "nnn.blaccpillars.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Pillars/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain13 - NFT  {
+
+            case "nnn.nft.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/NFT/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain14 - Eye  {
+
+            case "nnn.eye.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/Eye/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain15 - Blacklining  {
+
+            case "nnn.blacklining.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/Blacklining/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain16 - Tele-Communication  {
+
+            case "nnn.blacctelecommservice.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Tele/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain17 - Website Inquiry  {
+
+            case "nnn.webcreation.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/Website_Inquiry/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain18 - B.L.A.C.C. Music  {
+
+            case "nnn.blaccmusic.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Music/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain18 - B.L.A.C.C. Message  {
+
+            case "nnn.blaccmessage.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Message/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain19 - B.L.A.C.C. Academy  {
+
+            case "nnn.blaccacademy.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Academy/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain20 - B.L.A.C.C. Email  {
+
+            case "nnn.blaccemail.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Email/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain21 - B.L.A.C.C. Database  {
+
+            case "nnn.blaccdatabase.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Database/Overview.html", "content");
+			break;
+
+                                //}
+
+ 
+    //Domain22 - B.L.A.C.C. Guided Pathways  {
+
+            case "nnn.blaccguide.bc":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../blaccstore/BLACC_Guided_Pathways/Overview.html", "content");
+			break;
+
+                                //}
+
+		case "Aardvark":
+			text = "...";
+			ASE.say("Stand By");
+		window.open("../ASE/ASE_Directory/Animals_Research/A/Aardark/Aardark.html", "content");
+			break;
+                                
+		case "Abyssinian":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Abyssinian/Abyssinian.html", "content");
+			break;
+                                
+		case "Acadian Flycatcher":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Acadian_Flycatcher/Acadian_Flycatcher.html", "content");
+			break;
+                                
+		case "Ackie Monitor":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Ackie_Monitor/Ackie_Monitor.html", "content");
+			break;
+                                
+		case "Addax":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Addax/Addax.html", "content");
+			break;
+                                
+		case "Adélie Penguin":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Ani4mals_Research/A/Adélie_Penguin/Adélie_Penguin.html", "content");
+			break;
+                                
+		case "Aesculapian Snake":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Aesculapian_Snake/Aesculapian_Snake.html", "content");
+			break;
+                                
+		case "Afghan Hound":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Afghan_Hound/Afghan_Hound.html", "content");
+			break;
+                                
+		case "African Bush Elephant":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/African_Bush_Elephant/African_Bush_Elephant.html", "content");
+			break;
+                                
+		case "African Clawed Frog":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/African_Clawed_Frog/African_Clawed_Frog.html", "content");
+			break;
+                                
+		case "African Forest Elephant":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Forest_Elephant/African_Forest_Elephant.html", "content");
+			break;
+                                
+		case "African Grey Parrot":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/African_Grey_Parrot/African_Grey_Parrot.html", "content");
+			break;
+                                
+		case "African Palm Civet":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Palm_Civet/African_Palm_Civet.html", "content");
+			break;
+                                
+		case "African Sugarcane Borer":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Sugarcane_Borer/African_Sugarcane_Borer.html", "content");
+			break;
+                                
+		case "Aardwolf":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Aardwolf/Aardwolf.html", "content");
+			break;
+                                
+		case "Abyssinian Guinea Pig":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Abyssinian_Guinea_Pig/Abyssinian_Guinea_Pig.html", "content");
+			break;
+                                
+		case "Achrioptera Manga":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Achrioptera_Manga/Achrioptera_Manga.html", "content");
+			break;
+                                
+		case "Addax":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Addax/Addax.html", "content");
+			break;
+                                
+		case "Admiral Butterfly":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Admiral_Butterfly/Admiral_Butterfly.html", "content");
+			break;
+                                
+		case "Affenpinscher":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Affenpinscher/Affenpinscher.html", "content");
+			break;
+                                
+		case "African Bullfrog":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/African_Bullfrog/African_Bullfrog.html", "content");
+			break;
+                                
+		case "African Civet":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/African_Civet/African_Civet.html", "content");
+			break;
+                                
+		case "African Fish Eagle":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Fish_Eagle/African_Fish_Eagle.html", "content");
+			break;
+                                
+		case "African Golden Cat":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Golden_Cat/African_Golden_Cat.html", "content");
+			break;
+                                
+		case "African Jacana":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Jacana/African_Jacana.html", "content");
+			break;
+                                
+		case "African Penguin":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/African Penguin/African Penguin.html", "content");
+			break;
+                                
+		case "African Tree Toad":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Tree_Toad/African_Tree_Toad.html", "content");
+			break;
+                                
+		case "African Wild Dog":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/African_Wild_Dog/African_Wild_Dog.html", "content");
+			break;
+                                
+		case "Agama Lizard":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Agama Lizard/Agama Lizard.html", "content");
+			break;
+                                
+		case "Agouti":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Agouti/Agouti.html", "content");
+			break;
+                                
+		case "Ainu":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Ainu/Ainu.html", "content");
+			break;
+                                
+		case "Airedoodle":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Airedoodle/Airedoodle.html", "content");
+			break;
+                                
+		case "Akita":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Akita/Akita.html", "content");
+			break;
+                               
+		case "Alaskan Klee Kai":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Alaskan_Klee_Kai/Alaskan_Klee_Kai.html", "content");
+			break;
+                                
+		case "Alaskan Pollock":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Alaskan_Pollock/Alaskan_Pollock.html", "content");
+			break;
+                                
+		case "Albacore Tuna":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Albacore_Tuna/Albacore_Tuna.html", "content");
+			break;
+                                
+		case "Albertonectes":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Albertonectes/Albertonectes.html", "content");
+			break;
+                                
+		case "Aldabra Giant Tortoise":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Aldabra_Giant_Tortoise/Aldabra_Giant_Tortoise.html", "content");
+			break;
+                                
+		case "Allosaurus":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Allosaurus/Allosaurus.html", "content");
+			break;
+                                
+		case "Alpaca":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Alpaca/Alpaca.html", "content");
+			break;
+                                
+		case "Alpine Goat":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Alpine Goat/Alpine Goat.html", "content");
+			break;
+                                
+		case "Amano Shrimp":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Amano Shrimp/Amano Shrimp.html", "content");
+			break;
+                                
+		case "Amazon Parrot":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Amazon_Parrot/Amazon_Parrot.html", "content");
+			break;
+                                
+		case "Amazon Tree Boa":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Amazon_Tree_Boa/Amazon_Tree_Boa.html", "content");
+			break;
+                                
+		case "Amberjack":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Amberjack/Amberjack.html", "content");
+			break;
+                                
+		case "American Alligator":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Alligator/American_Alligator.html", "content");
+			break;
+                                
+		case "American Bulldog":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Bulldog/American_Bulldog.html", "content");
+			break;
+                                
+		case "American Cocker Spaniel":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Cocker_Spaniel/American_Cocker_Spaniel.html", "content");
+			break;
+                                
+		case "American Coonhound":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Coonhound/American_Coonhound.html", "content");
+			break;
+                                
+		case "American Eel":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Eel/American_Eel.html", "content");
+			break;
+                                
+		case "American Foxhound":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Foxhound/American_Foxhound.html", "content");
+			break;
+                                
+		case "American Leopard Hound":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/American_Leopard_Hound/American_Leopard_Hound.html", "content");
+			break;
+                                
+		case "American Pit Bull Terrier":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/American_Pit_Bull_Terrier/American_Pit_Bull_Terrier.html", "content");
+			break;
+                                
+		case "American Pygmy Goat":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/American_Pygmy_Goat/American_Pygmy_Goat.html", "content");
+			break;
+                                
+		case "American Staffordshire Terrier":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/American_Staffordshire_Terrier/American_Staffordshire_Terrier.html", "content");
+			break;
+                                
+		case "American Water Spaniel":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/American_Water_Spaniel/American_Water_Spaniel.html", "content");
+			break;
+                                
+		case "Amethystine Python":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Amethystine_Python/Amethystine_Python.html", "content");
+			break;
+                                
+		case "Amur Leopard":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Amur_Leopard/Amur_Leopard.html", "content");
+			break;
+                                
+		case "Anatolian Shepherd Dog":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Anatolian_Shepherd_Dog/Anatolian_Shepherd_Dog.html", "content");
+			break;
+                                
+		case "Andrewsarchus":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Andrewsarchus/Andrewsarchus.html", "content");
+			break;
+                                
+		case "Angelshark":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Angelshark/Angelshark.html", "content");
+			break;
+                                
+		case "Anglerfish":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Anglerfish/Anglerfish.html", "content");
+			break;
+                                
+		case "Anna’s Hummingbird":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Annas_Hummingbird/Annas_Hummingbird.html", "content");
+			break;
+                                
+		case "Anomalocaris":
+			text = "...";
+			ASE.say("Stand By");
+window.open("../ASE/ASE_Directory/Animals_Research/A/Anomalocaris/Anomalocaris.html", "content");
+			break;
+                                
+		case "Antarctic Scale Worm":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Antarctic_Scale_Worm/Antarctic_Scale_Worm.html", "content");
+			break;
+                                
+		case "Antelope":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Antelope/Antelope.html", "content");
+			break;
+                                
+		case "Antiguan Racer Snake":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Antiguan_Racer_Snake/Antiguan_Racer_Snake.html", "content");
+			break;
+                                
+		case "Apennine Wolf":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Apennine_Wolf/Apennine_Wolf.html", "content");
+			break;
+                                
+		case "Apple Head Chihuahua":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Apple_Head_Chihuahua/Apple_Head_Chihuahua.html", "content");
+			break;
+                                
+		case "Arabian Cobra":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Arabian_Cobra/Arabian_Cobra.html", "content");
+			break;
+                                
+		case "Arafura File Snake":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Arafura_File_Snake/Arafura_File_Snake.html", "content");
+			break;
+                                
+		case "Arapaima":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Arapaima/Arapaima.html", "_blank");
+			break;
+                                
+		case "Archaeopteryx":
+			text = "...";
+			ASE.say("Stand By");
+			window.open("../ASE/ASE_Directory/Animals_Research/A/Archaeopteryx/Archaeopteryx.html", "content");
+			break;
+
+
+
+                    case "Open ASL alphabet":
+
+                        text = "Open ASL Alphabet";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Alphabet.jpg", "../Research/ASL/ASL_Alphabet.jpg", "width=300,height=300");
+
+                        break;
+
+
+
+                    case "ASL Alphabet":
+
+                        text = "ASL Alphabet";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Alphabet.jpg", "../Research/ASL/ASL_Alphabet.jpg", "width=300,height=300");
+
+                        break;
+
+
+                //Letter A {
+
+                    case "How do you sign the letter A":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_A.jpg", "../Research/ASL/ASL_A.jpg", "content");
+
+                        break;
+
+                        
+
+                    case "A":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../ASE/ASE_Directory/Research/ASL/ASL_A.jpg", "content");
+
+                        break;
+
+                    
+
+                //}
+
+                //Letter B {
+
+                    case "How do you sign the letter B":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_B.jpg", "../Research/ASL/ASL_B.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "B":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_B.jpg", "../Research/ASL/ASL_B.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter C {
+
+                    case "How do you sign the letter C":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_C.jpg", "../Research/ASL/ASL_C.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "C":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_C.jpg", "../Research/ASL/ASL_C.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter D {
+
+                    case "How do you sign the letter D":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_D.jpg", "../Research/ASL/ASL_D.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "D":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_D.jpg", "../Research/ASL/ASL_D.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter E {
+
+                    case "How do you sign the letter E":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_E.jpg", "../Research/ASL/ASL_E.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "E":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_E.jpg", "../Research/ASL/ASL_E.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter F {
+
+                    case "How do you sign the letter F":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_F.jpg", "../Research/ASL/ASL_F.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "F":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_F.jpg", "../Research/ASL/ASL_F.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter G {
+
+                    case "How do you sign the letter G":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_G.jpg", "../Research/ASL/ASL_G.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "G":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_G.jpg", "../Research/ASL/ASL_G.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter H {
+
+                    case "How do you sign the letter H":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_H.jpg", "../Research/ASL/ASL_H.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "H":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_H.jpg", "../Research/ASL/ASL_H.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter I {
+
+                    case "How do you sign the letter I":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_I.jpg", "../Research/ASL/ASL_I.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "I":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_I.jpg", "../Research/ASL/ASL_I.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter J {
+
+                    case "How do you sign the letter J":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_J.jpg", "../Research/ASL/ASL_J.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "J":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_J.jpg", "../Research/ASL/ASL_J.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter K {
+
+                    case "How do you sign the letter K":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_K.jpg", "../Research/ASL/ASL_K.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "K":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_K.jpg", "../Research/ASL/ASL_K.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter L {
+
+                    case "How do you sign the letter L":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_L.jpg", "../Research/ASL/ASL_L.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "L":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_L.jpg", "../Research/ASL/ASL_L.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter M {
+
+                    case "How do you sign the letter M":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_M.jpg", "../Research/ASL/ASL_M.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "M":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_M.jpg", "../Research/ASL/ASL_M.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter N {
+
+                    case "How do you sign the letter N":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_N.jpg", "../Research/ASL/ASL_N.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "N":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_N.jpg", "../Research/ASL/ASL_N.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter O {
+
+                    case "How do you sign the letter O":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_O.jpg", "../Research/ASL/ASL_O.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "O":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_O.jpg", "../Research/ASL/ASL_O.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter P {
+
+                    case "How do you sign the letter P":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_P.jpg", "../Research/ASL/ASL_P.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "P":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_P.jpg", "../Research/ASL/ASL_P.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter Q {
+
+                    case "How do you sign the letter Q":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Q.jpg", "../Research/ASL/ASL_Q.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "Q":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Q.jpg", "../Research/ASL/ASL_Q.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter R {
+
+                    case "How do you sign the letter R":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_R.jpg", "../Research/ASL/ASL_R.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "R":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_R.jpg", "../Research/ASL/ASL_R.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter S {
+
+                    case "How do you sign the letter S":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_S.jpg", "../Research/ASL/ASL_S.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "S":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_S.jpg", "../Research/ASL/ASL_S.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter T {
+
+                    case "How do you sign the letter T":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_T.jpg", "../Research/ASL/ASL_T.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "T":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_T.jpg", "../Research/ASL/ASL_T.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter U {
+
+                    case "How do you sign the letter U":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_U.jpg", "../Research/ASL/ASL_U.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "U":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_U.jpg", "../Research/ASL/ASL_U.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter V {
+
+                    case "How do you sign the letter V":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_V.jpg", "../Research/ASL/ASL_V.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "V":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_V.jpg", "../Research/ASL/ASL_V.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter W {
+
+                    case "How do you sign the letter W":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_W.jpg", "../Research/ASL/ASL_W.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "W":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_W.jpg", "../Research/ASL/ASL_W.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter X {
+
+                    case "How do you sign the letter X":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_X.jpg", "../Research/ASL/ASL_X.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "X":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_X.jpg", "../Research/ASL/ASL_X.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter Y {
+
+                    case "How do you sign the letter Y":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Y.jpg", "../Research/ASL/ASL_Y.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "Y":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Y.jpg", "../Research/ASL/ASL_Y.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //Letter Z {
+
+                    case "How do you sign the letter Z":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Z.jpg", "../Research/ASL/ASL_Z.jpg", "width=300,height=300");
+
+                        break;
+
+                        
+
+                    case "Z":
+
+                        text = "...";
+
+                        ASE.say("Give me second.");
+
+                        window.open("../Research/ASL/ASL_Z.jpg", "../Research/ASL/ASL_Z.jpg", "width=300,height=300");
+
+                        break;
+
+                //}
+
+                //}
+
+                //Pronouns {
+
+                    
+
+                //}
+
+                //Animals {
+
+                    
+
+                //}
+
+                //Emotions {
+
+                    
+
+                //}
+
+
+                                
+
+                            //Conditional  {
+                            case "bring up Mass alert":
+                                text = "bring up Mass alert";
+                                ASE.say("Okay. Stand by.");
+                                if (emergency < relax) {
+                                    alert("Emergency");
+                                    window.open("https://blaccenterprise.github.io/blacc_profile/Contact_Card/Business_Mass_Alert.html", "https://blaccenterprise.github.io/blacc_profile/Contact_Card/Business_Mass_Alert.html", "width=400,height=400");
+                                } else {
+                                    alert("Relax");
+                                    window.open("https://blaccenterprise.github.io/blacc_profile/Contact_Card/David_Bush.html", "https://blaccenterprise.github.io/blacc_profile/Contact_Card/David_Bush.html", "width=400,height=400");
+
+                                };
+                                break;
+
+                            //}
+
+                          
+                        }
+
+                    }
+</script>
+            
+<script>
+
+function myFunctionaseUsername() {
+    
+                        //Variables {
+                        var text;
+                        var consciousness = document.getElementById("myInputUsername").value;
+                        var ASE = new Artyom();
+                        var emergency = 1;
+                        var relax = 2;
+                        //}
+    
+                        switch (consciousness) {
+ 
+                                //U1 - Stevie W. Carpenter {
+
+            case "Stevie_W_Carpenter::Carpensw111!":
+			text = "...";
+			ASE.say("Welcome Mr. Stevie Carpenter. Just a reminder check our updates. How can I help you today?");
+		window.open("./StevieWCarpenterCarpensw111.html", "_self");
+			break;
+
+
+                 //}  
+
+                                 //U1 - Stevie W. Carpenter {
+
+            case "":
+			text = "...";
+			ASE.say("Welcome Mr. Stevie Carpenter. Just a reminder check our updates. How can I help you today?");
+		window.open("./Music_Artist.html", "_self");
+			break;
+
+
+                 //}  
+
+                            //Conditional  {
+                            case "bring up Mass alert":
+                                text = "bring up Mass alert";
+                                ASE.say("Okay. Stand by.");
+                                if (emergency < relax) {
+                                    alert("Emergency");
+                                    window.open("https://blaccenterprise.github.io/blacc_profile/Contact_Card/Business_Mass_Alert.html", "https://blaccenterprise.github.io/blacc_profile/Contact_Card/Business_Mass_Alert.html", "width=400,height=400");
+                                } else {
+                                    alert("Relax");
+                                    window.open("https://blaccenterprise.github.io/blacc_profile/Contact_Card/David_Bush.html", "https://blaccenterprise.github.io/blacc_profile/Contact_Card/David_Bush.html", "width=400,height=400");
+
+                                };
+                                break;
+
+                            //}
+
+                          
+                        }
+
+                    }
+    
+</script>
+    </div>
+      
+    <script>
+        // 1. Grab references to the DOM elements
+        const toggleControlSearch = document.getElementById('toggleControlSearch');
+        const targetElementSearch = document.getElementById('targetElementSearch');
+        const searchText = document.getElementById('searchText');
+
+        // 2. Define the toggle function
+        function toggleElementSearch() {
+            // Toggle the 'active' class on the switch button itself (for visual state)
+            const isActive = toggleControlSearch.classList.toggle('active');
+            
+            // Toggle the 'hidden' class on the target element
+            targetElementSearch.classList.toggle('hidden');
+            
+            // Optional: Update the text label dynamically
+            if (isActive) {
+                searchText.textContent = "On";
+            } else {
+                searchText.textContent = "Off";
+            }
+        }
+
+        // 3. Attach the function to the click event
+        toggleControlSearch.addEventListener('click', toggleElementSearch);
+
+        // Initialize state as 'hidden' on startup to match the default "Off" text
+        targetElementSearch.classList.add('hidden');
+    </script>
+
+    
+    <script>
+        // 1. Grab references to the DOM elements
+        const toggleControlHome = document.getElementById('toggleControlHome');
+        const targetElementHome = document.getElementById('targetElementHome');
+        const homeText = document.getElementById('homeText');
+
+        // 2. Define the toggle function
+        function toggleElementHome() {
+            // Toggle the 'active' class on the switch button itself (for visual state)
+            const isActive = toggleControlHome.classList.toggle('active');
+            
+            // Toggle the 'hidden' class on the target element
+            targetElementHome.classList.toggle('hidden');
+            
+            // Optional: Update the text label dynamically
+            if (isActive) {
+                homeText.textContent = "On";
+            } else {
+                homeText.textContent = "Off";
+            }
+        }
+
+        // 3. Attach the function to the click event
+        toggleControlHome.addEventListener('click', toggleElementHome);
+
+        // Initialize state as 'hidden' on startup to match the default "Off" text
+        targetElementHome.classList.add('hidden');
+    </script>
+
+
+    
+    <script>
+        // 1. Grab references to the DOM elements
+        const toggleControlMenu = document.getElementById('toggleControlMenu');
+        const targetElementMenu = document.getElementById('targetElementMenu');
+        const menuText = document.getElementById('menuText');
+
+        // 2. Define the toggle function
+        function toggleElementMenu() {
+            // Toggle the 'active' class on the switch button itself (for visual state)
+            const isActive = toggleControlMenu.classList.toggle('active');
+            
+            // Toggle the 'hidden' class on the target element
+            targetElementMenu.classList.toggle('hidden');
+            
+            // Optional: Update the text label dynamically
+            if (isActive) {
+                menuText.textContent = "On";
+            } else {
+                menuText.textContent = "Off";
+            }
+        }
+
+        // 3. Attach the function to the click event
+        toggleControlMenu.addEventListener('click', toggleElementMenu);
+
+        // Initialize state as 'hidden' on startup to match the default "Off" text
+        targetElementMenu.classList.add('hidden');
+    </script>
+
+
+    
+    <script>
+        // 1. Grab references to the DOM elements
+        const toggleControlClose = document.getElementById('toggleControlClose');
+        const targetElementClose = document.getElementById('targetElementClose');
+        const closeText = document.getElementById('closeText');
+
+        // 2. Define the toggle function
+        function toggleElementClose() {
+            // Toggle the 'active' class on the switch button itself (for visual state)
+            const isActive = toggleControlClose.classList.toggle('active');
+            
+            // Toggle the 'hidden' class on the target element
+            targetElementClose.classList.toggle('hidden');
+            
+            // Optional: Update the text label dynamically
+            if (isActive) {
+                closeText.textContent = "On";
+            } else {
+                closeText.textContent = "Off";
+            }
+        }
+
+        // 3. Attach the function to the click event
+        toggleControlClose.addEventListener('click', toggleElementClose);
+
+        // Initialize state as 'hidden' on startup to match the default "Off" text
+        targetElementClose.classList.add('hidden');
+    </script>
+
+
+    
+    <script>
+        // 1. Grab references to the DOM elements
+        const toggleControlSettings = document.getElementById('toggleControlSettings');
+        const targetElementSettings = document.getElementById('targetElementSettings');
+        const settingsText = document.getElementById('settingsText');
+
+        // 2. Define the toggle function
+        function toggleElementSettings() {
+            // Toggle the 'active' class on the switch button itself (for visual state)
+            const isActive = toggleControlSettings.classList.toggle('active');
+            
+            // Toggle the 'hidden' class on the target element
+            targetElementSettings.classList.toggle('hidden');
+            
+            // Optional: Update the text label dynamically
+            if (isActive) {
+                settingsText.textContent = "On";
+            } else {
+                settingsText.textContent = "Off";
+            }
+        }
+
+        // 3. Attach the function to the click event
+        toggleControlSettings.addEventListener('click', toggleElementSettings);
+
+        // Initialize state as 'hidden' on startup to match the default "Off" text
+        targetElementSettings.classList.add('hidden');
+    </script>
+
+</body>
+</html> 
