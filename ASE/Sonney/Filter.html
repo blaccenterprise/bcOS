@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div1 id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="./Personal_Information.html" target="_self">Personal Information</a>
+  <a href="./Chemistry.html">Chemistry</a>
+  <a href="./Neurobiology.html">Neurobiology</a>
+  <a href="./BLACC_Connect">B.L.A.C.C. Connect</a>
+  <a href="./City_Home_Page.html">City Home Page</a>
+  <a href="./COMMANDS_Conditional.html">Commands - Conditional</a>
+  <a href="./COMMANDS_Open">Commands - Open</a>
+  <a href="./COMPARATIVE_BLACC_Connect.html">Comparative - B.L.A.C.C. Connect</a>
+  <a href="./COMPARATIVE_Essence_Analysis.html">Comparative - Essence Analysis</a>
+  <a href="./Database.html">Database</a>
+  <a href="./Coding_Folder.html">Coding Folder</a>
+  <a href="./SECURITY_Location.html">Security Location</a>
+  <a href="./SECURITY_Alert.html">Security Alert</a>
+  <a href="./Politicians.html">Politicians</a>
+  <a href="./Physics.html">Physics Research</a>
+  <a href="./Outcome_Timing.html">Outcome Timing</a>
+  <a href="./Conversions_Units_Measurements.html">Conversions/Units Measurements</a>
+  <a href="./Computer_Research.html">Computer Research</a>
+  <a href="./Missions.html">Missions</a>
+  <a href="./Music_Safe.html">Music Safe</a>
+  <a href="./Message.html">Message</a>
+  <a href="./Mathematical_Operations.html">Mathematical Operations</a>
+  <a href="./Arthenyas_Memory_Vault.html">Arthenya's Memory Vault</a>
+  <a href="./Animals_Research.html">Animals Research</a>
+  <a href="./Firearms.html">Firearms</a>
+  <a href="./ASL.html">ASL</a>
+  <a href="./BLACC_Corporation.html">B.L.A.C.C. Corporation</a>
+  <a href="./BLACC_Members.html">B.L.A.C.C. Members</a>
+  <a href="./Book_Research.html">Book Research</a>
+  <a href="./Mechanical_Research.html">Mechanical Research</a>
+  <a href="./SECURITY_PSB.html">Security PSB</a>
+  <a href=".World_Research.html">World Research</a>
+  <a href="./BLACChole.html">BLACChole</a>
+  <a href="./Other_Apps.html">Other Apps</a>
+  <a href="./Chat.html">Chat</a>
+  <a href="./Combat_Mode.html">Combat Mode</a>
+  <a href="./Money_Movement.html">Money Movement</a>
+  <a href="./Black_Movement.html">Black Movement</a>
+  <a href="./Ultra_Instinct_Mode.html">Ultra Instinct Mode</a>
+  <a href="./ASE.html">ASE</a>
+  <a href="./Mother_Connection.html">Mother Connection</a>
+</div1>
+
+<div2 id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+</div2>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html>
