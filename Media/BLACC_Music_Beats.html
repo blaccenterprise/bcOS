@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Music Safe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="BLACC-top">
+  <div class="BLACC-bar BLACC-black BLACC-card">
+    <a class="BLACC-bar-item BLACC-button BLACC-padding-large BLACC-hide-medium BLACC-hide-large BLACC-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./Music_Safe.html" class="BLACC-bar-item BLACC-button BLACC-padding-large">B.L.A.C.C. Music - B.L.A.C.C. Music Beats</a>
+    <div class="BLACC-dropdown-hover">
+      <button class="BLACC-padding-large BLACC-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="BLACC-dropdown-content BLACC-bar-block BLACC-card-4">
+        <a href="./Instramentals.html" class="BLACC-bar-item BLACC-button">Instramentals</a>
+        <a href="./Wav_Samples.html" class="BLACC-bar-item BLACC-button">Wav Samples</a>
+        <a href="./BLACC_Music_Beats.html" class="BLACC-bar-item BLACC-button">B.L.A.C.C. Music Beat</a></div>
+    </div>
+    <a href="javascript:void(0)" class="BLACC-padding-large BLACC-hover-red BLACC-hide-small BLACC-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="BLACC-bar-block BLACC-black BLACC-hide BLACC-hide-large BLACC-hide-medium BLACC-top" style="margin-top:46px">
+  <a href="#band" class="BLACC-bar-item BLACC-button BLACC-padding-large" onclick="myFunction()">MUSICIANS</a>
+  <a href="#tour" class="BLACC-bar-item BLACC-button BLACC-padding-large" onclick="myFunction()">EVENTS</a>
+  <a href="#contact" class="BLACC-bar-item BLACC-button BLACC-padding-large" onclick="myFunction()">ENGINEERS</a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="BLACC-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- The Tour Section -->
+  
+<!--
+      
+        <div class="BLACC-third BLACC-margin-bottom">
+          <div class="BLACC-container BLACC-white">
+            <p><b>County Jail - 106BPM</b></p>
+            <p>Real Rap</p>
+            <button class="BLACC-center BLACC-button BLACC-black BLACC-margin-bottom">
+<a href="./COUNTY-JAIL_106BPM_2023_TAGGED.mp3" target="_blank" download>Download WAV</a></button>
+<br>
+<audio  class="BLACC-center" style="width:100px" controls>
+  <source src="./COUNTY-JAIL_106BPM_2023_TAGGED.mp3" type="audio/mpeg">
+</audio>
+          </div>
+        </div>
+  
+-->
+
+
+  <!-- Ticket Modal
+  <div id="ticketModal" class="BLACC-modal">
+    <div class="BLACC-modal-content BLACC-animate-top BLACC-card-4">
+      <header class="BLACC-container BLACC-teal BLACC-center BLACC-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="BLACC-button BLACC-teal BLACC-xlarge BLACC-display-topright">×</span>
+        <h2 class="BLACC-wide"><i class="fa fa-suitcase BLACC-mahhhhhhhhhnj jnh   nhmnn n rgin-right"></i>Tickets</h2>
+      </header>
+      <div class="BLACC-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="BLACC-input BLACC-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="BLACC-input BLACC-border" type="text" placeholder="Enter email">
+        <button class="BLACC-button BLACC-block BLACC-teal BLACC-padding-16 BLACC-section BLACC-right">PAY <i class="fa fa-check"></i></button>
+        <button class="BLACC-button BLACC-red BLACC-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="BLACC-right">Need <a href="#" class="BLACC-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+   The Contact Section 
+  <div class="BLACC-container BLACC-content BLACC-padding-64" style="max-width:800px" id="contact">
+    <h2 class="BLACC-wide BLACC-center">CONTACT</h2>
+    <p class="BLACC-opacity BLACC-center"><i>Fan? Drop a note!</i></p>
+    <div class="BLACC-row BLACC-padding-32">
+      <div class="BLACC-col m6 BLACC-large BLACC-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="BLACC-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="BLACC-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="BLACC-half">
+              <input class="BLACC-input BLACC-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="BLACC-half">
+              <input class="BLACC-input BLACC-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="BLACC-input BLACC-border" type="text" placeholder="Message" required name="Message">
+          <button class="BLACC-button BLACC-black BLACC-section BLACC-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Image of location/map 
+<img src="/BLACCimages/map.jpg" class="BLACC-image BLACC-greyscale-min" style="width:100%">
+
+
+
+<br>
+
+
+
+
+<!-- Footer -->
+
+<footer class="BLACC-container BLACC-black">
+<p> Made By B.L.A.C.C. Corportation  (c) 2024</p>
+<br>
+<hr>
+<br>
+  <ul class="lileft">
+ <li><a href="./Website_Template_B.L.A.C.C._Corporation.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="lileft">
+ <li><a href="https://www.blacccorporation.com">Support</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="./B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="./PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+ <ul class="lileft">
+<li><a href="./Subscribe_Form.html">Subscribe</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blacccconnect-1.w3spaces.com/Home_Page.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+<br>
+<hr>
+<br>
+
+
+
+  <p style="text-align: right;">Powered by <a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="./Website_Template_B.L.A.C.C._Corporation.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+</footer>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("BLACC-show") == -1) {
+    x.className += " BLACC-show";
+  } else { 
+    x.className = x.className.replace(" BLACC-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
