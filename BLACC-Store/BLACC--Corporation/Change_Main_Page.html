@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/x-icon" href="./BC.jpg">
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+* {box-sizing: border-box}
+
+.lileft {
+  float: left;
+}
+.liright {
+  float: right;
+}
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+	 background-image: url('./BLACC_Corp.jpg');
+}
+ h3 {
+     font-family: Georgia;
+     color: teal;
+     
+ }
+/* Style tab links */
+.tablinkhome {
+  background-color: red;
+  color: red;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablinkhome:hover {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink {
+  background-color: red;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#BLACCconnect {
+    background-color: black; 
+    text-align: center;
+    
+}
+
+#Change {
+    text-align: center;
+	 background-image: url('./Change_Background_Extra.jpg');
+
+}
+
+#BLACCguidedpathways {
+    background-color: black;
+    
+}
+
+#Newnexxus {
+    background-color: black;
+    
+}
+
+
+
+.bgChange {
+  /* The image used */
+  background-image: url("Change_Background_Wallpaper.jpg");
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonChange {
+    background-color: lightblue;
+    color: teal;
+    width: 150px;
+    height: 70px;
+}
+
+.buttonChange:hover {
+    background-color: white;
+    color: purple;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+</head>
+<body>
+    
+    <div class="BLACC-top">
+<div class="BLACC-bar BLACC-black">
+  <a href="./New_Design.html" class="BLACC-bar-item BLACC-button BLACC-hover-blue" target="_self"><i><img src="./BC.jpg" style="width:25px;height:25px;"></i></a>
+
+  <a href="./Search_Engine.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-search"></i></a>
+  <a href="./Support.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-commenting-o"></i></a>
+  <a href="./Login.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-user"></i></a>
+</div>
+ </div>
+ <br>
+ <br>
+<button class="tablinkhome" onclick="openPage('Change', this, 'black')" id="defaultOpen">Change</button>
+<button class="tablink" onclick="openPage('BLACCconnect', this, 'black')">BLACC Connect</button>
+<button class="tablink" onclick="openPage('BLACCguidedpathways', this, 'black')">B.L.A.C.C. Guided Pathways</button>
+<button class="tablink" onclick="openPage('Newnexxus', this, 'black')">New Nexxus</button>
+    
+
+<div id="BLACCark" class="tabcontent">
+  <h3>B.L.A.C.C. Ark</h3>
+  <p>BLACCark is where the heart is..</p>
+  <img src="./BLACC_Ark.jpg" width="1880px" height="700px" style="opacity: 50%">
+  <p style="color: red">
+      The real life game:
+
+B.L.A.C.C. Ark is a game that deals with real life mission, side quest, team missions, objectives and much more. Level up in life and see the results.
+
+
+
+Building the necessary components to provide a better quality of life through Change, Language, Architecture, Computer Science and Change, is the sole foundation of B.L.A.C.C.
+
+The direction in which the economy is heading, especially with the placement of A.I into the workfield; there needs to be another outlet for making wages that are designed for human accomplishment. Enter the real life game with different job offers covering all fields, just undestand that the action made within this game is real; you will be doing it.
+  </p>
+</div>
+
+
+
+
+
+
+<!--Change-->
+
+<div id="Change" class="tabcontent">
+    <div class="bgChange">
+<div class="container centered">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<canvas id="myCanvas" width="700" height="250" style="border:1px solid grey;">
+Change</canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(550,150,350,400);
+grad.addColorStop(0, "red");
+grad.addColorStop(1, "black");
+
+// Fill outlined text with gradient
+ctx.font = "196px Arial";
+ctx.fillStyle = grad;
+ctx.fillText("Change",0,190);
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<p style="margin-left: 1em; text-align: center; background-color: black; font-family: Times; font-size: 24px; color: white; border: solid 5px red">
+    <b>
+B.L.A.C.C.'s focus is dedicated to the knowledge of biological factors that affect humainty. In addition, reserching possible options to improve the quality of life by declining the negative biological affects on humanity. The inventions incorporated under the B.L.A.C.C. Corporation trademark is B.L.A.C.C. Ark, Asclepieion of B.L.A.C.C. and OneiroNet. Using the inventions are free. To access the invention, "click" the tab and sign-up for free. The inventions within the Change department are designed to improve the physiology and psychology of the user. Time invested will improve your observational skills, somatosensory skills and actualization skills.
+</b>
+</p> 
+  <br>
+<br>
+<br>
+	
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<video width="1250" autoplay controls>
+  <source src="https://blaccenterprise.github.io/Media/Installing_BLACC_App_Store.mp4" type="video/mp4">
+  <source src="https://blaccenterprise.github.io/Media/Installing_BLACC_App_Store.MPEG" type="video/MPEG">
+  </video>    
+  <script>
+      function lesson() {
+          var msg = new SpeechSynthesisUtterance();
+msg.text = "My name is Arthenya. I am called an Ace; Artificial Support Engine. I am Mr. Carpenter's Ace. I will be giving you the tutorial on how to utilize Black Corporation for max potentiality. If you view this from your phone, then that is great. But, if you are viewing this from a computer, then be prepared to switch to a mobile device in the near future. Each tutorial there will be video that will automatically start, please watch the audioless video. Follow the visual instructions along with my verbal instruction. First you will want to download the Black App Store. Either download the Andriod or I Phone version depending on your device, just scan the correct Q R code. Two devices may be necessary, one to show the code and the other that can scan the code. Make sure the device that is scanning the Q R code is the device you want the appilication. To locate the Q R code please go to blacc app store dot b l a c c c o r p dot com.";
+window.speechSynthesis.speak(msg);
+      }
+  </script>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+<br>
+    <div id="Change">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:black; border: solid 2px white">
+    <h2 style="color: yellow;">B.L.A.C.C.</h2>
+    <h2 style="color: yellow;">Conect</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./BLACC_Connect.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: yellow; font-family: Times;">ELEVATE WITH COMMUNITY</p>
+    <br>
+    <button class="BLACC-button BLACC-yellow BLACC-button-hover-white" style="width: 100px; height: 50px;"><a href="" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+  
+  <div class="column" style="background-color:black; border: solid 2px yellow">
+    <h2 style="color: yellow;">Purpose</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: white;">Through careful observation of the data, B.L.A.C.C. can make educated decisions on what aspects may need improve in the present; and the ability to foresee damaging circumstances that can be minimized before calamity occurs. Monitoring of B.L.A.C.C. owned parcels and having data on B.L.A.C.C. acres will allow for calculative development.</p>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: white;">There are eight databases with multiple subcategories, whiich will provide the necessary components to view important sectors that alter/influence parcels to provide a better quality of life.</p>
+  </div>
+  <div class="column" style="background-color:black; border: solid 2px yellow">
+    <h2 style="color: yellow;">About</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 22px; color: white;">The quality of the community that individuals decide to inhabit should have the necessary components to provide a better quality of life. The collaborative nature of the BLACC Database with BLACC Connect inspired Asclepieion Of BLACC</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: white;">After intense reserch for 5 yeasr, BLACC has identified eight main categories that are necessary in order to build a well-rounded community. These eight categories are Food/Water/Clothing/Housing, Donate Outgoing, Donate Receiving, Entertainment, Monetary Gains, Resources, Advisory/Counseling and transportation.</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: white;">For the security of the data that is presented within Asclepieion Of BLACC, access to the data input is monitored by BLACC Connect officers. BLACC members will be able to view the data and perform hypothetical calculations to see possible outcomes.</p>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<hr>
+
+<br>
+<hr>
+
+<br>
+<br>
+<br>
+    <div id="BLACCguidedpathways">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:black; border: solid 2px white">
+    <h2 style="color: yellow;">B.L.A.C.C.</h2>
+    <h2 style="color: yellow;">Guided Pathways</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./BLACC_Guided_Pathways.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: yellow; font-family: Times;">GUIDED PATHWAYS</p>
+    <br>
+    <button class="BLACC-button BLACC-yellow BLACC-button-hover-white" style="width: 100px; height: 50px;"><a href="" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+  
+  <div class="column" style="background-color:black; border: solid 2px yellow">
+    <h2 style="color: yellow;">Purpose</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: white;">Through careful observation of the data, B.L.A.C.C. can make educated decisions on what aspects may need improve in the present; and the ability to foresee damaging circumstances that can be minimized before calamity occurs. Monitoring of B.L.A.C.C. owned parcels and having data on B.L.A.C.C. acres will allow for calculative development.</p>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: white;">There are eight databases with multiple subcategories, whiich will provide the necessary components to view important sectors that alter/influence parcels to provide a better quality of life.</p>
+  </div>
+  <div class="column" style="background-color:black; border: solid 2px yellow">
+    <h2 style="color: yellow;">About</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 22px; color: white;">The quality of the community that individuals decide to inhabit should have the necessary components to provide a better quality of life. The collaborative nature of the BLACC Database with BLACC Connect inspired Asclepieion Of BLACC</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: white;">After intense reserch for 5 yeasr, BLACC has identified eight main categories that are necessary in order to build a well-rounded community. These eight categories are Food/Water/Clothing/Housing, Donate Outgoing, Donate Receiving, Entertainment, Monetary Gains, Resources, Advisory/Counseling and transportation.</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: white;">For the security of the data that is presented within Asclepieion Of BLACC, access to the data input is monitored by BLACC Connect officers. BLACC members will be able to view the data and perform hypothetical calculations to see possible outcomes.</p>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+<br>
+<br>
+
+<hr>
+<br>
+<hr>
+
+<br>
+<hr>
+
+<br>
+<br>
+<br>
+
+    <div id="Change">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color: black; border: solid 2px red">
+    <h2 style="color: red;">New</h2>
+    <h2 style="color: red;">Nexxus</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./New_Nexxus.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: white; font-family: Times;">ADVOCATE FOR THE FUTURE</p>
+    <br>
+    <button class="BLACC-button BLACC-lightpink BLACC-button-hover-lightblue" style="width: 100px; height: 50px;"><a href="" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+  
+  <div class="column" style="background-color: white; border: solid 2px red">
+    <h2 style="color: black;">Purpose</h2>
+    <hr style="border: solid 1px red">
+    <br>
+    <p style="font-family: times; font-size: 24px; color: black;">Through careful observation of the data, B.L.A.C.C. can make educated decisions on what aspects may need improve in the present; and the ability to foresee damaging circumstances that can be minimized before calamity occurs. Monitoring of B.L.A.C.C. owned parcels and having data on B.L.A.C.C. acres will allow for calculative development.</p>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: black;">There are eight databases with multiple subcategories, whiich will provide the necessary components to view important sectors that alter/influence parcels to provide a better quality of life.</p>
+  </div>
+  
+  <div class="column" style="background-color:white; border: solid 2px red">
+    <h2 style="color: black;">About</h2>
+    <hr style="border: solid 1px red">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: black;">The quality of the community that individuals decide to inhabit should have the necessary components to provide a better quality of life. The collaborative nature of the BLACC Database with BLACC Connect inspired Asclepieion Of BLACC</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">After intense reserch for 5 yeasr, BLACC has identified eight main categories that are necessary in order to build a well-rounded community. These eight categories are Food/Water/Clothing/Housing, Donate Outgoing, Donate Receiving, Entertainment, Monetary Gains, Resources, Advisory/Counseling and transportation.</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">For the security of the data that is presented within Asclepieion Of BLACC, access to the data input is monitored by BLACC Connect officers. BLACC members will be able to view the data and perform hypothetical calculations to see possible outcomes.</p>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+
+<footer class="BLACC-container BLACC-black">
+<p> Made By B.L.A.C.C. Corporation  &copy; 2020 - 2025</p>
+<br>
+<hr>
+<br>
+  <ul class="liright">
+ <li><a href="./New_Design.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="liright">
+ <li><a href="https://blaccenterprise.github.io/search/BLACC_Search.html">B.L.A.C.C. Search</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="./B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="./PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+
+ 
+ <ul class="liright">
+  <li><a href="https://blaccenterprise.github.io/blaccconnect/Level_1_Access/United_States_Selection_Level_1_Access.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blaccenterprise.github.io/newnexxus/Home_Page.html">New Nexxus</a>
+</ul>
+
+ 
+<br>
+<hr>
+<br>
+
+
+<a style="font-size: 28px; text-align: center; border: solid 3px red" href="./Subscribe_Form.html">Subscribe</a>
+<br>
+<br>
+  <p style="text-align: center;">Powered by <a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="./index.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+<br>
+<br>
+<br>
+</footer>
+
+  
+</div>
+
+<hr>
+<br>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 
