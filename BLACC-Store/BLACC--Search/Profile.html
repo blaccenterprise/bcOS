@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLACC.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.BLACCschools.com/BLACCcss/4/BLACC.css">
+<link rel="stylesheet" href="https://www.BLACCschools.com/lib/BLACC-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+</head>
+<body class="BLACC-theme-l5">
+
+<!-- Navbar -->
+<div class="BLACC-top">
+ <div class="BLACC-bar BLACC-theme-d2 BLACC-left-align BLACC-large">
+  <a class="BLACC-bar-item BLACC-button BLACC-hide-medium BLACC-hide-large BLACC-right BLACC-padding-large BLACC-hover-white BLACC-large BLACC-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-padding-large BLACC-theme-d4"><i class="fa fa-home BLACC-margin-right"></i>Logo</a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-hide-small BLACC-padding-large BLACC-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-hide-small BLACC-padding-large BLACC-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-hide-small BLACC-padding-large BLACC-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="BLACC-dropdown-hover BLACC-hide-small">
+    <button class="BLACC-button BLACC-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="BLACC-badge BLACC-right BLACC-small BLACC-green">3</span></button>     
+    <div class="BLACC-dropdown-content BLACC-card-4 BLACC-bar-block" style="width:300px">
+      <a href="#" class="BLACC-bar-item BLACC-button">One new friend request</a>
+      <a href="#" class="BLACC-bar-item BLACC-button">John Doe posted on your wall</a>
+      <a href="#" class="BLACC-bar-item BLACC-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-hide-small BLACC-right BLACC-padding-large BLACC-hover-white" title="My Account">
+    <img src="/BLACCimages/avatar2.png" class="BLACC-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="BLACC-bar-block BLACC-theme-d2 BLACC-hide BLACC-hide-large BLACC-hide-medium BLACC-large">
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-padding-large">Link 1</a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-padding-large">Link 2</a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-padding-large">Link 3</a>
+  <a href="#" class="BLACC-bar-item BLACC-button BLACC-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="BLACC-container BLACC-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="BLACC-row">
+    <!-- Left Column -->
+    <div class="BLACC-col m3">
+      <!-- Profile -->
+      <div class="BLACC-card BLACC-round BLACC-white">
+        <div class="BLACC-container">
+         <h4 class="BLACC-center">My Profile</h4>
+         <p class="BLACC-center"><img src="/BLACCimages/avatar3.png" class="BLACC-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw BLACC-margin-right BLACC-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw BLACC-margin-right BLACC-text-theme"></i> London, UK</p>
+         <p><i class="fa fa-birthday-cake fa-fw BLACC-margin-right BLACC-text-theme"></i> April 1, 1988</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="BLACC-card BLACC-round">
+        <div class="BLACC-white">
+          <button onclick="myFunction('Demo1')" class="BLACC-button BLACC-block BLACC-theme-l1 BLACC-left-align"><i class="fa fa-circle-o-notch fa-fw BLACC-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="BLACC-hide BLACC-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="BLACC-button BLACC-block BLACC-theme-l1 BLACC-left-align"><i class="fa fa-calendar-check-o fa-fw BLACC-margin-right"></i> My Events</button>
+          <div id="Demo2" class="BLACC-hide BLACC-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="BLACC-button BLACC-block BLACC-theme-l1 BLACC-left-align"><i class="fa fa-users fa-fw BLACC-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="BLACC-hide BLACC-container">
+         <div class="BLACC-row-padding">
+         <br>
+           <div class="BLACC-half">
+             <img src="/BLACCimages/lights.jpg" style="width:100%" class="BLACC-margin-bottom">
+           </div>
+           <div class="BLACC-half">
+             <img src="/BLACCimages/nature.jpg" style="width:100%" class="BLACC-margin-bottom">
+           </div>
+           <div class="BLACC-half">
+             <img src="/BLACCimages/mountains.jpg" style="width:100%" class="BLACC-margin-bottom">
+           </div>
+           <div class="BLACC-half">
+             <img src="/BLACCimages/forest.jpg" style="width:100%" class="BLACC-margin-bottom">
+           </div>
+           <div class="BLACC-half">
+             <img src="/BLACCimages/nature.jpg" style="width:100%" class="BLACC-margin-bottom">
+           </div>
+           <div class="BLACC-half">
+             <img src="/BLACCimages/snow.jpg" style="width:100%" class="BLACC-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="BLACC-card BLACC-round BLACC-white BLACC-hide-small">
+        <div class="BLACC-container">
+          <p>Interests</p>
+          <p>
+            <span class="BLACC-tag BLACC-small BLACC-theme-d5">News</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-d4">BLACCSchools</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-d3">Labels</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-d2">Games</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-d1">Friends</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme">Games</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-l1">Friends</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-l2">Food</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-l3">Design</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-l4">Art</span>
+            <span class="BLACC-tag BLACC-small BLACC-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="BLACC-container BLACC-display-container BLACC-round BLACC-theme-l4 BLACC-border BLACC-theme-border BLACC-margin-bottom BLACC-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="BLACC-button BLACC-theme-l3 BLACC-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="BLACC-col m7">
+    
+      <div class="BLACC-row-padding">
+        <div class="BLACC-col m12">
+          <div class="BLACC-card BLACC-round BLACC-white">
+            <div class="BLACC-container BLACC-padding">
+              <h6 class="BLACC-opacity">Social Media template by BLACC.css</h6>
+              <p contenteditable="true" class="BLACC-border BLACC-padding">Status: Feeling Blue</p>
+              <button type="button" class="BLACC-button BLACC-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="BLACC-container BLACC-card BLACC-white BLACC-round BLACC-margin"><br>
+        <img src="/BLACCimages/avatar2.png" alt="Avatar" class="BLACC-left BLACC-circle BLACC-margin-right" style="width:60px">
+        <span class="BLACC-right BLACC-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="BLACC-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="BLACC-row-padding" style="margin:0 -16px">
+            <div class="BLACC-half">
+              <img src="/BLACCimages/lights.jpg" style="width:100%" alt="Northern Lights" class="BLACC-margin-bottom">
+            </div>
+            <div class="BLACC-half">
+              <img src="/BLACCimages/nature.jpg" style="width:100%" alt="Nature" class="BLACC-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="BLACC-button BLACC-theme-d1 BLACC-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="BLACC-button BLACC-theme-d2 BLACC-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="BLACC-container BLACC-card BLACC-white BLACC-round BLACC-margin"><br>
+        <img src="/BLACCimages/avatar5.png" alt="Avatar" class="BLACC-left BLACC-circle BLACC-margin-right" style="width:60px">
+        <span class="BLACC-right BLACC-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="BLACC-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="BLACC-button BLACC-theme-d1 BLACC-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="BLACC-button BLACC-theme-d2 BLACC-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="BLACC-container BLACC-card BLACC-white BLACC-round BLACC-margin"><br>
+        <img src="/BLACCimages/avatar6.png" alt="Avatar" class="BLACC-left BLACC-circle BLACC-margin-right" style="width:60px">
+        <span class="BLACC-right BLACC-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="BLACC-clear">
+        <p>Have you seen this?</p>
+        <img src="/BLACCimages/nature.jpg" style="width:100%" class="BLACC-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="BLACC-button BLACC-theme-d1 BLACC-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="BLACC-button BLACC-theme-d2 BLACC-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="BLACC-col m2">
+      <div class="BLACC-card BLACC-round BLACC-white BLACC-center">
+        <div class="BLACC-container">
+          <p>Upcoming Events:</p>
+          <img src="/BLACCimages/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="BLACC-button BLACC-block BLACC-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="BLACC-card BLACC-round BLACC-white BLACC-center">
+        <div class="BLACC-container">
+          <p>Friend Request</p>
+          <img src="/BLACCimages/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="BLACC-row BLACC-opacity">
+            <div class="BLACC-half">
+              <button class="BLACC-button BLACC-block BLACC-green BLACC-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="BLACC-half">
+              <button class="BLACC-button BLACC-block BLACC-red BLACC-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="BLACC-card BLACC-round BLACC-white BLACC-padding-16 BLACC-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="BLACC-card BLACC-round BLACC-white BLACC-padding-32 BLACC-center">
+        <p><i class="fa fa-bug BLACC-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="BLACC-container BLACC-theme-d3 BLACC-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="BLACC-container BLACC-theme-d5">
+  <p>Powered by <a href="https://www.BLACCschools.com/BLACCcss/default.asp" target="_blank">BLACC.css</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("BLACC-show") == -1) {
+    x.className += " BLACC-show";
+    x.previousElementSibling.className += " BLACC-theme-d1";
+  } else { 
+    x.className = x.className.replace("BLACC-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" BLACC-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("BLACC-show") == -1) {
+    x.className += " BLACC-show";
+  } else { 
+    x.className = x.className.replace(" BLACC-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
