@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="image/x-icon" href="./BC.jpg">
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+* {box-sizing: border-box}
+
+.lileft {
+  float: left;
+}
+.liright {
+  float: right;
+}
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+	 background-image: url('./Language_Background_Extra.jpg');
+}
+ h3 {
+     font-family: Georgia;
+     color: #EB8B1E;
+     
+ }
+/* Style tab links */
+.tablinkhome {
+  background-color: #EB8B1E;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink {
+	 background-image: url('./Language_Background_Extra.jpg');
+  color: #EB8B1E;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #EB8B1E;
+  color: white;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: white;
+}
+
+#Vitalmathematics {
+	 background-image: url('./Language_Background_Extra.jpg');
+    text-align: center;
+    
+}
+
+#Language {
+    background-color:  #EB8B1E;
+    text-align: center;
+	 background-image: url('./Language_Background_Extra.jpg');
+
+}
+
+#BLACCacademy {
+	 background-image: url('./Language_Background_Extra.jpg');
+    text-align: center;
+    
+}
+
+#Pharaohhistory {
+	 background-image: url('./Language_Background_Extra.jpg');
+    text-align: center;
+    
+}
+
+
+
+.bgLanguage {
+  /* The image used */
+  background-image: url("Language_Background_Extra.jpg");
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: #EB8B1E;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonLanguage {
+	 background-image: url('./Language_Background_Extra.jpg');
+    color: #EB8B1E;
+    width: 150px;
+    height: 70px;
+}
+
+.buttonLanguage:hover {
+    background-color: #EB8B1E;
+    color: white;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+</head>
+<body>
+    
+    <div class="BLACC-top">
+<div class="BLACC-bar" style="background-color: #EB8B1E">
+  <a href="./New_Design.html" class="BLACC-bar-item BLACC-button BLACC-hover-blue" target="_self"><i><img src="./BC.jpg" style="width:25px;height:25px;"></i></a>
+
+  <a href="./Search_Engine.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-search"></i></a>
+  <a href="./Support.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-commenting-o"></i></a>
+  <a href="./Login.html" class="BLACC-bar-item BLACC-button BLACC-right BLACC-hover-blue"><i class="fa fa-user"></i></a>
+</div>
+ </div>
+ <br>
+ <br>
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container centered">
+
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<canvas id="myCanvas" width="1000" height="250" style="border:1px solid grey;">
+Language</canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(80,150,280,350);
+grad.addColorStop(0, "white");
+grad.addColorStop(1, "#EB8B1E");
+
+// Fill outlined text with gradient
+ctx.font = "196px Arial";
+ctx.fillStyle = grad;
+ctx.fillText("Language",0,190);
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<p style="margin-left: 1em; text-align: center; background-color: white; font-family: Times; font-size: 24px; color: black; border: solid 5px #EB8B1E">
+    <b>
+B.L.A.C.C.'s focus is dedicated to the knowledge of biological factors that affect humainty. In addition, reserching possible options to improve the quality of life by declining the negative biological affects on humanity. The inventions incorporated under the B.L.A.C.C. Corporation trademark is B.L.A.C.C. Ark, Asclepieion of B.L.A.C.C. and OneiroNet. Using the inventions are free. To access the invention, "click" the tab and sign-up for free. The inventions within the Language department are designed to improve the physiology and psychology of the user. Time invested will improve your observational skills, somatosensory skills and actualization skills.
+</b>
+</p> 
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	
+<video width="1250" autoplay controls>
+  <source src="../blaccenterprise.github.io_Media_/Installing_BLACC_App_Store.mp4" type="video/mp4">
+  <source src="../blaccenterprise.github.io_Media/Installing_BLACC_App_Store.MPEG" type="video/MPEG">
+  </video>    
+  <script>
+      function lesson() {
+          var msg = new SpeechSynthesisUtterance();
+msg.text = "My name is Arthenya. I am called an Ace; Artificial Support Engine. I am Mr. Carpenter's Ace. I will be giving you the tutorial on how to utilize white Corporation for max potentiality. If you view this from your phone, then that is great. But, if you are viewing this from a computer, then be prepared to switch to a mobile device in the near future. Each tutorial there will be video that will automatically start, please watch the audioless video. Follow the visual instructions along with my verbal instruction. First you will want to download the white App Store. Either download the Andriod or I Phone version depending on your device, just scan the correct Q R code. Two devices may be necessary, one to show the code and the other that can scan the code. Make sure the device that is scanning the Q R code is the device you want the appilication. To locate the Q R code please go to blacc app store dot b l a c c c o r p dot com.";
+window.speechSynthesis.speak(msg);
+      }
+  </script>
+
+</div>
+ <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+    <div id="Vitalmathematics">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column" style="border: solid 2px red">
+    <h2 style="color: red;">Vital</h2>
+    <h2 style="color: red;">Mathematics</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./Vital_Mathematic.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: white; font-family: Times;">Language Of The Universe</p>
+    <br>
+    <button class="BLACC-button BLACC-lightpink BLACC-button-hover-lightblue" style="width: 100px; height: 50px;"><a href="./Website_Template_BLACC_Corporation_Language_Project_Vital_Mathematics.html" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+  
+  <div class="column" style=" border: solid 2px red">
+    <h2 style="color: black;">Purpose</h2>
+    <hr style="border: solid 1px red">
+    <br>
+    <p style="font-family: times; font-size: 24px; color: black;">In response to the recent passing of AB705 and the even more concerning AB1705, Vital Mathematics is a valuable resource for students and educators alike. Enhance your math skills with Vital Mathematics. 
+</p>
+    <br>
+    <p style="font-family: times; font-size: 24px; color: black;">
+    Within this Subject Topic, there will be Study Modules, Visual Modules, Research Modules and Project Modules to help students understand basic Algebra, Intermediate Algebra, Geometry, Trigonometry, college Algebra, or Statistics
+    </p>
+  </div>
+  
+  <div class="column" style="background-color:white; border: solid 2px red">
+    <h2 style="color: black;">About</h2>
+    <hr style="border: solid 1px red">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: black;">Need assistance with basic algebra, intermediate algebra, geometry, trigonometry, college algebra, or statistics? </p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">
+Vital Mathematics, the free educational website provided by B.L.A.C.C. Academy under B.L.A.C.C. Corporation. With pre-recorded videos uploaded weekly, Vital Mathematics offers a wealth of material for all levels of math learners. As someone with 10 years of teaching experience in mathematics, I can attest to the quality of the material available on Vital Mathematics.
+</p>
+<br>
+    <p style="font-family: times; font-size: 22px; color: black;">
+ As someone with 10 years of teaching experience in mathematics, I can attest to the quality of the material available on Vital Mathematics.
+</p>
+<br>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<hr>
+
+<br>
+<hr>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+    <div id="BLACCmusic">
+
+<br>
+
+<div class="row">
+  
+  
+  
+  
+  <div class="column" style="background-color: black; border: solid 2px black">
+    <h2 style="color: yellow; text-align: center;">Purpose</h2>
+    <hr style="border: solid 1px black">
+    <br>
+    <p style="font-family: times; font-size: 24px; color: gold;">Through careful observation of the data, B.L.A.C.C. can make educated decisions on what aspects may need improve in the present; and the ability to foresee damaging circumstances that can be minimized before calamity occurs. Monitoring of B.L.A.C.C. owned parcels and having data on B.L.A.C.C. acres will allow for calculative development.</p>
+    <br>
+  </div>
+  
+  <div class="column" style="background-color: black; border: solid 2px white">
+    <h2 style="color: yellow; text-align: center;">B.L.A.C.C.</h2>
+    <h2 style="color: yellow; text-align: center;">Music</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./BLACC_Music.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: white; font-family: Times; text-align: center;">Learn Together</p>
+    <br>
+    <button class="BLACC-button BLACC-lightpink BLACC-button-hover-lightblue " style="width: 100px; height: 50px; margin-left: 250px;"><a href="./BLACC_Academy/BLACC_Academy.html" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+  <div class="column" style="background-color:black; border: solid 2px black">
+    <h2 style="color: yellow; text-align: center;">About</h2>
+    <hr style="border: solid 1px black">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: yellow;">New innovative software created by Stevie W. Carpenter with free licensing to all B.L.A.C.C. Music  artist. The use of new software to produce the next sound of music
+</p>
+<br></div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<hr>
+<br>
+<hr>
+
+<br>
+<hr style="border: solid 1px orange">
+
+<br>
+<br>    
+<div id="BLACCacademy">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  
+  
+  
+  
+  <div class="column" style="background-color: white; border: solid 2px black">
+    <h2 style="color: black;">Purpose</h2>
+    <hr>
+    <br>
+    <p style="font-family: times; font-size: 18px; color: black;">The current post-education laws that are being passed in combination with the advancement of technology has new challenges that must take another route to find a solution. Supplementary aid with various academic fields will increase probability of understanding and holding information based on the repetition concept. The kind of supplementary aid that must be administered needs to be tailored separately for each individual, in order to build on strengths to aid in their weaknesses. 3 Types of mediums that B.L.A.C.C. Academy will use in order for students to acquiring knowledge are</p>
+    <br>
+    <p style="font-family: times; font-size: 18px; color: black;">Visual - Watching the concept unfold in reality in order to grasp terminology with actions in real time.</p>
+    <br>
+    <p style="font-family: times; font-size: 18px; color: black;">Audio - Having the concept explained in detail, with terminology that is interchangeable with the student's vocabulary so he/she may understand the concept.</p>
+    <br>
+    <p style="font-family: times; font-size: 18px; color: black;">Physical - Students need to physically interact with the concept, changing the individual aspects; examining its entirety.</p>
+    <br>
+    </div>
+  
+  <div class="column" style="background-color: black; border: solid 2px white">
+    <h2 style="color: white;">B.L.A.C.C.</h2>
+    <h2 style="color: white;">Academy</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./BLACC_Academy.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: white; font-family: Times;">Learn Together</p>
+    <br>
+    <button class="BLACC-button BLACC-lightpink BLACC-button-hover-lightblue" style="width: 100px; height: 50px;"><a href="./BLACC_Academy/BLACC_Academy.html" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+  <div class="column" style="background-color:white; border: solid 2px black">
+    <h2 style="color: black;">About</h2>
+    <pre style="font-family: times; font-size: 15px; color: black;">Subjects topics could possible be on the schedule for an individual:
+</pre>
+    <pre style="font-family: times; font-size: 15px; color: black; float: left;">
+
+Biology:
+OneiroNet
+Asclepieion Of B.L.A.C.C.
+</pre>
+    <pre style="font-family: times; font-size: 15px; color: black; float: right;">
+
+Language:
+Vital Mathematics
+Pharaoh History
+</pre>
+<br>
+    <pre style="font-family: times; font-size: 15px; color: black; float: left;">
+
+Architecture:
+NFT
+Car Mechanics 
+Interior Design (Houses/Residential)
+</pre>
+    <pre style="font-family: times; font-size: 15px; color: black; float: right;">
+
+Computer Science:
+HTML
+CSS
+JavaScript
+Node.js
+Linux
+R
+PHP
+MySQL
+Apache
+Robotics
+</pre>
+<br>
+    <pre style="font-family: times; font-size: 15px; color: black; float: left;">
+
+Change (Humanitarian Work):
+New Nexxus
+B.L.A.C.C. Connect
+B.L.A.C.C. Guided Pathways
+</pre>
+<br>
+</div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<hr>
+
+<br>
+<hr style="border: solid 1px orange">
+
+<br>
+<br>
+<br>
+
+
+    <div id="Pharaohhistory">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+
+  <div class="column" style="background-color: white; border: solid 2px white">
+    <h2 style="color: black;">Purpose</h2>
+    <hr style="border: solid 1px yellow">
+    <br>
+    <p style="font-family: times; font-size: 24px; color: black;">The narration of how history is conveyed, can be the difference in empowering or diminishing the will of generations. Negro history is vital to those who can relate to the endevors and frontiers for Negro freedom. The power within the Negro history will be told by the entity known within this lifetime and reality as Young Pharaoh.</p>
+    <br>
+  </div>
+  
+  <div class="column" style="background-color:white; border: solid 2px yellow">
+    <h2 style="color: black;">About</h2>
+    <hr style="border: solid 1px yellow">
+    <br>
+    <p style="font-family: times; font-size: 22px; color: black;">For the security of the data that is presented within Asclepieion Of BLACC, access to the data input is monitored by BLACC Connect officers. BLACC members will be able to view the data and perform hypothetical calculations to see possible outcomes.</p>
+  </div>
+    <div class="column" style="background-color: black; border: solid 2px yellow">
+    <h2 style="color: yellow;">Pharaoh</h2>
+    <h2 style="color: yellow;">History</h2>
+    <br>
+    <br>
+    <br>
+    <img src="./Pharaoh_History.jpg" width="550px" height="350px">
+    <br>
+    <br>
+    <p style="font-size: 34px; color: yellow; font-family: Times;">True Negro History</p>
+    <br>
+    <button class="BLACC-button BLACC-lightpink BLACC-button-hover-yellow" style="width: 100px; height: 50px;"><a href="./Website_Template_BLACC_Corporation_Language_Project_Pharaoh_History.html" target="_self" style="color: white">View More</a></button>
+ 
+  </div>
+
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<footer class="BLACC-container BLACC-black">
+<p> Made By B.L.A.C.C. Corporation  &copy; 2020 - 2025</p>
+<br>
+<hr>
+<br>
+  <ul class="liright">
+ <li><a href="./New_Design.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="liright">
+ <li><a href="../blaccenterprise.github.io_search_/BLACC_Search.html">B.L.A.C.C. Search</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="./B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="./PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+
+ 
+ <ul class="liright">
+  <li><a href="../blaccenterprise.github.io_blaccconnect_/Level_1_Access/United_States_Selection_Level_1_Access.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="../blaccenterprise.github.io_newnexxus_/Home_Page.html">New Nexxus</a>
+</ul>
+
+ 
+<br>
+<hr>
+<br>
+
+
+<a style="font-size: 28px; text-align: center; border: solid 3px red" href="./Subscribe_Form.html">Subscribe</a>
+<br>
+<br>
+  <p style="text-align: center;">Powered by <a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="./index.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+<br>
+<br>
+<br>
+</footer>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 
