@@ -1,0 +1,545 @@
+  <!DOCTYPE html>
+<html>
+<head>
+      <title> Filter For Users </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {
+		    background-image: url('./Blue_Background.jpg');
+
+		}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color: white;">B.L.A.C.C. Academy Login</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/briansikweya">Brian Sikweya</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/omokehinde">Omokehinde</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/davidbush">David Bush</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/mariyahtownsend">Mariyah Townsend</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/terellblue">Terell Blue</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/jauteannashoe">Jauteanna Shoe</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ericadavis">Erica Davis</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/amberblue">Amber Blue</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/elijahrichardson">Elijah Richardson</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/donyestovall">Donye Stovall</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/andresaunders">Andre Saunders</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/andrewlyons">Andrew Lyons</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/arcuistgilbert">Arcuist Gilbert</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/adrienne">Adrienne</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/anisa">Anisa</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/claralandrum">Clara Landrum</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/chrisjovan">Chris Jovan</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/dawnjohnson">Dawn Johnson</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/francisjohnson">Francis Johnson</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/greg">Greg</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/lot">Lot</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/millow">Millow</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/brendaanderson">Brenda Anderson</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/powers">Powers</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ryelaniece">Rye La Niece</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/shyliciahking">Shyliciah King</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/baldwin">Baldwin</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/stezzo">Stezzo</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/sania">Sania</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/steviecarpenter">Stevie W. Carpenter</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/tonicook">Toni Cook</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/tylerhooper">Tyler Hooper</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/tomrobinson">Tom Robinson</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/vernon">Vernon</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/williamgibson">William Gibson</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/yannabush">Yanna Bush</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ariana">Ariana</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiachairman">California Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiapresident">California President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiasecretary">California Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiatreasurer">California Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiavicepresidentofbiology">California Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiavicepresidentoflanguage">California Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiavicepresidentofarchitecture">California Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiavicepresidentofcomputerscience">California Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/californiavicepresidentofchange">California Vice President Of Change</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradochairman">Colorado Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradopresident">Colorado President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradosecretary">Colorado Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradotreasurer">Colorado Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradovicepresidentofbiology">Colorado Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradovicepresidentoflanguage">Colorado Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradovicepresidentofarchitecture">Colorado Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradovicepresidentofcomputerscience">Colorado Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/coloradovicepresidentofchange">Colorado Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridachairman">Florida Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridapresident">Florida President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridasecretary">Florida Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridatreasurer">Florida Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridavicepresidentofbiology">Florida Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridavicepresidentoflanguage">Florida Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridavicepresidentofarchitecture">Florida Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridavicepresidentofcomputerscience">Florida Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/floridavicepresidentofchange">Florida Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahochairman">Idaho Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahopresident">Idaho President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahosecretary">Idaho Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahotreasurer">Idaho Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahovicepresidentofbiology">Idaho Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahovicepresidentoflanguage">Idaho Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahovicepresidentofarchitecture">Idaho Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahovicepresidentofcomputerscience">Idaho Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/idahovicepresidentofchange">Idaho Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansaschairman">Kansas Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansaspresident">Kansas President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansassecretary">Kansas Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansastreasurer">Kansas Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansasvicepresidentofbiology">Kansas Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansasvicepresidentoflanguage">Kansas Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansasvicepresidentofarchitecture">Kansas Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansasvicepresidentofcomputerscience">Kansas Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/kansasvicepresidentofchange">Kansas Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadachairman">Nevada Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadapresident">Nevada President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadasecretary">Nevada Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadatreasurer">Nevada Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadavicepresidentofbiology">Nevada Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadavicepresidentoflanguage">Nevada Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadavicepresidentofarchitecture">Nevada Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadavicepresidentofcomputerscience">Nevada Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/nevadavicepresidentofchange">Nevada Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicochairman">New Mexico Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicopresident">New Mexico President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicosecretary">New Mexico Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicotreasurer">New Mexico Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicovicepresidentofbiology">New Mexico Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicovicepresidentoflanguage">New Mexico Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicovicepresidentofarchitecture">New Mexico Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicovicepresidentofcomputerscience">New Mexico Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newmexicovicepresidentofchange">New Mexico Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkchairman">New York Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkpresident">New York President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorksecretary">New York Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorktreasurer">New York Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkvicepresidentofbiology">New York Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkvicepresidentoflanguage">New York Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkvicepresidentofarchitecture">New York Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkvicepresidentofcomputerscience">New York Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/newyorkvicepresidentofchange">New York Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiochairman">Ohio Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiopresident">Ohio President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiosecretary">Ohio Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiotreasurer">Ohio Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiovicepresidentofbiology">Ohio Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiovicepresidentoflanguage">Ohio Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiovicepresidentofarchitecture">Ohio Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiovicepresidentofcomputerscience">Ohio Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/ohiovicepresidentofchange">Ohio Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonchairman">Oregon Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonpresident">Oregon President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonsecretary">Oregon Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregontreasurer">Oregon Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonvicepresidentofbiology">Oregon Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonvicepresidentoflanguage">Oregon Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonvicepresidentofarchitecture">Oregon Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonvicepresidentofcomputerscience">Oregon Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/oregonvicepresidentofchange">Oregon Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texaschairman">Texas Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texaspresident">Texas President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texassecretary">Texas Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texastreasurer">Texas Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texasvicepresidentofbiology">Texas Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texasvicepresidentoflanguage">Texas Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texasvicepresidentofarchitecture">Texas Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texasvicepresidentofcomputerscience">Texas Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/texasvicepresidentofchange">Texas Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahchairman">Utah Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahpresident">Utah President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahsecretary">Utah Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahtreasurer">Utah Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahvicepresidentofbiology">Utah Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahvicepresidentoflanguage">Utah Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahvicepresidentofarchitecture">Utah Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahvicepresidentofcomputerscience">Utah Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/utahvicepresidentofchange">Utah Vice President Of Change</a></li>
+	
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonchairman">Washington Chairman</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonpresident">Washington President</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonsecretary">Washington Secretary</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtontreasurer">Washington Treasurer</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonvicepresidentofbiology">Washington Vice President Of Biology</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonvicepresidentoflanguage">Washington Vice President Of Language</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonvicepresidentofarchitecture">Washington Vice President Of Architecture</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonvicepresidentofcomputerscience">Washington Vice President Of Computer Science</a></li>
+
+  <li><a href="https://blacccorp1.wixsite.com/blacc-corporation/washingtonvicepresidentofchange">Washington Vice President Of Change</a></li>
+	
+	
+		
+
+<!--
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li> 
+	<li><a href="./A_D/Andre_Saunders_1.html">Andre Saunders</a></li>
+
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">BLACC Vice President Of Arcjitecture</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Nexxus</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+	-->
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
