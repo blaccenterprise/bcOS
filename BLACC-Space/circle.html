@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="icon" type="image/x-icon" href="./BC.jpg">
+     <script type="text/javascript" src="./import.js"></script>
+     <script type="text/javascript" src="./ASE.js"></script>
+    <script type="text/javascript" src="./BLACCCORPORATION_Term.js"></script>
+    <style>
+       
+:root {
+  --bg-page: #14092F;
+  --accent-container: #14092F;
+  --accent-secondary: #FE2A2A;
+  --accent-content: #FE2A2A;
+  --accent-sidenav: #FE2A2A;
+  --accent-sidenavtext: #FE2A2A;
+  --radius-main: 55%;
+  --cursor-img: pointer;
+}
+
+body {
+  background-color: var(bg-page);
+  font-family: sans-serif;
+  transition: 3s fade; /* Smooth transitions make it feel premium */
+}
+
+
+
+
+         
+    .containercircle {
+        background-image: url('./Circle_Background.jpg');
+  background-color: red;
+        text-align: center;
+      position: relative;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-left: 300px;
+      width: 1350px;
+      height: 750px;   
+    }
+
+    /* Base styles for all circles */
+    .circle {
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 24px 35px var(accent-sidenav);
+    }
+
+    /* --- The Center Circle --- */
+    .center-circle {
+      width: 500px;
+      height: 450px;
+      opacity: 0.8;
+      margin-left: -10px;
+      margin-top: -40px;
+      color: var(accent-sidenav);
+      top: 50%;
+      left: 50%;
+      /* Centers the element relative to its own exact midpoint */
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    .center-circle:hover {
+      transform: translate(-50%,-50%) scale(1.15);
+      background-color:  var(accent-sidenav);
+      box-shadow: 0 0 30px var(accent-sidenav);
+      opacity: 0.8;
+    }
+
+         
+    /* --- The Orbiting Circles --- */
+    .orbit-circle {
+      width: 95px;
+      height: 75px;
+      background-color: var(accent-sidenavtext);
+      top: 50%;
+      left: 50%;
+      /* Offset by half the width/height to center their pivot point */
+      margin-left: -40px;
+      margin-top: -70px;
+      z-index: 5;
+      
+      /* This is the magic: 
+        1. Rotate the circle to its specific angle.
+        2. Push it outward by 160px (the radius).
+        3. Rotate it backwards by the same angle so the div itself stays completely upright!
+      */
+      transform: rotate(var(--angle)) translateY(-430px) rotate(calc(var(--angle) * -1));
+        
+  border-radius: 50% solid yellow;
+  animation-name: example;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    }
+
+             .orbit-circle:hover {
+      /* Re-apply the orbit position, but add a scale(1.4) to make it larger */
+
+    margin-bottom: 30px;
+      width: 95px;
+      height: 75px;
+      background-color:  var(accent-sidenavtext);
+      box-shadow: 0 0 70px var(accent-sidenavtext);
+      opacity: 0.8;
+      z-index: 20;
+                 
+    }
+
+    /* Optional class added by JS on click */
+    .active-circle {
+      background-color:  #                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         FE2A2A !important;
+    }
+        
+    </style>
+    
+</head>
+<body>
+    <section style="background-color: var(bg-page); border-top:5px dashed yellow; border-bottom:5px dashed yellow; width: 1864px; height:1000px;" id="myCanvas">
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getSection("3d");
+
+    // Create linear gradient
+const grad=ctx.createLinearGradient(180,150,280,350);
+grad.addColorStop(0, white);
+grad.addColorStop(1, black);
+
+</script>
+    
+  <div class="containercircle" id="circleContainer">
+    <div class="circle center-circle" id="centerCircle"></div>
+      
+    <div class="circle orbit-circle" style="--angle: 46deg;">
+  <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+    </div>
+
+  <div class="circle orbit-circle" style="--angle: 65deg;"> 
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+    <div class="circle orbit-circle" style="--angle: 82deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+      <div class="circle orbit-circle" style="--angle: 102deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+  <div class="circle orbit-circle" style="--angle: 120deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+      
+     <div class="circle orbit-circle" style="--angle: 238deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+      <div class="circle orbit-circle" style="--angle: 256deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+      <div class="circle orbit-circle" style="--angle: 273deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+      <div class="circle orbit-circle" style="--angle: 293deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+      <div class="circle orbit-circle" style="--angle: 314deg;">
+      <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a>
+  </div>
+      
+  </div>
+    
+  <script>
+    // Grab all the hardcoded orbiting circles from the HTML
+    const orbitCircles = document.querySelectorAll('.orbit-circle');
+    
+    // Add click events to change their color
+    orbitCircles.forEach(circle => {
+      circle.addEventListener('click', function() {
+        this.classList.toggle('active-circle');
+      });
+    });
+
+    // Grab the center circle and the container
+    const centerCircle = document.getElementById('centerCircle');
+    const container = document.getElementById('circleContainer');
+    let currentRotation = 0;
+
+    // Rotate the entire container when the center is clicked
+    centerCircle.addEventListener('click', () => {
+      currentRotation += 36;
+      container.style.transform = `rotate(${currentRotation}deg)`;
+    });
+  </script>
+</section>
+  
+</body>
+</html>
