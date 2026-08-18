@@ -1,0 +1,837 @@
+
+<br>
+  <hr>
+         <section style="background-color: white; border-top:5px dashed yellow; border-bottom:5px dashed yelloq; width: 1964px; height:1000px;" id="myCanvas">
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getSection("3d");
+
+    // Create linear gradient
+const grad=ctx.createLinearGradient(180,150,280,350);
+grad.addColorStop(0, "lightblue");
+grad.addColorStop(1, "blue");
+
+</script>
+    
+  <div class="containercircle" id="circleContainer">
+    <div class="circle center-circle" id="centerCircle"></div>
+      
+    <div class="circle orbit-circle" style="--angle: 46deg;">
+  <a href="../ASE/Arthenya/Chemistry.html">
+  <divtip class="tooltip"> Chemistry  <span class="tooltiptext">"Chemistry" of the memory module will provides information about the elements and compounds that are formed by the elements.</span>
+</divtip>
+</a></div>
+
+      <div class="circle orbit-circle BLACC-spin" style="--angle: 65deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 82deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 102deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 120deg;"></div>
+      
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 238deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 256deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 273deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 293deg;"></div>
+    <div class="circle orbit-circle BLACC-spin" style="--angle: 314deg;"></div>
+  </div>
+    
+  <script>
+    // Grab all the hardcoded orbiting circles from the HTML
+    const orbitCircles = document.querySelectorAll('.orbit-circle');
+    
+    // Add click events to change their color
+    orbitCircles.forEach(circle => {
+      circle.addEventListener('click', function() {
+        this.classList.toggle('active-circle');
+      });
+    });
+
+    // Grab the center circle and the container
+    const centerCircle = document.getElementById('centerCircle');
+    const container = document.getElementById('circleContainer');
+    let currentRotation = 0;
+
+    // Rotate the entire container when the center is clicked
+    centerCircle.addEventListener('click', () => {
+      currentRotation += 36;
+      container.style.transform = `rotate(${currentRotation}deg)`;
+    });
+  </script>
+</section>
+  <br>
+
+
+
+<button class="tablink" onclick="openPage('Biology', this, 'red')">Biology</button>
+<button class="tablink" onclick="openPage('Language', this, 'orange')" id="defaultOpen">Language</button>
+<button class="tablink" onclick="openPage('Architecture', this, 'blue')">Architecture</button>
+<button class="tablink" onclick="openPage('Computerscience', this,'grey')">Computerscience</button>
+<button class="tablink" onclick="openPage('Change', this,'yellow')">Change</button>
+
+<div id="Biology" class="tabcontent">
+  
+  <div class="BLACC-container BLACC-padding-32">
+    <h3  class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 5px;">Biology</h3>
+  </div>
+  
+  <br>
+  <br>
+
+
+  <div class="BLACC-row-padding">
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+          <a href="./Website_Template_BLACC_Corporation_Biology_Project_The_Ark.html">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+<img src="BLACC_Ark.jpg" alt="BLACC Ark" style="width:1050px;">
+  <div class="text-block">
+    <h4>B.L.A.C.C. Ark</h4>
+    <p style="color:red;">What a beautiful sunrise</p>
+  </div>
+</a>
+
+       
+	 </div>
+				  </div>
+		  </div>
+      </div>
+
+	 
+   <br>
+   <br>
+   <br>
+	  
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+          <a href="./Website_Template_BLACC_Corporation_Biology_Project_OneiroNet.html">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+<img src="OneiroNet.jpg" alt="BLACC Ark" style="width:1050px;">
+  <div class="text-block">
+    <h4>OneiroNet</h4>
+    <p style="color:red;">What a beautiful sunrise</p>
+  </div>
+</a>
+
+       
+	 </div>
+				  </div>
+		  </div>
+      </div>
+	 
+   <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Asclepieion_Of_BLACC.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Biology_Project_Asclepieion_Of_BLACC.html">Asclepieion Of B.L.A.C.C.
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	 
+  
+<div id="Language" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Architecture" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="Computerscience" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<div id="Change" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+    
+  <div class="BLACC-container BLACC-padding-32" id="purpose" style="width: 1050px; margin-left: 150px;">
+     <span><h3 class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black;font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 5px">Purpose<span><pre style="color: gold; font-size: 17px; font-family: Times; padding: 3px; text-align: center;"> 
+		  B.L.A.C.C. will not wait on Affirmative Action or another 
+		  individual/organization to do right. B.L.A.C.C. is what Stevie W.
+		  Carpenter has built in the past 5 years. B.L.A.C.C. was established
+		  in 2020, but the vision for its structure began before 2020. After 
+		  being released from California Department of Correction and 
+		  Rehabilitation in 2017, a lot of roadblocks were placed in his path
+		  based on past circumstances. B.L.A.C.C. will  eradicate the process 
+		  that Stevie W. Carpenter went through in order to get to where he is 
+		  now, by teaching the damaged, forgotten and misguided youth and homeless
+		  regardless of race. The youths' current struggle shouldn’t come from 
+		  the result of their parents or caregivers' bad decisions in life. 
+		  
+              Stevie W. Carpenter knows how life can be struggling as 
+		  a  youth, and he will not wait for pseudo-political committees to 
+		  nominate real humanitarians to be a politician. Stevie W. Carpenter 
+		  accomplishments have been repeated constantly, but his ultimate 
+		  purpose is to learn how to help his people before he departs; his 
+		  internal struggle. His belief and faith remains in these five keys. 
+		Love. Information. God. Heart. Teaching. 
+		  
+</pre></span></h3>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+
+  <div class="BLACC-container BLACC-padding-32" id="biology">
+    <h3  class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 5px;">Biology</h3>
+  </div>
+  
+  <br>
+  <br>
+
+
+  <div class="BLACC-row-padding">
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Ark.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Biology_Project_The_Ark.html">B.L.A.C.C. Ark
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	 
+   
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./OneiroNet.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Biology_Project_OneiroNet.html">OneiroNet
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	 
+   
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Asclepieion_Of_BLACC.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Biology_Project_Asclepieion_Of_BLACC.html">Asclepieion Of B.L.A.C.C.
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+  <br>
+  <br>
+	<hr>
+  <div class="BLACC-container BLACC-padding-32 " id="language">
+    <h3 class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 5px;">Language</h3>
+  </div>
+
+
+  <div class="BLACC-row-padding">
+	  
+    
+
+	 
+   
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Vital_Mathematic.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Language_Project_Vital_Mathematics.html">Vital Mathematics
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Pharaoh_History.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Language_Project_Pharaoh_History.html">Pharaoh History
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Music.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_Music.html">B.L.A.C.C. Music
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+    
+
+	 
+   
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Academy.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./BLACC_Academy/BLACC_Academy.html">B.L.A.C.C. Academy
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+	  
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+  <br>
+	<hr>
+  <div class="BLACC-container BLACC-padding-32 " id="architecture">
+    <h3 class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 2px;">Architecture</h3>
+  </div>
+
+
+  <div class="BLACC-row-padding">
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./NFT.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Architecture_Project_NFT.html">NFT
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Blacklining.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://blaccenterprise.github.io/world_wide_watch/Blacklining/Login.html" target="_self">Blacklining
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Eye.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://blaccenterprise.github.io/world_wide_watch/Eye/Login.html" target="_self">Eye
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+  <br>
+  <br>
+	<hr>
+
+  <div class="BLACC-container BLACC-padding-32 " id="computerscience">
+    <h3 class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 5px;">Computer Science</h3>
+  </div>
+
+
+  <div class="BLACC-row-padding">
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Connect.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Connect.html">B.L.A.C.C. Connect
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Tele.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html">B.L.A.C.C. Server
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./New_Nexxus.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_New_Nexxus.html">New Nexxus
+			  </a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./Web_Inquiry.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Computer_Science_Project_Website_Inquiry.html">Website Inquiry</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+  
+    <div class="BLACC-row-padding">
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./ASE.jpg" alt="BLACC Ark" style="width:200px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://blaccenterprise.github.io/ase/ASE/ASE_Home.html">A.S.E.</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Email.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="../BLACC_Email/Login.html">B.L.A.C.C. Email</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>   
+	  
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Messages.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="../BLACC_Messages/Login.html">B.L.A.C.C. Messages</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>   
+
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Database.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://blaccenterprise.github.io/database/BLACC_Database_Home.html">B.L.A.C.C. Database</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>  
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+  
+    <div class="BLACC-row-padding">
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACChole_Icon.jpg" alt="BLACC Ark" style="width:200px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://blaccenterprise.github.io/blacchole/Website_Template_BLACC_Corporation_Computer_Science_Project_BLACChole.html">BLACChole</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Search_August_Edition.jpg" alt="BLACC Ark" style="width:200px; height:200px;"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://blaccenterprise.github.io/search/BLACC_Search.html">B.L.A.C.C. Search</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+
+	  
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <br>
+  <br>
+	<hr>
+
+
+  <div class="BLACC-container BLACC-padding-32 " id="change">
+    <h3 class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 5px;">Change</h3>
+  </div>
+
+
+  <div class="BLACC-row-padding">
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Connect.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Change_Project_BLACC_Connect.html">B.L.A.C.C. Connect</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BLACC_Guided_Pathways.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Change_Project_BLACC_Guided_Pathway.html">B.L.A.C.C. Guided Pathway</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./New_Nexxus.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Website_Template_BLACC_Corporation_Change_Project_New_Nexxus.html">New Nexxus</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+	  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+	<hr>
+
+
+  <div class="BLACC-container BLACC-padding-32 " id="stock">
+    <h3 class="BLACC-border BLACC-border-yellow BLACC-padding-32" style="background: black; font-size:96px; font-family: Vivaldi; color: gold; text-align: center; text-shadow: 0 32px 24px yellow;">Stock</h3>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+	  
+  <div class="BLACC-row-padding">
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BC.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Stock_Price.html" target="_blank">Stock Price</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BC.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="https://pay.blacccorporation.com">Buy Stock</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+
+	  
+    <div class="BLACC-col l3 m6 BLACC-margin-bottom">
+      <div class="container BLACC-display-container">
+        <div class="BLACC-display-topleft BLACC-black BLACC-padding">
+        <img src="./BC.jpg" alt="BLACC Ark" style="width:250px"  class="image">
+			  <div class="overlay">
+    <div class="text"><a href="./Sell_Stock.html">Sell Stock</a>
+	 </div>
+				  </div>
+		  </div>
+      </div>
+    </div>
+
+
+	  
+   
+
+	  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+	  <hr>
+  <br>
+  <br>
+
+  
+  <a href="./Team.html"><div class="BLACC-container BLACC-padding-32" id="team">
+     <span><h3 class="BLACC-border BLACC-border-blue BLACC-hover-border-green BLACC-padding-32 BLACC-hover-text-green" style="background: black;font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 2px;">Team<span></span></h3></span>
+  </div></a>
+
+  <br>
+  <br>
+  <hr>
+
+
+
+
+
+	
+  <div class="BLACC-container BLACC-padding-32" id="about">
+     <span><h3 class="BLACC-border BLACC-border-blue BLACC-padding-32" style="background: black;font-size:96px; font-family: Vivaldi; color: red; text-align: center; border: solid gold 2px;">About<span><p style="color: gold; font-size: 24px;">
+	  
+	  <pre style="color: gold; font-size: 17px; font-family: Times; padding: 3px; text-align: center;">
+	  
+	  B.L.A.C.C. Corporation, with the alias B.L.A.C.C., was established in the State of California on 
+	  June 16, 2020 for the purpose of creating inventions to incorporate under B.L.A.C.C. Corporation 
+	  as Intellectual Property. The fields that B.L.A.C.C. focus on Biology, Language, Architecture, 
+	  Computer Science and Change (Humanitarian Work). Stevie W. Carpenter academic background stems 
+	  from my A.A. of Liberal Arts: Mathematics and Science, A.A. of Liberal Arts: Social and Behavioral 
+	  Science, A.A. of Liberal Arts: Arts and Humanities, B.S. of Neurobiology w/ minor in Statistics.
+
+New Nexxus was the first invention incorporated under B.L.A.C.C. in 2020, which is a networking system 
+made for the Student Government of The United States. This idea evolved from my involvement in the 
+Student Government as Senator of Activities and Planning, Executive of Outreach and Vice President of 
+Los Angeles City College.
+
+Shares within B.L.A.C.C. started at the Volume of 20,000,000; throughout expansion of B.L.A.C.C. the 
+Volume of shares are 130,000,000. The price of a single share in the first quarter of 2020 started at 
+.001; in the last quarter of 2023 the price of a single share is .0683
+
+
+Portions of property and shares within B.L.A.C.C. is owned by Stevie W. Carpenter, investors, 
+inventors, the Public, B.L.A.C.C. Board Members and B.L.A.C.C. Connect Officers.
+
+B.L.A.C.C. is hosted on a private Linux server created by Stevie W. Carpenter using Node.js on 
+GoogleChrome V8 Javascript Engine. Files initiated in the recent third party server (BLACCSpaces) will be 
+securely transferred to the private server by the end of the first quarter of 2024.
+
+B.L.A.C.C. owns several domains being:
+
+<a href="./BLACC_Server_Domain.html">Click Link</a>
+
+
+B.L.A.C.C. now has the ability to create and manage domains, along with creating the HTML, CSS, 
+JavaScript source code for the website to be hosted on the domain.
+
+Businesses in partnership with B.L.A.C.C., will have a portion of the server dedicated to hosting a 
+domain (examplebusiness.blacccorporation.com) addressing the public with their future plans.
+B.L.A.C.C. will be providing a RSVP listing for early access to attain a @blacccorp.com email. This 
+email is recommended for security purposes; especially for Black members. Google and Outlook are 
+B.L.A.C.C. trusted emailing systems.
+
+
+B.L.A.C.C. has released another invention known as B.L.A.C.C. Connect. For more information click the 
+link below. B.L.A.C.C. Connect, due to its complexity; in short, the system is the B.L.A.C.C. 
+Government Network.
+
+Grants for B.L.A.C.C. Connect has been secured through B.L.A.C.C.,which will help fund classes that 
+will be taught by B.L.A.C.C. Connect Educators in order to give the youth practical working knowledge 
+and experience. Portions of the grant will be issued to backpay, payroll and maintenance for the upkeep 
+of B.L.A.C.C. Connect.</pre>
+
+
+
+</span></h3>
+    </span>
+  </div>
+
+      
+-->
+
+
+	

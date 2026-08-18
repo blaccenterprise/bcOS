@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="icon" type="image/x-icon" href="./BC.jpg">
+     <script type="text/javascript" src="./import.js"></script>
+     <script type="text/javascript" src="./ASE.js"></script>
+    <script type="text/javascript" src="./BLACCCORPORATION_Term.js"></script>
+    <style>
+        body {
+    font-family: Georgia, "Times New Roman", Times, serif, "Open Sans", sans-serif, "Imprint MT Shadow";
+
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: radial-gradient(yellow, white, black);
+         }
+
+        .imgdefault {
+        width: 200px;
+            height: 50px;
+            }
+        
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  src: url(flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+
+    /* Optional class added by JS on click */
+    .active-circle {
+      background-color: #2ed573 !important;
+    }      
+        
+.material-icons {
+  font-family: 'Material Icons';
+  color: red;
+    font-weight: normal;
+  text-shadow: -1px -1px 0 red, 1px -1px 0 yellow, -1px 1px 0 green, 1px 1px 0 blue;
+    opacity: 1;
+    font-style: normal;
+  margin-left: 20px;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: 12px;
+  text-transform: wavy;
+  display: inline-block;
+  white-space: pretty;
+  text-wrap: pretty;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+        
+.container {
+      position: relative;
+  display: grid;
+    height: auto;
+    opacity: 1;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  gap: 2.5px;
+    padding: 2.5px;
+}
+
+ 
+.container div.item {
+  background-color: black;
+  opacity: 1;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  box-shadow: 50px 30px 60px 100px #87A6B4;    
+  border: 3px solid yellow;
+}
+
+ 
+.container div img {
+  background-color: black;
+  opacity: 0;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  box-shadow: 50px 30px 60px 100px #87A6B4;    
+  border: 3px solid yellow;
+}
+        
+.container div {
+  background-color: black;
+  opacity: 0;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  box-shadow: 50px 30px 60px 100px #87A6B4;    
+}
+        
+.container: hover div {
+  background-color: #f1f1f180;
+  opacity: 0;
+  text-align: center;
+  transition: 2s ease;
+  padding: 5px;
+  font-size: 30px;
+  box-shadow: 50px 30px 60px 100px #87A6B4;    
+}
+     
+
+.container button {
+    position: relative;
+  background-color: blue;
+    color: red;
+  opacity: 1;
+  text-align: center;
+  font-size: 40px;
+    border: 1px double red;
+}
+
+.container:hover button {
+    position: relative;
+    color: blue;
+  opacity: 1;
+  text-align: center;
+  font-size: 90px;
+  box-shadow: 5px 3px 6px red;    
+transition: font-size 10s ;
+}
+
+.container:hover.active button {
+    position: relative;
+    color: blue;
+  opacity: 1;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 5px 3px 6px red;    
+transition: font-size 2s ;
+}
+
+
+
+.item:hover img {
+    opacity: 1;
+  text-align: center;
+  font-size: 30px;
+    border: 10px double orange;
+   box-shadow: 50px 30px 60px black;
+
+}
+
+.itemapp:hover {
+    opacity: 1;
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+   box-shadow: 5px 40px 60px 50px black;
+}
+
+.itemapp {
+    opacity: 1;
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+    width: 100px;
+    height: 100px;
+   box-shadow: 5px 4px 6px black;  
+       transition: 2s ease infinite;
+}
+
+.item:hover {
+  background-color: #f1f1f180;
+    opacity: 1;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+   box-shadow: 5px 3px 6px #87A6B4;
+}
+
+.item {
+  background-color: #f1f1f180;
+    opacity: 1;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+   box-shadow: 50px 30px 60px #87A6B4;
+}
+        
+      
+h1 {
+  text-shadow: 0 40px 28px lightblue;
+	}
+
+
+.glow {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 50px 20px 30px #00BFFF, 10px 20px 60px #88C6E0, 50px 20px 30px #88BED5, 10px 30px 60px #00BFFF, 10px 30px 30px #88AEBF, 50px 30px 60px #87A6B4, 10px 20px 30px #869FA9;
+  }
+  
+  to {
+    text-shadow: 10px 30px 60px #00BFFF, 50px 10px 40px #848F94, 10px 10px 50px #00BFFF, 10px 10px 60px #808080, 50px 10px 70px #87CEEB, 10px 10px 80px #00BFFF, 50px 10px 90px #88AEBF;
+  }
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 43%;
+  left: 30%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.middle-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  bottom: 55%;
+  left: 30%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.top-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  bottom: 67%;
+  left: 30%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.top-middle {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  bottom: 67%;
+  left: 43%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.top-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  bottom: 67%;
+  right: 30%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.middle-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  bottom: 55%;
+  right: 30%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  bottom: 43%;
+  right: 30%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+
+.bottom-middle {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  bottom: 43%;
+  left: 43%;
+  text-shadow: 10px 10px 10px #00BFFF;
+    color: black;
+    font-family: Times;
+    
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 10px 10px 5px #00BFFF;
+    color: black;
+    font-family: Times;
+}
+        
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: 2s ease;
+  background-color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+        
+         
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px double blue;
+  cursor: pointer;
+    margin-left: 60px;
+  box-shadow: 10px 10px 10px yellow;
+}
+
+.tooltiptext {
+  box-shadow: 10px 10px 10px yellow;
+  visibility: hidden;
+  font-size: 20px;
+  background-color: #00000080;
+  color: white;
+    bottom: 0px;
+    margin-left: -200px;
+    margin-bottom: -300px;
+  text-align: left;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+        
+        
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 6;
+    
+}
+
+
+        
+.item2 {
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 6;
+  grid-column-end: 9;
+}
+
+        
+.item3 {
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+
+
+
+        
+        
+.item4 {
+  grid-row-start: 10;
+  grid-row-end: 25;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+        
+.item5 {
+  grid-row-start: 6;
+  grid-row-end: 20;
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+
+        
+.item6 {
+  grid-row-start: 6;
+  grid-row-end: 20;
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+
+
+
+        
+        
+.item7 {
+  grid-row-start: 25;
+  grid-row-end: 35;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+        
+.item8 {
+  grid-row-start: 20;
+  grid-row-end: 30;
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+
+        
+.item9 {
+  grid-row-start: 20;
+  grid-row-end: 30;
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+
+
+
+        
+        
+.item10 {
+  grid-row-start: 35;
+  grid-row-end: 50;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+        
+.item11 {
+  grid-row-start:30;
+  grid-row-end: 45;
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+        
+.item12 {
+  grid-row-start: 30;
+  grid-row-end: 45;
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+
+
+
+
+        
+        
+.item13 {
+  grid-row-start: 50;
+  grid-row-end: 65;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+        
+.item14 {
+  grid-row-start: 45;
+  grid-row-end: 60;
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+        
+.item15 {
+  grid-row-start: 45;
+  grid-row-end: 60;
+  grid-column-start: 8;
+  grid-column-end: 10;
+}
+
+
+
+
+        
+.item16 {
+  grid-row-start: 65;
+  grid-row-end: 75;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+        
+.item17 {
+  grid-row-start: 60;
+  grid-row-end: 75;
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+        
+.item18 {
+  grid-row-start: 60;
+  grid-row-end: 75;
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+
+
+    
+        
+.item19 {
+  grid-row-start: 75;
+  grid-row-end: 85;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+        
+.item20 {
+  grid-row-start: 75;
+  grid-row-end: 85;
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+
+        
+.item21 {
+  grid-row-start: 75;
+  grid-row-end: 85;
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+
+
+        
+.item22 {
+  grid-row-start: 85;
+  grid-row-end: 95;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+        
+.item23 {
+  grid-row-start: 85;
+  grid-row-end: 95;
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+        
+.item24 {
+  grid-row-start: 85;
+  grid-row-end: 95;
+  grid-column-start: 8;
+  grid-column-end: 10;
+}
+
+
+
+        
+        
+.item25 {
+  grid-row-start: 95;
+  grid-row-end: 105;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+        
+.item26 {
+  grid-row-start: 95;
+  grid-row-end: 105;
+  grid-column-start: 6;
+  grid-column-end: 9;
+}
+
+        
+.item27 {
+  grid-row-start: 95;
+  grid-row-end: 105;
+  grid-column-start: 9;
+  grid-column-end: 10;
+}
+
+
+
+        
+        
+        
+.item28 {
+  grid-row-start: 105;
+  grid-row-end: 115;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+        
+.item29 {
+  grid-row-start: 105;
+  grid-row-end: 115;
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+        
+.item30 {
+  grid-row-start: 105;
+  grid-row-end: 115;
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+</style>
+    
+</head>
+<body>
+<div class="BLACC-bar-block BLACC-border BLACC-red" style="width:100px; opacity: 1;">
+  <div class="BLACC-bar-item  BLACC-red">London</div>
+  <div class="BLACC-bar-item BLACC-red">Paris</div>
+  <div class="BLACC-bar-item BLACC-red">Tokyo</div>
+</div>
+
+    
+<i><h1 style="font-size:85px; font-family: Times; margin-top: 75px; text-align: center;"  class="glow">'B.L.A.C.C. Explore'</h1></i> 
+    <hr style="border: 4px double blue;">
+<div class="container">
+    
+  <div class="item1 item" id="demo">
+      <div class="overlay tooltip">
+      <img style="width:630.91px; height: 722px;" src="./BC.jpg">
+      <div class="itemapp overlay centered" style="width:15px; height: 15px;">
+    <button class="material-icons " onclick="myFunctionshow1()" style="width:15px; height: 15px; display: block; margin-left: -5px; margin-bottom: 2px;">
+            apps
+    </button><span style="width: 350px; height: 130px" class="bottom-middle  tooltiptext">Apple Apple Apple Apple</span>        
+          </div>
+          
+
+    <div class="BLACC-bar BLACC-red" style="opacity: 1;">
+          <a  style="text-align: left;" href="" target="_self"><i class="material-icons" >search</i></a>
+        <a class="" href="" target="_self"><i class="material-icons" >share</i></a> 
+  <a href="#" class="BLACC-bar-item BLACC-hover-green">Tokyo</a>
+</div>
+    
+      <div id="myDIV1" style="display: none; opacity: .5;">
+        <a class="bottom-left" href="" target="_self"><i class="material-icons" >share</i></a> 
+          <a  class="middle-left" href="" target="_self"><i class="material-icons" >search</i></a>
+          <a  class="top-left" href="" target="_self"><i class="material-icons" >preview</i></a>
+          <a  class="top-middle" href="" target="_self"><i class="material-icons" >bug_report</i></a>
+          <a  class="top-right" href="" target="_self"><i class="material-icons" >announcement</i></a>
+          <a  class="middle-right" href="" target="_self"><i class="material-icons" >sync</i></a>
+          <a  class="bottom-right" href="" target="_self"><i class="material-icons" >open_window</i></a>
+          <a  class="bottom-middle" href="" target="_self"><i class="material-icons" >find_in_page</i></a>
+         
+        </div>
+</div>
+      </div>
+    
+          <div class="item2 item" id="demo">
+      <div class="overlay tooltip">
+  <video autoplay muted loop playsinline style="width:355.94px; height: 401px;">
+    <source src="comp.mp4" type="video/mp4">
+    <!-- Optional: Add a WebM source for better browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+          <div class="centered itemapp overlay">
+    <button class="material-icons " onclick="myFunctionshow2()" style="width:15px; height: 15px; display: block; margin-left: -5px; margin-bottom: 2px;">
+            apps
+    </button><span style="width: 350px; height: 130px" class="bottom-middle  tooltiptext">Apple Apple Apple Apple</span>        
+          </div>
+      <div id="myDIV2" class="bottom-left itemapp" style="display: none; opacity: .5;">
+    <a class="bottom-left" href="" target="_self"><i class="material-icons" >share</i></a> 
+          <a  class="middle-left" href="" target="_self"><i class="material-icons" >search</i></a>
+          <a  class="top-left" href="" target="_self"><i class="material-icons" >preview</i></a>
+          <a  class="top-middle" href="" target="_self"><i class="material-icons" >bug_report</i></a>
+          <a  class="top-right" href="" target="_self"><i class="material-icons" >announcement</i></a>
+          <a  class="middle-right" href="" target="_self"><i class="material-icons" >sync</i></a>
+          <a  class="bottom-right" href="" target="_self"><i class="material-icons" >open_window</i></a>
+          <a  class="bottom-middle" href="" target="_self"><i class="material-icons" >find_in_page</i></a>
+                 </div>
+</div>
+              
+          </div>
+
+    
+
+  <div class="item3 item"><img style="width:77.11px; height: 401px;" src="./BC.jpg">      
+      <div class="overlay tooltip">
+ <div class="centered itemapp overlay">
+    <button class="material-icons " onclick="myFunctionshow3()" style="width:40px; height: 40px; display: block; margin-left: -20px;">
+            apps
+    </button><span style="width: 350px; height: 130px" class="bottom-middle  tooltiptext">Apple Apple Apple Apple</span>        
+          </div>
+      <div id="myDIV3" class="bottom-left itemapp" style="display: none; opacity: 1;">
+        <i class="material-icons" >search</i>
+        </div>      
+</div></div>  
+
+    
+  <div class="item4 item"><img style="width:130.41px; height: 1260.5px;" src="./BC.jpg"><div class="overlay tooltip">
+ <div class="centered itemapp overlay">
+    <button class="material-icons " onclick="myFunctionshow4()" style="width:40px; height: 40px; display: block; margin-left: -20px;">
+            apps
+    </button><span style="width: 350px; height: 130px" class="bottom-middle  tooltiptext">Apple Apple Apple Apple</span>        
+          </div>
+      <div id="myDIV4" class="bottom-left itemapp" style="display: none; opacity: 1;">
+        <i class="material-icons" >search</i>
+        </div>      
+</div></div>
+
+    
+  <div class="item5 item"><img style="width:606.19px; height: 1156.5px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+    
+  <div class="item6 item"><img style="width:77.11px; height: 1156.5px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item7 item"><img style="width:881.16px; height: 807px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item8 item"><img style="width:105.69px; height: 826px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item9 item"><img style="width:77.11px; height: 826px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item10 item"><img style="width:380.66px; height: 1184.5px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item11 item"><img style="width:495.5px; height: 1194px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item12 item"><img style="width:187.8px; height: 1194px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item13 item"><img style="width:380.66px; height: 931px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+      
+  <div class="item14 item"><img style="width:580.83px; height: 1222.5px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item15 item"><img style="width:132.47px; height: 1222.5px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item16 item"><img style="width:130.41px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item17 item"><img style="width:745.75px; height: 170px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item18 item"><img style="width:187.8px; height: 170px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item19 item"><img style="width:630.91px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item20 item"><img style="width:105.69px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item21 item"><img style="width:77.11px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item22 item"><img style="width:380.66px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item23 item"><img style="width:550.83px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+     
+  <div class="item24 item"><img style="width:132.47px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item25 item"><img style="width:630.91px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item26 item"><img style="width:355.94px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip">
+
+      
+</div></div>
+
+    
+  <div class="item27 item"><img style="width:77.11px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip"></div></div>
+<div class="item28 item"><img style="width:130.41px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip"></div></div>
+<div class="item29 item"><img style="width:745.75px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip"></div></div>
+<div class="item30 item"><img style="width:187.8px; height: 65px;" src="./BC.jpg"><div class="overlay tooltip"></div></div>
+<div class="item31 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item32 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item33 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item34 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item35 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item36 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item37 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item38 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item39 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item40 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item41 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item42 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item43 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item44 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item45 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item46 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item47 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item48 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item49 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item50 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item51 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item52 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item53 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item54 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item55 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item56 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item57 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item58 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item59 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item60 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item61 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item62 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item63 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item64 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item65 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item66 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item67 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item68 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item69 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item70 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item71 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item72 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item73 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item74 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item75 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item76 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item77 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item78 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item79 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item80 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item81 item"><img src="./Website_Inquiry.jpg" class="imgdefault">81<div class="overlay tooltip"></div></div>
+<div class="item82 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item83 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item84 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item85 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item86 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item87 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item88 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item89 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item90 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item91 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item92 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item93 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item94 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item95 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item96 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item97 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item98 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item99 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item100 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item101 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item102 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item103 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item104 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item105 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item106 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item107 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item108 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item109 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item110 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item111 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item112 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item113 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+<div class="item114 item"><img src="./Website_Inquiry.jpg" class="imgdefault"><div class="overlay tooltip"></div></div>
+<div class="item115 item"><i class="material-icons">watch_later</i><div class="overlay tooltip"></div></div>
+    <!--
+  <div class="item116">116</div>
+  <div class="item117">117</div>
+  <div class="item118">118</div>
+  <div class="item119">119</div>
+  <div class="item120">120</div>
+  <div class="item121">121</div>
+  <div class="item122">122</div>
+  <div class="item123">123</div>
+  <div class="item124">124</div>
+  <div class="item125">125</div>
+  <div class="item126">126</div>
+  <div class="item127">127</div>
+  <div class="item128">128</div>
+  <div class="item129">129</div>
+  <div class="item130">130</div>
+  <div class="item131">131</div>
+  <div class="item132">132</div>
+  <div class="item133">133</div>
+  <div class="item134">134</div>
+  <div class="item135">135</div>
+  <div class="item136">136</div>
+  <div class="item137">137</div>
+  <div class="item138">138</div>
+  <div class="item139">139</div>
+  <div class="item140">140</div>
+  <div class="item141">141</div>
+  <div class="item142">142</div>
+  <div class="item143">143</div>
+  <div class="item144">144</div>
+  <div class="item145">145</div>
+  <div class="item146">146</div>
+  <div class="item147">147</div>
+  <div class="item148">148</div>
+  <div class="item149">149</div>
+  <div class="item150">150</div>
+  <div class="item151">151</div>
+  <div class="item152">152</div>
+  <div class="item153">153</div>
+  <div class="item154">154</div>
+  <div class="item155">155</div>
+  <div class="item156">156</div>
+  <div class="item157">157</div>
+  <div class="item158">158</div>
+  <div class="item159">159</div>
+  <div class="item160">160</div>
+  <div class="item161">161</div>
+  <div class="item162">162</div>
+  <div class="item163">163</div>
+  <div class="item164">164</div>
+  <div class="item165">165</div>
+  <div class="item166">166</div>
+  <div class="item167">167</div>
+  <div class="item168">168</div>
+  <div class="item169">169</div>
+  <div class="item170">170</div>
+  <div class="item171">171</div>
+  <div class="item172">172</div>
+  <div class="item173">173</div>
+  <div class="item174">174</div>
+  <div class="item175">175</div>
+  <div class="item176">176</div>
+  <div class="item177">177</div>
+  <div class="item178">178</div>
+  <div class="item179">179</div>
+  <div class="item180">180</div>
+  <div class="item181">181</div>
+  <div class="item182">182</div>
+  <div class="item183">183</div>
+  <div class="item184">184</div>
+  <div class="item185">185</div>
+  <div class="item186">186</div>
+  <div class="item187">187</div>
+  <div class="item188">188</div>
+  <div class="item189">189</div>
+  <div class="item190">190</div>
+  <div class="item191">191</div>
+  <div class="item192">192</div>
+  <div class="item193">193</div>
+  <div class="item194">194</div>
+  <div class="item195">195</div>
+  <div class="item196">196</div>
+  <div class="item197">197</div>
+  <div class="item198">198</div>
+  <div class="item199">199</div>
+  <div class="item200">200</div>
+  <div class="item201">201</div>
+  <div class="item202">202</div>
+  <div class="item203">203</div>
+  <div class="item204">204</div>
+  <div class="item205">205</div>
+  <div class="item206">206</div>
+  <div class="item207">207</div>
+  <div class="item208">208</div>
+  <div class="item209">209</div>
+  <div class="item210">210</div>
+  <div class="item211">211</div>
+  <div class="item212">212</div>
+  <div class="item213">213</div>
+  <div class="item214">214</div>
+  <div class="item215">215</div>
+  <div class="item216">216</div>
+  <div class="item217">217</div>
+  <div class="item218">218</div>
+  <div class="item219">219</div>
+  <div class="item220">220</div>
+  <div class="item221">221</div>
+  <div class="item222">222</div>
+  <div class="item223">223</div>
+  <div class="item224">224</div>
+  <div class="item225">225</div>
+  <div class="item226">226</div>
+  <div class="item227">227</div>
+  <div class="item228">228</div>
+  <div class="item229">229</div>
+  <div class="item230">230</div>
+  <div class="item231">231</div>
+  <div class="item232">232</div>
+  <div class="item233">233</div>
+  <div class="item234">234</div>
+  <div class="item235">235</div>
+  <div class="item236">236</div>
+  <div class="item237">237</div>
+  <div class="item238">238</div>
+  <div class="item239">239</div>
+  <div class="item240">240</div>
+  <div class="item241">241</div>
+  <div class="item242">242</div>
+  <div class="item243">243</div>
+  <div class="item244">244</div>
+  <div class="item245">245</div>
+  <div class="item246">246</div>
+  <div class="item247">247</div>
+  <div class="item248">248</div>
+  <div class="item249">249</div>
+  <div class="item250">250</div>
+  <div class="item251">251</div>
+  <div class="item252">252</div>
+  <div class="item253">253</div>
+  <div class="item254">254</div>
+  <div class="item255">255</div>
+  <div class="item256">256</div>
+  <div class="item257">257</div>
+  <div class="item258">258</div>
+  <div class="item259">259</div>
+  <div class="item260">260</div>
+  <div class="item261">261</div>
+  <div class="item262">262</div>
+  <div class="item263">263</div>
+  <div class="item264">264</div>
+  <div class="item265">265</div>
+  <div class="item266">266</div>
+  <div class="item267">267</div>
+  <div class="item268">268</div>
+  <div class="item269">269</div>
+  <div class="item270">270</div>
+  <div class="item271">271</div>
+  <div class="item272">272</div>
+  <div class="item273">273</div>
+  <div class="item274">274</div>
+  <div class="item275">275</div>
+  <div class="item276">276</div>
+  <div class="item277">277</div>
+  <div class="item278">278</div>
+  <div class="item279">279</div>
+  <div class="item280">280</div>
+  <div class="item281">281</div>
+  <div class="item282">282</div>
+  <div class="item283">283</div>
+  <div class="item284">284</div>
+  <div class="item285">285</div>
+  <div class="item286">286</div>
+  <div class="item287">287</div>
+  <div class="item288">288</div>
+  <div class="item289">289</div>
+  <div class="item290">290</div>
+  <div class="item291">291</div>
+  <div class="item292">292</div>
+  <div class="item293">293</div>
+  <div class="item294">294</div>
+  <div class="item295">295</div>
+  <div class="item296">296</div>
+  <div class="item297">297</div>
+  <div class="item298">298</div>
+  <div class="item299">299</div>
+  <div class="item300">300</div>
+  <div class="item301">301</div>
+  <div class="item302">302</div>
+  <div class="item303">303</div>
+  <div class="item304">304</div>
+  <div class="item305">305</div>
+  <div class="item306">306</div>
+  <div class="item307">307</div>
+  <div class="item308">308</div>
+  <div class="item309">309</div>
+  <div class="item310">310</div>
+  <div class="item311">311</div>
+  <div class="item312">312</div>
+  <div class="item313">313</div>
+  <div class="item314">314</div>
+  <div class="item315">315</div>
+  <div class="item316">316</div>
+  <div class="item317">317</div>
+  <div class="item318">318</div>
+  <div class="item319">319</div>
+  <div class="item320">320</div>
+  <div class="item321">321</div>
+  <div class="item322">322</div>
+  <div class="item323">323</div>
+  <div class="item324">324</div>
+  <div class="item325">325</div>
+  <div class="item326">326</div>
+  <div class="item327">327</div>
+  <div class="item328">328</div>
+  <div class="item329">329</div>
+  <div class="item330">330</div>
+  <div class="item331">331</div>
+  <div class="item332">332</div>
+  <div class="item333">333</div>
+  <div class="item334">334</div>
+  <div class="item335">335</div>
+  <div class="item336">336</div>
+  <div class="item337">337</div>
+  <div class="item338">338</div>
+  <div class="item339">339</div>
+  <div class="item340">340</div>
+  <div class="item341">341</div>
+  <div class="item342">342</div>
+  <div class="item343">343</div>
+  <div class="item344">344</div>
+  <div class="item345">345</div>
+  <div class="item346">346</div>
+  <div class="item347">347</div>
+  <div class="item348">348</div>
+  <div class="item349">349</div>
+  <div class="item350">350</div>
+  <div class="item351">351</div>
+  <div class="item352">352</div>
+  <div class="item353">353</div>
+  <div class="item354">354</div>
+  <div class="item355">355</div>
+  <div class="item356">356</div>
+  <div class="item357">357</div>
+  <div class="item358">358</div>
+  <div class="item359">359</div>
+  <div class="item360">360</div>
+  <div class="item361">361</div>
+  <div class="item362">362</div>
+  <div class="item363">363</div>
+  <div class="item364">364</div>
+  <div class="item365">365</div>
+  <div class="item366">366</div>
+  <div class="item367">367</div>
+  <div class="item368">368</div>
+  <div class="item369">369</div>
+  <div class="item370">370</div>
+  <div class="item371">371</div>
+  <div class="item372">372</div>
+  <div class="item373">373</div>
+  <div class="item374">374</div>
+  <div class="item375">375</div>
+  <div class="item376">376</div>
+  <div class="item377">377</div>
+  <div class="item378">378</div>
+  <div class="item379">379</div>
+  <div class="item380">380</div>
+  <div class="item381">381</div>
+  <div class="item382">382</div>
+  <div class="item383">383</div>
+  <div class="item384">384</div>
+  <div class="item385">385</div>
+  <div class="item386">386</div>
+  <div class="item387">387</div>
+  <div class="item388">388</div>
+  <div class="item389">389</div>
+  <div class="item390">390</div>
+  <div class="item391">391</div>
+  <div class="item392">392</div>
+  <div class="item393">393</div>
+  <div class="item394">394</div>
+  <div class="item395">395</div>
+  <div class="item396">396</div>
+  <div class="item397">397</div>
+  <div class="item398">398</div>
+  <div class="item399">399</div>
+  <div class="item400">400</div>
+  <div class="item401">401</div>
+  <div class="item402">402</div>
+  <div class="item403">403</div>
+  <div class="item404">404</div>
+  <div class="item405">405</div>
+  <div class="item406">406</div>
+  <div class="item407">407</div>
+  <div class="item408">408</div>
+  <div class="item409">409</div>
+  <div class="item410">410</div>
+  <div class="item411">411</div>
+  <div class="item412">412</div>
+  <div class="item413">413</div>
+  <div class="item414">414</div>
+  <div class="item415">415</div>
+  <div class="item416">416</div>
+  <div class="item417">417</div>
+  <div class="item418">418</div>
+  <div class="item419">419</div>
+  <div class="item420">420</div>
+  <div class="item421">421</div>
+  <div class="item422">422</div>
+  <div class="item423">423</div>
+  <div class="item424">424</div>
+  <div class="item425">425</div>
+  <div class="item426">426</div>
+  <div class="item427">427</div>
+  <div class="item428">428</div>
+  <div class="item429">429</div>
+  <div class="item430">430</div>
+  <div class="item431">431</div>
+  <div class="item432">432</div>
+  <div class="item433">433</div>
+  <div class="item434">434</div>
+  <div class="item435">435</div>
+  <div class="item436">436</div>
+  <div class="item437">437</div>
+  <div class="item438">438</div>
+  <div class="item439">439</div>
+  <div class="item440">440</div>
+  <div class="item441">441</div>
+  <div class="item442">442</div>
+  <div class="item443">443</div>
+  <div class="item444">444</div>
+  <div class="item445">445</div>
+  <div class="item446">446</div>
+  <div class="item447">447</div>
+  <div class="item448">448</div>
+  <div class="item449">449</div>
+  <div class="item450">450</div>
+  <div class="item451">451</div>
+  <div class="item452">452</div>
+  <div class="item453">453</div>
+  <div class="item454">454</div>
+  <div class="item455">455</div>
+  <div class="item456">456</div>
+  <div class="item457">457</div>
+  <div class="item458">458</div>
+  <div class="item459">459</div>
+  <div class="item460">460</div>
+  <div class="item461">461</div>
+  <div class="item462">462</div>
+  <div class="item463">463</div>
+  <div class="item464">464</div>
+  <div class="item465">465</div>
+  <div class="item466">466</div>
+  <div class="item467">467</div>
+  <div class="item468">468</div>
+  <div class="item469">469</div>
+  <div class="item470">470</div>
+  <div class="item471">471</div>
+  <div class="item472">472</div>
+  <div class="item473">473</div>
+  <div class="item474">474</div>
+  <div class="item475">475</div>
+  <div class="item476">476</div>
+  <div class="item477">477</div>
+  <div class="item478">478</div>
+  <div class="item479">479</div>
+  <div class="item480">480</div>
+  <div class="item481">481</div>
+  <div class="item482">482</div>
+  <div class="item483">483</div>
+  <div class="item484">484</div>
+  <div class="item485">485</div>
+  <div class="item486">486</div>
+  <div class="item487">487</div>
+  <div class="item488">488</div>
+  <div class="item489">489</div>
+  <div class="item490">490</div>
+  <div class="item491">491</div>
+  <div class="item492">492</div>
+  <div class="item493">493</div>
+  <div class="item494">494</div>
+  <div class="item495">495</div>
+  <div class="item496">496</div>
+  <div class="item497">497</div>
+  <div class="item498">498</div>
+  <div class="item499">499</div>
+  <div class="item500">500</div>
+    -->
+</div>
+
+<script>
+function myFunctionshow1() { var x = document.getElementById("myDIV1"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow2() { var x = document.getElementById("myDIV2"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow3() { var x = document.getElementById("myDIV3"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow4() { var x = document.getElementById("myDIV4"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow5() { var x = document.getElementById("myDIV5"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow6() { var x = document.getElementById("myDIV6"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow7() { var x = document.getElementById("myDIV7"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow8() { var x = document.getElementById("myDIV8"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow9() { var x = document.getElementById("myDIV9"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow10() { var x = document.getElementById("myDIV10"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow11() { var x = document.getElementById("myDIV11"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow12() { var x = document.getElementById("myDIV12"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow13() { var x = document.getElementById("myDIV13"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow14() { var x = document.getElementById("myDIV14"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow15() { var x = document.getElementById("myDIV15"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow16() { var x = document.getElementById("myDIV16"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow17() { var x = document.getElementById("myDIV17"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow18() { var x = document.getElementById("myDIV18"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow19() { var x = document.getElementById("myDIV19"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow20() { var x = document.getElementById("myDIV20"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow21() { var x = document.getElementById("myDIV21"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow22() { var x = document.getElementById("myDIV22"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow23() { var x = document.getElementById("myDIV23"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow24() { var x = document.getElementById("myDIV24"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow25() { var x = document.getElementById("myDIV25"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow26() { var x = document.getElementById("myDIV26"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow27() { var x = document.getElementById("myDIV27"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow28() { var x = document.getElementById("myDIV28"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow29() { var x = document.getElementById("myDIV29"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow30() { var x = document.getElementById("myDIV30"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow31() { var x = document.getElementById("myDIV31"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow32() { var x = document.getElementById("myDIV32"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow33() { var x = document.getElementById("myDIV33"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow34() { var x = document.getElementById("myDIV34"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow35() { var x = document.getElementById("myDIV35"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow36() { var x = document.getElementById("myDIV36"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow37() { var x = document.getElementById("myDIV37"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow38() { var x = document.getElementById("myDIV38"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow39() { var x = document.getElementById("myDIV39"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow40() { var x = document.getElementById("myDIV40"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow41() { var x = document.getElementById("myDIV41"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow42() { var x = document.getElementById("myDIV42"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow43() { var x = document.getElementById("myDIV43"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow44() { var x = document.getElementById("myDIV44"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow45() { var x = document.getElementById("myDIV45"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow46() { var x = document.getElementById("myDIV46"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow47() { var x = document.getElementById("myDIV47"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow48() { var x = document.getElementById("myDIV48"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow49() { var x = document.getElementById("myDIV49"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow50() { var x = document.getElementById("myDIV50"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow51() { var x = document.getElementById("myDIV51"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow52() { var x = document.getElementById("myDIV52"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow53() { var x = document.getElementById("myDIV53"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow54() { var x = document.getElementById("myDIV54"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow55() { var x = document.getElementById("myDIV55"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow56() { var x = document.getElementById("myDIV56"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow57() { var x = document.getElementById("myDIV57"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow58() { var x = document.getElementById("myDIV58"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow59() { var x = document.getElementById("myDIV59"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow60() { var x = document.getElementById("myDIV60"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow61() { var x = document.getElementById("myDIV61"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow62() { var x = document.getElementById("myDIV62"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow63() { var x = document.getElementById("myDIV63"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow64() { var x = document.getElementById("myDIV64"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow65() { var x = document.getElementById("myDIV65"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow66() { var x = document.getElementById("myDIV66"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow67() { var x = document.getElementById("myDIV67"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow68() { var x = document.getElementById("myDIV68"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow69() { var x = document.getElementById("myDIV69"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow70() { var x = document.getElementById("myDIV70"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow71() { var x = document.getElementById("myDIV71"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow72() { var x = document.getElementById("myDIV72"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow73() { var x = document.getElementById("myDIV73"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow74() { var x = document.getElementById("myDIV74"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow75() { var x = document.getElementById("myDIV75"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow76() { var x = document.getElementById("myDIV76"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow77() { var x = document.getElementById("myDIV77"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow78() { var x = document.getElementById("myDIV78"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow79() { var x = document.getElementById("myDIV79"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow80() { var x = document.getElementById("myDIV80"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow81() { var x = document.getElementById("myDIV81"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow82() { var x = document.getElementById("myDIV82"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow83() { var x = document.getElementById("myDIV83"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow84() { var x = document.getElementById("myDIV84"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow85() { var x = document.getElementById("myDIV85"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow86() { var x = document.getElementById("myDIV86"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow87() { var x = document.getElementById("myDIV87"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow88() { var x = document.getElementById("myDIV88"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow89() { var x = document.getElementById("myDIV89"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow90() { var x = document.getElementById("myDIV90"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow91() { var x = document.getElementById("myDIV91"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow92() { var x = document.getElementById("myDIV92"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow93() { var x = document.getElementById("myDIV93"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow94() { var x = document.getElementById("myDIV94"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow95() { var x = document.getElementById("myDIV95"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow96() { var x = document.getElementById("myDIV96"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow97() { var x = document.getElementById("myDIV97"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow98() { var x = document.getElementById("myDIV98"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow99() { var x = document.getElementById("myDIV99"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow100() { var x = document.getElementById("myDIV100"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow101() { var x = document.getElementById("myDIV101"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow102() { var x = document.getElementById("myDIV102"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow103() { var x = document.getElementById("myDIV103"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow104() { var x = document.getElementById("myDIV104"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow105() { var x = document.getElementById("myDIV105"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow106() { var x = document.getElementById("myDIV106"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow107() { var x = document.getElementById("myDIV107"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow108() { var x = document.getElementById("myDIV108"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow109() { var x = document.getElementById("myDIV109"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow110() { var x = document.getElementById("myDIV110"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow111() { var x = document.getElementById("myDIV111"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow112() { var x = document.getElementById("myDIV112"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow113() { var x = document.getElementById("myDIV113"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow114() { var x = document.getElementById("myDIV114"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+function myFunctionshow115() { var x = document.getElementById("myDIV115"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }
+</script>
+</body>
+</html>
+

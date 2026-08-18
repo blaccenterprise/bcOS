@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>B.L.A.C.C. Corporation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Format_Web.css">
+<link rel="stylesheet" href="./blacc_body.css">
+<link rel="stylesheet" href="./button.css">
+<link rel="icon" type="image/x-icon" href="./BC.jpg">
+     <script type="text/javascript" src="./import.js"></script>
+     <script type="text/javascript" src="./ASE.js"></script>
+    <script type="text/javascript" src="./BLACCCORPORATION_Term.js"></script>
+    
+     <style>
+         
+.containertext {
+  position: relative;
+  font-family: Georgia;
+  color: blue;
+    background-color: #0000000D
+}
+
+.text-block {
+    font-size:90px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #1b98e00D;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+         
+#bwscale {
+  animation: mymove6 30s infinite;
+}
+
+#panel, .flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+  cursor:pointer;
+}
+
+#panel {
+  display: none;
+}
+         
+        .BLACC-animate-fading{animation:fading 15xs infinite}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+         
+.sidenav {
+  height: 45%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 1600px;
+    background-color: #ADD8E680;
+    color: yellow;
+  overflow-x: hidden;
+  padding-top: 10px;
+    border-left: 7px solid black;
+    border-color:none blue black lightblue;
+    border-style:none double double;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: black;
+    opacity: 1;
+    display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+         
+.sidenav a:hover {
+  color: white;
+  background-color: blue;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+    
+}
+
+.text-block {
+  position: absolute;
+  top: 40px;
+  left: 320px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+         
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: white;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Biology {background-color: red;}
+#Language {background-color: orange;}
+#Architecture {background-color: blue;}
+#Computerscience {background-color: grey;}
+#Change {background-color: yellow;}
+         
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  color: red;
+    font-weight: normal;
+  text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
+    font-style: normal;
+  margin-left: 20px;
+    font-size: 24px;
+  line-height: 1;
+  letter-spacing: 12px;
+  text-transform: wavy;
+  display: inline-block;
+  white-space: pretty;
+  text-wrap: pretty;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+         
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 12px;
+  width: 100px;
+  background-color: lightblue;
+  color: green;
+  text-align: center;
+  border-radius: 6px;
+  position: fixed;
+  z-index: 1;
+  bottom: -125px;
+  right: 20%;
+  margin-left: 60px;
+  padding: .5px;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+         
+    .containercircle {
+        background-image: url('./Circle_Background.jpg');
+        text-align: center;
+      position: relative;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-left: 300px;
+      width: 1350px;
+      height: 750px;   
+    }
+
+    /* Base styles for all circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 24px 35px rgba(0, 0, 0, 0.8);
+    }
+
+    /* --- The Center Circle --- */
+    .center-circle {
+      width: 500px;
+      height: 450px;
+      opacity: 0.5;
+      margin-left: -10px;
+      margin-top: -40px;
+      background-color: blue;
+      top: 50%;
+      left: 50%;
+      /* Centers the element relative to its own exact midpoint */
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    .center-circle:hover {
+      transform: translate(-50%,-50%) scale(1.15);
+      background-color: lightblue;
+      box-shadow: 0 0 30px rgba(255, 71, 87, 0.8);
+    }
+
+         
+    /* --- The Orbiting Circles --- */
+    .orbit-circle {
+      width: 95px;
+      height: 75px;
+      background-color: #1e90ff;
+      top: 50%;
+      left: 50%;
+      /* Offset by half the width/height to center their pivot point */
+      margin-left: -40px;
+      margin-top: -70px;
+      z-index: 5;
+      
+      /* This is the magic: 
+        1. Rotate the circle to its specific angle.
+        2. Push it outward by 160px (the radius).
+        3. Rotate it backwards by the same angle so the div itself stays completely upright!
+      */
+      transform: rotate(var(--angle)) translateY(-430px) rotate(calc(var(--angle) * -1));
+        
+  border-radius: 50% solid yellow;
+  animation-name: example;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    }
+
+             .orbit-circle:hover {
+      /* Re-apply the orbit position, but add a scale(1.4) to make it larger */
+
+    margin-bottom: 30px;
+      width: 95px;
+      height: 75px;
+      background-color: #70a1ff;
+      box-shadow: 0 0 70px rgba(30, 144, 255, 0.8);
+      z-index: 20;
+                 
+    }
+
+    /* Optional class added by JS on click */
+    .active-circle {
+      background-color: #2ed573 !important;
+    }
+         
+         /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: red;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+         
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: absolute;
+  display: inline-block;
+  background: black;
+  width: 100%;
+  border-radius: 5px;
+  bottom: 50px;
+  color: yellow;
+        opacity:.7;
+  text-align: center;
+  font-size: 20px;
+  font-family: Times;
+}
+
+input {
+  position: relative;
+  height: 105px;
+  width: 200px;
+  outline: none;
+  text-align: center;
+  border: 4px solid blue;
+  border-radius: 5px;
+  font-size: 30px;
+box-shadow: 30px 90px 120px 60px rgba(219, 212, 193,.8);
+background-color: white;
+  top: 0px;
+}
+         
+input[type=text] : hover {
+    position: relative;
+  height: 105px;
+  width: 200px;
+  outline: none;
+  text-align: center;
+  border: 4px solid blue;
+  border-radius: 5px;
+  font-size: 30px;
+box-shadow: 0px 10px 80px 40px rgba(219, 212, 193,.8);
+background-color: white;
+  top: 0px;
+        opacity:.7;
+
+}
+
+input[type=text] {
+    position: relative;
+  background-color: black ;
+  color: yellow;
+  width: 800px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color:  white;
+        opacity:.7;
+
+  color: yellow;
+  cursor: pointer;
+  box-shadow: 0px 10px 50px 30px rgba(180,150,10,0.22);
+}
+ 
+.autocomplete-items {
+  position: relative;
+  border: 1px solid white;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  max-height: 280px;
+}
+
+.autocomplete-items div { 
+    cursor: pointer;
+  background-color: black; 
+  color: white; 
+    border-bottom: 1px solid blue; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: white; 
+    color: black;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+
+/* Style the search box */
+#mySearch {
+  background: white;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  top: 500px;
+  left: 325px;
+  color: blue;
+    text-align: center;
+      font-size: 20px;
+  font-family: Times;
+  box-shadow: 0px 10px 50px 30px rgba(180,150,210,0.42);
+}
+
+#mySearch input{
+color: blue;
+  position: relative;
+  top: 500px;
+  left: 325px;
+  height: 105px;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  border: 4px solid green;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0px 50px 50px rgba(0,0,190,0.7);
+  font-family: Times;
+}
+/* Style the navigation menu inside the left column */
+#myMenu {
+    margin-bottom:150px;
+    width: 75%;
+  font-size: 15px;
+  background-color: black;
+    opacity: .4;
+  color: green;
+  pointer-events: none;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#myMenu li a {
+  opacity: .7;
+    font-family: Times;
+    font-size: 30px;
+    color:blue;
+    text-align: center;
+}
+
+#myMenu li a: hover{
+  background-color: blue; 
+    color: white;
+
+}
+    
+      .sidedesign {
+        font-size: 24px;
+        font-family: Georgia;
+        color: white;
+      
+     }    
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 1000;
+  background-color: blue;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  margin-left: 200px;
+}
+
+.sidebar a {
+  padding: 4px 4px 4px 12px;
+  text-decoration: none;
+  font-family: Times;
+  color: black;
+  border: 2px red dotted;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: red;
+  color: blue;
+}
+
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+::selection {
+  color: yellow;
+  background: white;
+  border: 3px solid white;
+  font-size: 20px;
+  font-family: Times;
+box-shadow: 0px 10px 80px 40px rgba(219, 212, 193,.8);
+}
+
+
+.searchInput {
+  position: relative;
+  height: 105px;
+  width: 300px;
+  outline: none;
+  text-align: center;
+  border: 4px solid green;
+  border-radius: 5px;
+  font-size: 70px;
+box-shadow: 0px 10px 80px 40px rgba(219, 212, 193,.8);
+background-color: #E8E3E1;
+    
+}
+.container {
+  position: relative;
+  height: 200px;
+  width: 600px;
+    margin-left:300px;
+    margin-bottom: 200px;
+  outline: none;
+  border-radius: 5px;
+background-color: black;
+}
+
+
+     
+
+.searchInput.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.searchInput .resultBox{
+  padding: 0;
+  opacity: 1;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: hidden;
+}
+
+.searchInput.active .resultBox.active{
+  padding: 30px 18px;
+  opacity: 1;
+  pointer-events: auto;
+  color: red;
+  background: white;
+}
+
+.resultBox li{
+    position: relative;
+    text-align: center;
+  list-style: none;
+  padding: 8px 12px;
+    background: black;
+    color: white;
+  display: block;
+  width: 250px;
+    height: 75px;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.searchInput.active .resultBox.active li{
+    background: white;
+        opacity:.7;
+
+    color: black;
+}
+.resultBox li:hover {
+  background: black;
+    color: green;
+}
+
+.icon {
+  position: relative;
+  width: 100%;
+  right: 200px;
+  top: 300px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: red;
+  background: red;
+        opacity:.7;
+
+  cursor: pointer;
+}
+        
+         
+    
+#result {
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  color: blue;
+  background: black;
+  cursor: pointer;
+}
+    
+#result ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+}
+    
+#result ul li {
+  padding: 5px 10px;
+  background-color: black;
+}
+         
+#result ul li a{
+  color: white;
+}
+         
+#result ul li:hover {
+  background: black;
+  color: white;
+}
+  
+
+         
+#output {
+			  color:yellow;
+			    padding:10px;
+			    width: 100%;
+			    margin-top:20px;
+			    line-height:30px;
+    }
+         
+.hide {
+			    display:none;
+			}
+         
+			.show {
+			    display:block;
+			}
+				
+
+* {
+  box-sizing: border-box;
+}
+         
+     
+.myInput {
+  background-color: white;
+    opacity:.7;
+  background-position: 4px 8px;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: yellow;
+  font-size: 36px;
+  border: 5px solid white;
+  margin-bottom: 12px;
+box-shadow: 0px 10px 80px 40px rgba(39,63,245,.8);
+  bottom: 170px;
+  left: -100px;
+
+
+
+
+    
+}        
+     
+.myInput[type=submit] {
+  background-color: white;
+    opacity:.7;
+  background-position: 4px 8px;
+  background-repeat: no-repeat;
+  width: 50%;
+  color: yellow;
+  font-size: 15px;
+  padding: 12px 20px 82px 40px;
+  border: 5px solid yellow;
+  margin-top: 12px;
+  box-shadow: 5px 60px 80px 90px rgba(219, 212, 193,.8);
+
+}     
+     
+         
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 00px;
+  height: 100px;
+}
+
+#myUL li a {
+  border: 1px blur blue;
+  margin-top: -3px; /* Prevent double borders */
+  background-color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-family: Times;
+}
+
+#myUL li a:hover {
+  background-color: white;
+  color: white;
+}
+
+        
+
+* {
+  box-sizing: border-box;
+}
+
+#myDIV {
+  width: 20%%;
+  height: 20%;
+  animation: mymove 26s infinite;
+}
+
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: .25;}
+  to {opacity: .50;}
+  to {opacity: .75;}
+  to {opacity: 1;}
+}
+         
+#BLACC-animate-fading{animation:fading 25s infinite}
+         
+@keyframes fading{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+         
+#BLACC-animate-right{position:relative;animation:animateright 30s infinite}
+         
+@keyframes animateright{
+    from{right:0px;opacity:0;transform:scale(0);} 
+    to{right:-450px;opacity:1;transform:scale(1);}
+}
+         
+#BLACC-animate-left{position:relative;animation:animateleft 30s infinite}
+         
+@keyframes animateleft{
+    from{left:0px;opacity:0;transform:scale(0);} 
+    to{left:-150px;opacity:1;transform:scale(1);}
+}
+         
+#BLACC-animate-saturate{animation:saturate 25s infinite}
+         
+@keyframes saturate{
+    from{filter:saturate(500%);} 
+    to{filter:saturate(1000%);}
+}
+         
+#BLACC-animate-brightness{animation:brightness 30s infinite}
+         
+@keyframes brightness{
+    from{filter:brightness(0%); filter:contrast(100%);transform:scale(0);} 
+    to{filter:brightness(1000%); filter:contrast(1000%);transform:scale(1);}
+}
+         
+#BLACC-animate-sepia{animation:sepia 25s infinite}
+         
+@keyframes sepia{
+    from{filter:sepia(100%);} 
+    to{filter:sepia(1000%);}
+}
+         
+#BLACC-animate-drop-shadow{animation:drop-shadow 25s infinite}
+         
+@keyframes drop-shadow{
+    from{filter: drop-shadow(10px 10px 7px lightgrey);} 
+    to{filter: drop-shadow(40px 40px 7px red);}
+}
+         
+#BLACC-animate-zoom {
+    animation:animatezoom 25s }
+         
+@keyframes animatezoom {
+    from{transform:scale(0);} 
+    to{transform:scale(1)};
+}
+         
+         body {
+    font-family: Georgia, "Times New Roman", Times, serif, "Open Sans", sans-serif, "Imprint MT Shadow";
+
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: radial-gradient(yellow, white, blue);
+         }
+	
+	hr {
+		border-color: yellow;
+		}
+
+	    html, body, h1, h2, h3, h4, h5 {font-family: Georgia, "Times New Roman", Times, serif, "Open Sans", sans-serif}
+
+ .invert {filter: invert(80%);}
+
+.lileft {
+  float: left;
+}
+.liright {
+  float: right;
+}
+
+	
+.dark-mode {
+  background-image: radial-gradient(yellow, black, white);
+  color: white;
+    
+    #navbar { 
+        background-color: black;
+        }
+    .sidenav {
+        background-color: #00000080;
+        }
+    .sidenav a{
+        color: white;
+        }
+    
+}
+
+p {
+	color: white;
+	}
+img {
+  border: 1px solid black;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+    color: white;
+}
+
+li a {
+  display: block;
+  color: red;
+  padding: 8px 16px;
+  text-decoration: none;
+    background-color: grey;
+}
+
+li a:hover {
+  background-color: red;
+  color: white;
+    border: 3px solid grey;
+  box-shadow: 5px 6px 8px 9px grey;
+}
+
+
+.image {
+  border-radius: 50%;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+ transition:wide 7s ease infinite;
+}
+
+.container:hover .overlay {
+  opacity: 1;  
+
+}
+
+h1 {
+  text-shadow: 0 40px 28px grey;
+	}
+h3 {
+  text-shadow: 0 40px 28px lightblue;
+margin-left: -260px;
+	}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  padding: 16px 20px;
+  border-color: yellow;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  weight: 100px;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 0;
+}
+
+         
+/* Add styles to the form container */
+.form-container {
+  max-width: 50px;
+  padding: 150px;
+  background-color: white;
+  color: yellow;
+  box-shadow: 5px 60px 80px 90px rgba(219, 212, 193,.8);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: blue;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+#navbar {
+  position: fixed;
+  background-color: #ADD8E680;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: block;
+  border: 7px double black;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  color: green;
+}
+    
+    
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Places video behind content */
+}
+
+.content {
+  position: center;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+         .footer {
+             border: 7px double black;
+             }
+         
+
+      
+.video-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+  z-index: 0;
+}
+
+    
+
+.text {
+ 
+  background-color: white;
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+
+
+
+.glow {
+  font-size: 80px;
+  color: blue;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 50px 20px 30px #00BFFF, 10px 20px 60px #88C6E0, 50px 20px 30px #88BED5, 10px 30px 60px #00BFFF, 10px 30px 30px #88AEBF, 50px 30px 60px #87A6B4, 10px 20px 30px #869FA9;
+  }
+  
+  to {
+    text-shadow: 10px 30px 60px #00BFFF, 50px 10px 40px #848F94, 10px 10px 50px #00BFFF, 10px 10px 60px #808080, 50px 10px 70px #87CEEB, 10px 10px 80px #00BFFF, 50px 10px 90px #88AEBF;
+  }
+}
+         
+</style>
+</head>
+<body class="BLACC-main">
+
+<!-- Navbar (sit on top) -->
+<div class="BLACC-top" style="font-size: 12px; border-bottom: 4px solid red; background-color: lightblue;">
+  <div id="navbar" class="BLACC-bar BLACC-wide BLACC-padding BLACC-card BLACC-border BLACC-border-wide"  style="font-size: 12px;">
+      
+    <a href="./Old_Design.html" class="BLACC-bar-item BLACC-button BLACC-hover-white" style="background-color: black; height: 130px;">
+        <b style="color:white; font-size: 9px" class="BLACC-hover-text-black">BC &copy</b>
+        <hr>
+    </a>
+      
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="BLACC-center" style="font-size: 12px; padding-left: 35em;">
+        
+      <a href="#biology" class="BLACC-bar-item BLACC-button"  style="font-size: 18px; background-color: red; color: black; border: 5px double black;"><strong style="font-size: 45px; background-color: white;"  class="BLACC-hover-text-red BLACC-white  BLACC-border BLACC-border-white BLACC-hover-border-black BLACC-hover-white"> B</strong>iology</a>
+        
+      <a href="#language" class="BLACC-bar-item BLACC-button BLACC-button-orange BLACC-hover-white BLACC-center" style="color:black;font-size: 18px; background-color: orange;" ><strong style="color:black;font-size: 45px; background-color: white;" class="BLACC-hover-text-orange BLACC-hover-white">L</strong>anguage</a>
+        
+      <a href="#architecture" class="BLACC-bar-item BLACC-button BLACC-hover-white BLACC-center"  style="font-size: 18px; background-color: blue; border: 5px double black;"><strong style="color:black;font-size: 45px; background-color: white;" class="BLACC-hover-text-blue BLACC-hover-white">A</strong>rchitecture</a>
+        
+      <a href="#computerscience" class="BLACC-bar-item BLACC-button BLACC-hover-white BLACC-center"  style="font-size: 18px; background-color : silver;"><strong style="color:black;font-size: 45px; background-color: white;" class="BLACC-hover-text-gray BLACC-hover-white">C</strong>omputer Science</a>
+        
+      <a href="#change" class="BLACC-bar-item BLACC-button BLACC-button-hover-white BLACC-center"  style="font-size: 18px; background-color : yellow; border: 5px double black;"><strong style="color:black;font-size: 45px; background-color: white;" class="BLACC-text-yellow BLACC-hover-white">C</strong>hange</a>
+        
+      </div>
+</div>
+      </div>
+    <br>
+<div class="sidenav">
+<a class="active"  onclick="myFunctiondark()"><i class="material-icons">nightlight</i> Dark-mode</a> 
+    
+              <script>
+function myFunctiondark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+    
+    <script>
+        function myFunctionautooff() {
+   
+  var x = document.getElementById("myA");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+            }
+    </script>
+    
+    <a class="active" href="./Old_Design.html"><i class="material-icons">home</i> Home</a> 
+        <!--
+        
+<a href="#stock"><i class="material-icons">settings</i>Settings</a>
+<a class="active" href="./Login.html"><i class="material-icons">login</i>Login  </a> 
+    -->
+    
+            
+<a class="active" href="" download><i class="material-icons">install_desktop</i> Install</a> 
+    
+<a class="active" onclick="myFunctionshare()"><i class="material-icons">share</i>Share</a>
+ <input type="text" style="opacity: .0; width: 0px; height: 0px;" value="https://blaccenterprise/blacccororation/index.html" id="myShare">
+    <script>
+function myFunctionshare() {
+  // Get the text field
+  var copyText = document.getElementById("myShare");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+    <hr>
+
+    
+<a class="active" href="./Report_Problem.html"><i class="material-icons">report_problem</i> Report Problem</a> 
+<a class="active" href="./Contact_Problem.html"><i class="material-icons">contact_support</i>Contact Support</a> 
+<a class="active" href="./Info.html"><i class="material-icons">info</i> Info</a> 
+<a class="active" href="./Help.html"><i class="material-icons">help_outline</i> Help Outline</a> 
+<a class="active" function(alert)><i class="material-icons">announcement</i> Announcement</a>
+    <a class="active" href="./Bug_Report.html"><i class="material-icons">bug_report</i> Bug Report</a> 
+    <a class="active" href=""><i class="material-icons">smart_button</i>Smart Button</a> 
+
+    <!--
+<a class="active" href="#"><i class="material-icons">view_list</i> View List</a> 
+<a class="active" href="#"><i class="material-icons">store</i> Store</a> 
+<a class="active" href="#"><i class="material-icons">work</i> Work</a> 
+<a class="active" href="#"><i class="material-icons">analytics</i> Analytics</a> 
+<a class="active" href="#"><i class="material-icons">watch_later</i> Watch Later</a> 
+<a class="active" href="#"><i class="material-icons">update</i> Update</a> 
+<a class="active" href="#"><i class="material-icons">code</i> Code</a> 
+<a class="active" href="#"><i class="material-icons">room</i> Room</a> 
+<a class="active" href="#"><i class="material-icons">receipt</i> receipt</a> 
+<a class="active" href="#"><i class="material-icons">more_vert</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">toggle_on</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">more_horiz</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">check_box_outline_blank</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">apps</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">radio_button_unchecked</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">bolt</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">key</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">add_box</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">arrow_circle_right</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">menu_open</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">undo</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">manage_search</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">settings_accessibility</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">exit_to_app</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">change_circle</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">unfold_more</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">reply</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">library_add</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">backspace</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">dataset</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">swap_horiz</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">app_registration</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">download_for_offline</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">create_new_folder</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">file_open</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">publish</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">upload</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">view_timeline</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">token</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">sort_by_alpha</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">downloading</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">search_off</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">dynamic_form</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">data_thresholding</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">install_desktop</i> Home</a>
+    
+<a class="active" href="#"><i class="material-icons">tab</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">file_download_off</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">view_compact_alt</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tab_unselected</i> Home</a> 
+    
+<a class="active" href="#"><i class="material-icons">add</i> Home</a>
+    -->
+    <!--
+<a class="active" href="#"><i class="material-icons">empty_dashboard</i> </a>
+    
+    
+<a class="active" href="#"><i class="material-icons">category_search</i> Home</a>
+    
+<a class="active" href="#"><i class="material-icons">deployed_code_update</i> Home</a> 
+    
+<a class="active" href="#"><i class="material-icons">file_export</i> Home</a>
+    
+<a class="active" href="#"><i class="material-icons">share_windows</i> Home</a> 
+    
+<a class="active" href="#"><i class="material-icons">iframe</i> Home</a> 
+    
+<a class="active" href="#"><i class="material-icons">left_panel_open</i> Home</a>
+    
+<a class="active" href="#"><i class="material-icons">right_panel_close</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">chronic</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">bottom_navigation</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">sliders</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tab_duplicate</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tab_search</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">bubbles</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tab_group</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">drag_click</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tab_close</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">search_gear</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">timer_arrow_down</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">reopen_window</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">widget_small</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">widget_medium</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tile_small</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">widget_width</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tile_large</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tile_medium</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">widget_menu</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">splitscreen_landscape_add</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">handshake</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">person_add</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">support_agent</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">share</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">thumb_up</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">public</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">travel_explore</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">pets</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">psychology</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">diversity_3</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">sentiment_very_satisfied</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">thumb_down</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">sunny</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">recycling</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">diamond</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">person_remove</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">diversity_2</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">man</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">medical_information</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">communication</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">female</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">cookie</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">woman</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">bedtime</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">connect_without_contact</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">partner_exchange</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">hive</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">elderly</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">skull</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">public_off</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">south_america</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">routine</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">identity_platform</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">emoji_symbols</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">cognition</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">sign_language</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tactic</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">neurology</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">18_up_rating</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">social_leaderboard</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">person_alert</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">footprint</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">conditions</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">taunt</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">guardian</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">share_off</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">power_settings_new</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">pending</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">preview</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">record_voice_over</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">interests</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">target</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">square_foot</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">home_app_logo</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">save_as</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">open_in_browser</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">background_replace</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">lock_person</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">label_important</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">3d_rotation</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">anchor</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">new_label</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">gesture</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">add_alert</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">web_traffic</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">batch_prediction</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">on_device_training</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">alarm_add</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">rsvp</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">watch_screentime</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">history_2</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">timer_play</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">link</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">mail</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">call</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">send</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">forum</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">inventory_2</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">chat_bubble</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">contact_support</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">alternate_email</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">sms</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">comment</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">hub</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">person_search</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">drafts</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">outgoing_mail</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">g_translate</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">network_intelligence</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">inbox</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">schedule_send</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">dialpad</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">cancel_presentation</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">move_to_inbox</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">attach_email</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">mark_as_unread</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">unsubscribe</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">markunread_mailbox</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">voicemail</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">mark_chat_read</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">threat_intelligence</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">attribution</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">contact_emergency</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">call_merge</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">video_chat</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">settings_bluetooth</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">link_2</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tooltip</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">tooltip_2</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">network_intelligence_history</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">network_intelligence_update</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+<a class="active" href="#"><i class="material-icons">info</i> Home</a> 
+        -->
+
+
+        </div>
+    
+
+<!-- Header -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Header -->
+<header style="font-size:270px; font-family: Times; color: red; text-align: center; margin-left: 50px;" class="BLACC-animate BLACC-animate-opacity">
+    <div class="BLACC-row-padding BLACC-animate-fading ">
+        
+    <article class="BLACC-col l2 m6 BLACC-margin" id="BLACC-animate-right" >
+      <div class="video-container BLACC-animate-fading" style="border: 7px solid red; border-radius: 10%; box-shadow: 0 30px 70px 50px red;">
+  <video autoplay muted loop playsinline class="background-video ">
+    <source src="Biology.mp4" type="video/mp4">
+    <!-- Optional: Add a WebM source for better browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+            <div class="content BLACC-animate-fading">
+            <a href="#" style="color: red" target="_self" class="ahomebiology BLACC-text-red  BLACC-hover-text-shadow-black">B.</a>
+            </div>
+                </div>
+    </article>
+
+        
+    <article class="BLACC-col l2 m6 BLACC-margin" id="BLACC-animate-fading">
+      <div class="video-container" style="border: 7px solid orange; border-radius: 10%; box-shadow: 0 30px 70px 50px orange;">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="lang.mp4" type="video/mp4">
+    <!-- Optional: Add a WebM source for better browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+            <div class="content">
+                <a href="#" style="color: orange"  target="_self" class="ahomelanguage BLACC-hover-text-white BLACC-hover-text-shadow-black">L.</a>
+                </div>
+     </div>
+    </article>
+    <article class="BLACC-col l2 m6 BLACC-margin" id="BLACC-animate-fading">
+      
+      <div class="video-container" style="border: 7px solid yellow; border-radius: 10%; box-shadow: 0 30px 70px 50px yellow;">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="arch.mp4" type="video/mp4">
+    <!-- Optional: Add a WebM source for better browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+            <div class="content">
+            <a href="#" style="color: yellow"  target="_self" class="ahomeart BLACC-hover-text-white BLACC-text-yellow BLACC-hover-text-shadow-black">A.</a>
+                </div>
+     </div>
+    </article>
+    <article class="BLACC-col l2 m6 BLACC-margin" id="BLACC-animate-left">
+      
+      <div class="video-container" style="border: 7px solid grey; border-radius: 10%; box-shadow: 0 30px 70px 50px grey;">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="comp.mp4" type="video/mp4">
+    <!-- Optional: Add a WebM source for better browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+            <div class="content" id="BLACC-animate-sepia">
+            <a href="#" style="color: grey"  target="_self" class="ahomecomputerscience BLACC-text-grey BLACC-hover-text-white BLACC-hover-text-shadow-black">C.</a>
+                </div> 
+     </div>
+    </article>
+        
+    <article class="BLACC-col l2 m6 BLACC-margin" id="BLACC-animate-brightness">
+      
+      <div class="video-container" style="border: 7px solid blue; border-radius: 10%; box-shadow: 0 30px 70px 50px blue;">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="chang.mp4" type="video/mp4">
+    <!-- Optional: Add a WebM source for better browser compatibility -->
+    Your browser does not support the video tag.
+  </video>
+            <div class="content" id="BLACC-animate-drop-shadow BLACC-animate-saturate myDIV">
+            <a id="BLACC-animate-drop-shadow" href="#" style="color: blue"  target="_self" class="ahomechange">C.</a>
+                </div>
+     </div>    
+
+    </article>
+        
+  </div>  
+    
+    </header>
+    
+    
+
+<div class="containertext">
+  <img src="./Diversity.jpg" alt="diversity" style="width:85%;">
+  <div class="text-block">
+   
+         <h3 style="font-family: Georgia; text-shadow: 25px 17px 8px rgba(27,24,24,0.46); font-size: 100px; text-shadow: white; top: 250px; margin-right:360px;" class="glow">'A Better Quality Of Life'</h3>
+      <br>
+  </div>
+</div>
+    <br>
+    
+<section style="background-color:black;">
+           
+
+<!--Make sure the form has the autocomplete function switched off:-->
+
+    </section>        
+
+    <!--
+
+
+<div class="container">
+  <img src="img_nature_wide.jpg" alt="Nature" style="width:100%;">
+  <div class="text-block">
+    <h4>Nature</h4>
+    <p>What a beautiful sunrise</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>   
+       
+a
+
+    
+<br>
+<br>
+<br>
+
+<button class="open-button" onclick="openForm()" style="margin-bottom: 100px; width: 100px; height: 100px;">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="mailto:blaccconnect@gmail.com" class="form-container" method="post" >
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="button" class="BLACC-button BLACC-yellow"><a href="https://blaccenterprise.github.io/blacchole/Tutorial/Home_Page.html">Tutorial Videos</a></button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+	
+<!-- Image of location/map 
+<div class="BLACC-container">
+  <img src="/##" class="BLACC-image" style="width:100%">
+</div>
+-->
+<!-- End page content -->
+
+
+<!-- Footer -->
+
+<footer class="footer" style="background-color: lightblue;">
+<p style=" color: black;"> Made By B.L.A.C.C. Corporation  &copy; 2020 - 2026</p>
+<hr>
+<br>
+  <ul class="lileft" style="color: white;">
+ <li><a href="./Old_Design.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="lileft" style="color: red;">
+ <li><a href="BLACC_Internet_Server.html">B.L.A.C.C. Search</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="./B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="./PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+ <ul class="lileft">
+<li><a href="./Subscribe_Form.html">Subscribe</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blaccenterprise.github.io/blaccconnect/Level_1_Access/United_States_Selection_Level_1_Access.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blaccenterprise.github.io/newnexxus/Home_Page.html">New Nexxus</a>
+</ul>
+
+ 
+<br>
+<hr>
+
+
+
+  <p style="text-align: right; padding-right:230px; color: black;">Powered by <a href="./Old_Design.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="./Old_Design.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+</footer>
+
+
+
+
+<script>
+    function() scrolling {
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+        }
+</script>
+
+		
+		<script>
+			/* JS comes here */
+		    function runSpeechRecognition() {
+		        // get output div reference
+		        var output = document.getElementById("output");
+		        // get action element reference
+		        var action = document.getElementById("action");
+                // new speech recognition object
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
+            
+                // This runs when the speech recognition service starts
+                recognition.onstart = function() {
+                    action.innerHTML = "<small>listening, please speak...</small>";
+                };
+                
+                recognition.onspeechend = function() {
+                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                }
+              
+                // This runs when the speech recognition service returns result
+                recognition.onresult = function(event) {
+                    var transcript = event.results[0][0].transcript;
+                    var confidence = event.results[0][0].confidence;
+                    output.innerHTML = transcript;
+                    output.classList.remove("hide");
+                };
+            
+                // This runs when the speech recognition service starts
+                recognition.onstart = function() {
+                    action.innerHTML = "<small>listening, please speak...</small>";
+                };
+              
+                 // start recognition
+                 recognition.start();
+	        }
+		</script>
+		
+
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("BLACC-show") == -1) {
+    x.className += " BLACC-show";
+  } else { 
+    x.className = x.className.replace(" BLACC-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+      
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+      
+                <script>
+                    /* JS comes here */
+                    function runSpeechRecognition() {
+                        // get output div reference
+                        var output = document.getElementById("output");
+                        // get action element reference
+                        var action = document.getElementById("action");
+                        // new speech recognition object
+                        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                        var recognition = new SpeechRecognition();
+
+                        // This runs when the speech recognition service starts
+                        recognition.onstart = function() {
+                            action.innerHTML = "<small>listening, please speak...</small>";
+                        };
+
+                        recognition.onspeechend = function() {
+                            action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                        }
+
+                        // This runs when the speech recognition service returns result
+                        recognition.onresult = function(event) {
+                            var transcript = event.results[0][0].transcript;
+                            var confidence = event.results[0][0].confidence;
+                            output.innerHTML = transcript;
+                            output.classList.remove("hide");
+                        };
+
+                        // This runs when the speech recognition service starts
+                        recognition.onstart = function() {
+                            action.innerHTML = "<small>listening, please speak...</small>";
+                        };
+
+                        // start recognition
+                        recognition.start();
+                    }
+                </script>
+                <!--
+
+                                <script>
+                                    var Arthenya = new Artyom();
+                                    // Needed user interaction at least once in the website to make
+                                    // it work automatically without user interaction later... thanks google .i.
+                                    document.getElementById("btn").addEventListener("click", function() {
+                                        Arthenya.say("Hi?");
+                                    }, true);
+                                </script>
+                                -->
+                                
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keypress", myFunctionase(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myInput").click();
+  }
+});
+</script>
+
+</body>
+
+</html>
