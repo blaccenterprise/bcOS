@@ -1,0 +1,24 @@
+.BLACC-theme-l5 {color:#000 !important; background-color:#fefef8 !important}
+.BLACC-theme-l4 {color:#000 !important; background-color:#fcfae8 !important}
+.BLACC-theme-l3 {color:#000 !important; background-color:#f9f5d2 !important}
+.BLACC-theme-l2 {color:#000 !important; background-color:#f6f0bb !important}
+.BLACC-theme-l1 {color:#000 !important; background-color:#f3eba5 !important}
+.BLACC-theme-d1 {color:#000 !important; background-color:#ecdf6c !important}
+.BLACC-theme-d2 {color:#000 !important; background-color:#e8d84a !important}
+.BLACC-theme-d3 {color:#000 !important; background-color:#e3d029 !important}
+.BLACC-theme-d4 {color:#000 !important; background-color:#cbb91a !important}
+.BLACC-theme-d5 {color:#fff !important; background-color:#a99b16 !important}
+
+.BLACC-theme-light {color:#000 !important; background-color:#fefef8 !important}
+.BLACC-theme-dark {color:#fff !important; background-color:#a99b16 !important}
+.BLACC-theme-action {color:#fff !important; background-color:#a99b16 !important}
+
+.BLACC-theme {color:#000 !important; background-color:#f0e68c !important}
+.BLACC-text-theme {color:#f0e68c !important}
+.BLACC-border-theme {border-color:#f0e68c !important}
+
+.BLACC-hover-theme:hover {color:#000 !important; background-color:#f0e68c !important}
+.BLACC-hover-text-theme:hover {color:#f0e68c !important}
+.BLACC-hover-border-theme:hover {border-color:#f0e68c !important}
+
+
