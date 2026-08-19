@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Crazeosama Home Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./blacc_body.css">
+    <link rel="stylesheet" href="./Format_Web.css">
+    <link rel="stylesheet" href="https://blaccenterprise.github.io/content/CSS/blue_theme_part_1.css">
+    <link rel="stylesheet" href="https://blaccenterprise.github.io/content/CSS/blue_theme_part_2.css">
+    <script src="./blacc.js"></script>
+    <style>
+     body {
+       background-image: url('./Photos/back.jpg');
+     }   
+p {
+  color: white;
+  font-family: Georgia;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 1px;
+}
+a {
+  font-family: Times;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+    </style>
+<body>
+
+<!-- Navigation (Stays on Top) -->
+<div class="BLACC-top BLACC-bar BLACC-black BLACC-large">
+<a href="#home" class="BLACC-bar-item BLACC-button BLACC-text-blue">Home</a>
+<a href="#music" class="BLACC-bar-item BLACC-button BLACC-text-blue">Singles/Albums</a>
+<a href="#post" class="BLACC-bar-item BLACC-button BLACC-text-blue">Post</a>
+<a href="#contact" class="BLACC-bar-item BLACC-button BLACC-text-blue">Contact</a>
+<button onclick="myFunctiondark()" class="BLACC-button dark-mode" style="float: right;">Dark</button>
+</div>
+<script>
+function myFunctiondark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!-- Start Content -->
+<div id="home" class="BLACC-content">
+<!-- Slides -->
+<img class="slides centered" src="./Photos/1.png" width="100%">
+<img class="slides centered" src="./Photos/2.png" width="100%">
+<img class="slides centered" src="./Photos/3.png" width="100%">
+<img class="slides centered" src="./Photos/4.png" width="100%">
+<img class="slides centered" src="./Photos/5.png" width="100%">
+<img class="slides centered" src="./Photos/6.png" width="100%">
+<img class="slides centered" src="./Photos/7.png" width="100%">
+<img class="slides centered" src="./Photos/8.png" width="100%">
+<img class="slides centered" src="./Photos/9.png" width="100%">
+<img class="slides centered" src="./Photos/10.png" width="100%">
+<img class="slides centered" src="./Photos/11.png" width="100%">
+<img class="slides centered" src="./Photos/12.png" width="100%">
+<img class="slides centered" src="./Photos/13.png" width="100%">
+<img class="slides centered" src="./Photos/14.png" width="100%">
+<img class="slides centered" src="./Photos/15.png" width="100%">
+<img class="slides centered" src="./Photos/16.png" width="100%">
+<script>
+BLACC.slideshow(".slides", 1500);
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- About -->
+<div id="about" class="BLACC-container BLACC-padding-32">
+<!-- Canvas -->
+<section style="border:1px solid red; background-color: black;">
+  <img src="./Photos/BC.jpg">
+
+<canvas id="myCanvas" width="600" height="250" style="border:1px solid red; background-color: black;">
+CrazeOsama</canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(250,400,380,450);
+grad.addColorStop(0, "darkblue");
+grad.addColorStop(1, "red");
+
+// Fill outlined text with gradient
+ctx.font = "100px cursive";
+ctx.fillStyle = grad;
+ctx.fillText("CrazeOsama",0,190);
+</script>
+</section>
+<br>
+<br>
+<hr style="border: 2px dashed white;">
+<hr style="border: 2px dashed white;">
+<br>
+<br>
+<p style="border:1px solid red; background-color: black;">This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<br>
+<br>
+<hr style="border: 2px dashed white;">
+<hr style="border: 2px dashed white;">
+<br>
+<br>
+<!-- Members -->
+<div id="members" class="BLACC-container BLACC-padding-32" style="border:1px solid red; background-color: black;">
+<h2 class="BLACC-center">Band Members</h2>
+<div class="BLACC-row BLACC-center">
+
+<div class="BLACC-third">
+<img src="img_bandmember.jpg" alt="Name1" style="width:60%">
+</div>
+
+<div class="BLACC-third">
+<img src="img_bandmember.jpg" alt="Name2" style="width:60%">
+</div>
+
+<div class="BLACC-third">
+<img src="img_bandmember.jpg" alt="Name3" style="width:60%">
+</div>
+
+</div>
+</div>
+<br>
+<br>
+<hr style="border: 2px dashed white;">
+<hr style="border: 2px dashed white;">
+<br>
+<br>
+    <h2 style="text-align: center; color: blue; font-family: Times; border:1px solid red; background-color: black;"><b>Music By CrazeOsama Produced By B.L.A.C.C. Music/ Black Mafia</b></h2>
+    <p class="BLACC-justify">  </p>
+    
+<hr style="border: 2px dashed white;">
+<video style="border:1px solid red; background-color: black;" class="center" width="1000" controls>
+  <source src="./Introduction_The_Use_Of_BLACC_Profile.mp4" type="video/mp4">
+  <source src="./Introduction_The_Use_Of_BLACC_Profile.ogg" type="video/ogg">
+  </video>    
+<hr style="border: 2px dashed white;">
+        <p style="border:1px solid red; background-color: black;"> Description : Video Introduction : The Use Of B.L.A.C.C. Profile, Released on 2024, Video comes from the intellectual property created by Stevie W. Carpenter. Credit : Videos - Introduction : The Use Of B.L.A.C.C. Profile, Created By Stevie W. Carpenter (Artist). Platform Design - BLACChole, Created By Stevie W. Carpenter. Restrictions : Video is only for watching and informative purposes. Copying and Selling of Video is prohibited. Violation of restriction will result in arbitration by B.L.A.C.C. Corporation and Artist</p>
+<br>
+<br>
+<hr style="border: 2px dashed white;">
+<hr style="border: 2px dashed white;">
+<br>
+<br>
+
+<!-- Contact -->
+<div id="contact" class="BLACC-container BLACC-center BLACC-padding-32" style="border:1px solid red; background-color: black;">
+<h2 class="BLACC-wide">CONTACT</h2>
+Texas, US<br>
+Phone: +00 151515<br>
+Email: mail@mail.com<br>
+<p class="BLACC-opacity BLACC-center"><i>Fan? Drop a note!</i></p>
+
+<form action="/action_page.php" target="_blank">
+<input class="BLACC-input" type="text" placeholder="Name" required name="Name">
+<input class="BLACC-input" type="text" placeholder="Email" required name="Email">
+<input class="BLACC-input" type="text" placeholder="Message" required name="Message"><br>
+<button class="BLACC-button BLACC-black" type="submit">SEND</button>
+</form>
+
+<br>
+<img src="map.jpg" class="BLACC-image" style="width:100%">
+
+
+<p class="BLACC-center BLACC-padding">Powered by <a href="https://blaccenterprise.github.io/blacccorporation/Website_Template_Music.html" title="BLACC.CSS" target="_blank">B.L.A.C.C. Music</a></p>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<!-- End Content -->
+</div>
+
+<!-- Footer -->
+
+<footer class="BLACC-container BLACC-black">
+<p> Made By B.L.A.C.C. Corporation  (c) 2020 - 2025</p>
+<br>
+<hr>
+<br>
+  <ul class="lileft">
+ <li><a href="https://blacccorporation.w3spaces.com/index.html">B.L.A.C.C. Corporation </a>
+    </ul>
+
+	 
+ <ul class="lileft">
+ <li><a href="https://blaccsearch.w3spaces.com/BLACC_Search.html">B.L.A.C.C. Search</a>
+  </ul>
+  
+  
+ <ul class="lileft">
+ <li><a href="https://blacccorporation.w3spaces.com/B.L.A.C.C.CorporationTERMSANDCONDITIONS.html" target="_blank">Terms</a>
+ </ul>
+
+ 
+ <ul class="lileft">
+ <li><a href="https://blacccorporation.w3spaces.com/PRIVACYPOLICYFORB.L.A.C.C.CORPORATION.html" target="_blank">Privacy Policy</a>
+ </ul>
+ 
+ <ul class="lileft">
+<li><a href="https://blacccorporation.w3spaces.com/Subscribe_Form.html">Subscribe</a>
+</ul>
+
+ 
+ <ul class="lileft">
+  <li><a href="https://blaccconnect.w3spaces.com/Level_1_Access/United_States_Selection_Level_1_Access.html">B.L.A.C.C. Connect</a>
+</ul>
+
+ 
+<br>
+<hr>
+<br>
+
+
+
+  <p style="text-align: right;">Powered by <a href="https://blacccorporation.w3spaces.com/Website_Template_BLACC_Corporation_Computer_Science_Project_BLACC_Server.html" title="B.L.A.C.C." class="BLACC-hover-text-green">B.L.A.C.C. Server</a>~Created by <a href="https://blacccorporation.w3spaces.com/index.html" title="B.L.A.C.C."  class="BLACC-hover-text-green">B.L.A.C.C. Corporation</a></p>
+</footer>
+
+</body>
+</html>

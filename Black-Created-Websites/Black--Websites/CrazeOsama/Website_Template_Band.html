@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>The Band</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./blacc_body.css">
+    <link rel="stylesheet" href="./Format_Web.css">
+    <script src="./blacc.js"></script>
+<body>
+
+<!-- Navigation (Stays on Top) -->
+<div class="BLACC-top BLACC-bar BLACC-black">
+<a href="#home" class="BLACC-bar-item BLACC-button">Home</a>
+<a href="#about" class="BLACC-bar-item BLACC-button">About</a>
+<a href="#members" class="BLACC-bar-item BLACC-button">Members</a>
+<a href="#contact" class="BLACC-bar-item BLACC-button">Contact</a>
+</div>
+
+<!-- Start Content -->
+<div id="home" class="BLACC-content">
+
+<!-- Slides -->
+<img class="slides centered" src="./BC.jpg" width="75%">
+<img class="slides v" src="./yplogo.jpg" width="75%">
+<img class="slides centered" src="./BC.jpg" width="75%">
+<script>
+BLACC.slideshow(".slides", 1500);
+</script>
+
+<!-- About -->
+<div id="about" class="BLACC-container BLACC-padding-32">
+<h1 class="BLACC-center">CrazeOsama</h1>
+<p>This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<!-- Members -->
+<div id="members" class="BLACC-container BLACC-padding-32">
+<h2 class="BLACC-center">Band Members</h2>
+<div class="BLACC-row BLACC-center">
+
+<div class="BLACC-third">
+<img src="img_bandmember.jpg" alt="Name1" style="width:60%">
+</div>
+
+<div class="BLACC-third">
+<img src="img_bandmember.jpg" alt="Name2" style="width:60%">
+</div>
+
+<div class="BLACC-third">
+<img src="img_bandmember.jpg" alt="Name3" style="width:60%">
+</div>
+
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="BLACC-container BLACC-center BLACC-padding-32">
+<h2 class="BLACC-wide">CONTACT</h2>
+Chicago, US<br>
+Phone: +00 151515<br>
+Email: mail@mail.com<br>
+<p class="BLACC-opacity BLACC-center"><i>Fan? Drop a note!</i></p>
+
+<form action="/action_page.php" target="_blank">
+<input class="BLACC-input" type="text" placeholder="Name" required name="Name">
+<input class="BLACC-input" type="text" placeholder="Email" required name="Email">
+<input class="BLACC-input" type="text" placeholder="Message" required name="Message"><br>
+<button class="BLACC-button BLACC-black" type="submit">SEND</button>
+</form>
+
+<br>
+<img src="map.jpg" class="BLACC-image" style="width:100%">
+<p class="BLACC-center BLACC-padding">Powered by <a href="https://www.BLACCschools.com/BLACCcss/default.asp" title="BLACC.CSS" target="_blank">BLACC.css</a></p>
+</div>
+
+<!-- End Content -->
+</div>
+
+</body>
+</html>
